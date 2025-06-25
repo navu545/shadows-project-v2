@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="navbar-wrapper flex flex-col items-center border-b border-gray-200 w-full">
       <div className="navbar-wrap flex flex-row justify-between items-center pb-5 mt-5 max-w-6xl w-full">
         <div className="navbar-logo mt-2">
-          <Link to="/newHome">
+          <Link to="/">
             <img
               src="https://ik.imagekit.io/shadows/Shadows-project/LogoNew.svg"
               alt="navbar-logo"
@@ -25,7 +25,7 @@ const Navbar = () => {
               <p>Creative Studio</p>
             </Link>
 
-            <Link to="/">
+            <Link to="/NGO">
               <p>NGO</p>
             </Link>
           </div>

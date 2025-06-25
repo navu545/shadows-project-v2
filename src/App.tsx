@@ -25,7 +25,7 @@ const AnimatedRoutes = () => {
           path="/"
           element={
             <Suspense fallback={<Loader />}>
-              <Home />
+              <NewHome />
             </Suspense>
           }
         />
@@ -46,10 +46,10 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/newhome"
+          path="/NGO"
           element={
             <Suspense fallback={<Loader />}>
-              <NewHome />
+              <Home />
             </Suspense>
           }
         />
