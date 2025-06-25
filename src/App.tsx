@@ -88,9 +88,11 @@ const App = () => {
   if (!delayPassed) return <Loader />;
 
   return (
-    <Router>
-      <AnimatedRoutes />
-    </Router>
+    <div style={{ zoom: 0.9 }}>
+      <Router>
+        <AnimatedRoutes />
+      </Router>
+    </div>
   );
 };
 
