@@ -85,13 +85,15 @@ const App = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  if (!delayPassed) return <Loader />;
-
   return (
     <div style={{ zoom: 0.9 }}>
-      <Router>
-        <AnimatedRoutes />
-      </Router>
+      {delayPassed ? (
+        <Router>
+          <AnimatedRoutes />
+        </Router>
+      ) : (
+        <Loader />
+      )}
     </div>
   );
 };
