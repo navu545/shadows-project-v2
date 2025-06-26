@@ -24,20 +24,16 @@ const Navbar = () => {
         </div>
 
         <div className="links-wrpper flex items-center gap-20">
-          <div className="links-pages flex gap-6 mt-2 font-semibold relative">
+          <div className="links-pages flex gap-6 mt-2 relative">
             {navItems.map(({ label, path }) => {
               const isActive = currentPath === path;
 
               return (
-                <Link
-                  key={path}
-                  to={path}
-                  className="relative px-4 py-2 rounded-full"
-                >
+                <Link key={path} to={path} className="group relative">
                   {isActive && (
                     <motion.div
                       layoutId="pill"
-                      className="absolute inset-0 bg-gray-200 rounded-full"
+                      className="absolute inset-0 rounded-full [background-image:linear-gradient(to_right,#2597FF,#FFF500)]"
                       transition={{
                         type: "spring",
                         stiffness: 300,
@@ -45,7 +41,21 @@ const Navbar = () => {
                       }}
                     />
                   )}
-                  <span className="relative z-10">{label}</span>
+
+                  <div
+                    className={`relative z-10 px-4 py-1 rounded-full border-2 transition-all duration-300
+      ${
+        isActive
+          ? "border-transparent text-white bg-transparent"
+          : `text-black border-transparent 
+           group-hover:[background-image:linear-gradient(white,white),linear-gradient(to_right,#2597FF,#FFF500)] 
+           group-hover:[background-origin:border-box] 
+           group-hover:[background-clip:padding-box,border-box] 
+           group-hover:text-black`
+      }`}
+                  >
+                    {label}
+                  </div>
                 </Link>
               );
             })}
@@ -58,13 +68,13 @@ const Navbar = () => {
                   "https://docs.google.com/forms/d/e/1FAIpQLSftFAJCrFFyp4fIbNhBBEJEiXKCyY9Fp36bLcSyhXWCmN0A1Q/viewform?usp=dialog"
                 )
               }
-              className="px-8 py-2 mt-2 bg-black text-white rounded-full text-sm cursor-pointer"
+              className="px-8 py-2 mt-2 bg-black text-white rounded-full text-sm cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white"
             >
               Join Us
             </button>
 
             <Link to="/bank-information">
-              <button className="px-8 py-2 mt-2 bg-black text-white rounded-full text-sm cursor-pointer">
+              <button className="px-8 py-2 mt-2 bg-black text-white rounded-full text-sm cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
                 Donate
               </button>
             </Link>

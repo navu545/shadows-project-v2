@@ -9,7 +9,6 @@ import {
   msmFive,
   msmSix,
   msmSeven,
-  msmEight,
 } from "./MuseumCard/MuseumAddress";
 
 const cardsArray = [
@@ -20,8 +19,7 @@ const cardsArray = [
   <MuseumCardOne {...msmFive} />,
   <MuseumCardOne {...msmSix} />,
   <MuseumCardOne {...msmSeven} />,
-  <MuseumCardOne {...msmEight} />,
-  <MuseumCardOne {...msmOne} />,
+  
 ];
 
 const MuseumsListHolder = () => {
@@ -67,7 +65,7 @@ const MuseumsListHolder = () => {
   for (let i = 0; i < cardsArray.length; i += 8) {
     const batch = cardsArray.slice(i, i + 8);
     pages.push(
-      <div className="grid gap-x-40 gap-y-10 grid-cols-4 mt-10 mb-15 place-items-center items-start h-[688px]">
+      <div className="grid gap-x-20 gap-y-10 grid-cols-4 mt-10 mb-15 place-items-center items-start h-[688px]">
         {batch}
       </div>
     );

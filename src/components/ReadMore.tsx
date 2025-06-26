@@ -6,7 +6,7 @@ const ReadMore = () => {
   const [showReadButton, setShowReadButton] = useState(false);
   const paraRef = useRef<HTMLDivElement>(null);
 
-  const collapsedHeight = 50;
+  const collapsedHeight = 55;
   useEffect(() => {
     if (paraRef.current) {
       setShowReadButton(paraRef.current.scrollHeight > collapsedHeight);
@@ -25,15 +25,15 @@ const ReadMore = () => {
 
   return (
     <div className="flex flex-col items-center mb-30">
-      <div className="flex max-w-6xl bg-[#E9F0ED] rounded-lg py-5 px-5">
+      <div className="flex max-w-7xl bg-[#E9F0ED] rounded-2xl py-5 px-5">
         <div className="mr-5">
           <img src={Microphone} className="w-70" />
         </div>
 
         <div>
           <div ref={paraRef} style={dynamicStyle}>
-            <p>
-              <span className="font-bold">Skrynia</span> is the Ukrainian word
+            <p className="text-xl">
+              <span className="font-extrabold text-xl">Skrynia</span> is the Ukrainian word
               for chest trunk. It is also the name of an underground dissident
               literary and art magazine published in Lviv in 1971. Our culture
               was under attack then and forced to exist only in the shadows.
@@ -47,7 +47,7 @@ const ReadMore = () => {
 
           {showReadButton && (
             <button
-              className="font-semibold underline underline-offset-2 cursor-pointer"
+              className="font-semibold underline underline-offset-2 cursor-pointer text-xl"
               onClick={() => setExpanded(!expanded)}
             >
               {expanded ? "read less" : "read more..."}

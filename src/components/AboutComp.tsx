@@ -104,7 +104,7 @@ const AboutNew = () => {
         </div>
         <div className="approach-text-wrap grid grid-cols-2 gap-30">
           <div className="1pointapproach-wrap flex flex-col items-center">
-            <img src={aboutnew1}></img>
+            <img src={aboutnew1} className="w-20"></img>
             <h2 className="font-semibold text-2xl mt-4 underline underline-offset-4">
               The 501 (c)(3) Nonprofit
             </h2>
@@ -115,7 +115,7 @@ const AboutNew = () => {
               full-scale invasion, we’ve supported 13 museums and raised over 1
               million UAH in direct aid in partnership with Western donors.{" "}
             </p>
-            <Link to="/">
+            <Link to="/NGO">
               <div className="openLink-wrap flex items-center cursor-pointer">
                 <p className="underline mt-2">Learn more</p>
                 <img className="w-5 h-5 ml-2" src={openlink}></img>
@@ -123,7 +123,7 @@ const AboutNew = () => {
             </Link>
           </div>
           <div className="2pointapproach-wrap flex flex-col items-center">
-            <img src={aboutnew2}></img>
+            <img src={aboutnew2} className="w-20"></img>
             <h2 className="font-semibold text-2xl mt-4 underline">
               The Creative Studio
             </h2>

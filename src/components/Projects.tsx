@@ -19,6 +19,9 @@ const prjThree = {
   prjheading: "Letters From Ukraine",
   prjtext:
     "Digital archive launched amid the full-scale invasion of letters from Ukrainians to the world.",
+  clickable: true,
+  onClick: () =>
+    window.open("https://www.instagram.com/lettersfromukraine/", "_blank"),
 };
 
 const prjFour = {
@@ -26,6 +29,9 @@ const prjFour = {
   prjheading: "Shadows Cultural Media",
   prjtext:
     "Media project led between 2021/22 to educate youth on their history and culture.",
+  clickable: true,
+  onClick: () =>
+    window.open("https://www.instagram.com/shadows.project/", "_blank"),
 };
 
 const Projects = () => {
@@ -41,29 +47,29 @@ const Projects = () => {
           <ProjectCard />
         </div>
 
-        <div className="group/card filter grayscale transition duration-300 hover:filter-none">
+        <div>
           <ProjectCardTwo {...prjTwo} />
         </div>
 
-        <div className="group/card filter grayscale transition duration-300 hover:filter-none">
+        <div>
           <ProjectCardTwo {...prjThree} />
         </div>
 
-        <div className="group/card filter grayscale transition duration-300 hover:filter-none">
+        <div>
           <ProjectCardTwo {...prjFour} />
         </div>
       </div>
 
       <div className="ProjectsBtn-wrap grid grid-cols-2 gap-10 items-center">
         <button
-          className="projectBtn w-full px-12 py-4 bg-black text-white rounded-full text-sm cursor-pointer"
+          className="projectBtn w-full px-12 py-4 bg-black text-white rounded-full text-sm cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white"
           onClick={() => setModal(true)}
         >
           Work with us
         </button>
 
         <button
-          className="projectBtnTwo w-full px-12 py-3 border-3 border-black text-black rounded-full text-sm cursor-pointer"
+          className="projectBtnTwo w-full px-12 py-3 border-3 border-black text-black rounded-full text-sm cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-black"
           onClick={() =>
             window.open(
               "https://docs.google.com/forms/d/e/1FAIpQLSftFAJCrFFyp4fIbNhBBEJEiXKCyY9Fp36bLcSyhXWCmN0A1Q/viewform?usp=dialog"

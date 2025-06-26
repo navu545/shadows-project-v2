@@ -15,11 +15,18 @@ const NewHome = lazy(() => import("./pages/NewHome"));
 const Aboutpage = lazy(() => import("./pages/AboutPage"));
 const Creativepage = lazy(() => import("./pages/CreativePage"));
 
+
 const AnimatedRoutes = () => {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence
+      mode="wait"
+      onExitComplete={() => {
+          window.scrollTo({ top: 0 });
+        }
+      }
+    >
       <Routes location={location} key={location.pathname}>
         <Route
           path="/"
@@ -74,6 +81,7 @@ const AnimatedRoutes = () => {
   );
 };
 
+
 const App = () => {
   const [delayPassed, setDelayPassed] = useState(false);
 
@@ -83,6 +91,12 @@ const App = () => {
     }, 2000);
 
     return () => clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
   }, []);
 
   return (

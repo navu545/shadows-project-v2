@@ -17,7 +17,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({scroll}) => {
             by Russia.
           </p>
           <button
-            className="px-12 py-3 mt-2 bg-black text-white rounded-full text-m cursor-pointer"
+            className="px-12 py-3 mt-2 bg-black text-white rounded-full text-m cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white"
             onClick={scroll}
           >
             Support us
@@ -47,7 +47,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({scroll}) => {
           artworks, and cultural artifacts that are under direct threat.
         </p>
       </div>
-
+      
       <div className="aid-details w-full max-w-7xl grid grid-cols-3 bg-[#F8EF2433] p-5 rounded-2xl">
         <div className="aid-1 mt-5 mb-5 w-50 mx-auto">
           <h2 className="aid-1-head font-bold text-3xl">

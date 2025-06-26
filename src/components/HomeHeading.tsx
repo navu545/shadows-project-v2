@@ -36,7 +36,7 @@ const Homeheading = () => {
             Our Recent Projects
           </h2>
           <Link to="/creativePage" state={{ scrollTo: "recent-projects" }}>
-            <button className="px-10 py-3 mt-4 bg-black text-white rounded-full cursor-pointer text-xl">
+            <button className="px-10 py-3 mt-4 bg-black text-white rounded-full cursor-pointer text-xl transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
               See more
             </button>
           </Link>
@@ -45,7 +45,7 @@ const Homeheading = () => {
           <img
             src={newhome1}
             alt="Project 1"
-            className="w-1/2 h-auto object-cover rounded"
+            className="w-1/2 h-auto object-cover rounded lg:scale-90 xl:scale-100"
           />
           <img
             src={newhome2}
@@ -56,7 +56,7 @@ const Homeheading = () => {
                 "_blank"
               )
             }
-            className="w-1/2 h-auto object-cover rounded cursor-pointer"
+            className="w-1/2 h-auto object-cover rounded cursor-pointer lg:scale-90 xl:scale-100"
           />
         </div>
       </div>

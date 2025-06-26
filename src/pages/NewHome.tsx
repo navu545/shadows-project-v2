@@ -5,6 +5,7 @@ import Contacts from "../components/Contacts";
 import { motion } from "framer-motion";
 
 const NewHome = () => {
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

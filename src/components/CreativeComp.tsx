@@ -52,7 +52,7 @@ const CreativeComp = () => {
           </p>
           <div className="mb-10"></div>
           <button
-            className="px-10 py-3 mt-2 bg-black text-white rounded-full text-m cursor-pointer"
+            className="px-10 py-3 mt-2 bg-black text-white rounded-full text-m cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white"
             onClick={() => setModal(true)}
           >
             Work with us
@@ -113,13 +113,13 @@ const CreativeComp = () => {
       <div className="past-partners flex-col mb-15 max-w-6xl">
         <h2 className="text-4xl font-bold mb-10">Past Partners</h2>
         <div className="past-partners-img grid grid-cols-7 items-center gap-10">
-          <img src={partner1}></img>
-          <img src={partner2}></img>
-          <img src={partner3}></img>
-          <img src={partner4}></img>
-          <img src={partner5}></img>
-          <img src={partner6}></img>
-          <img src={partner7}></img>
+          <img src={partner1} className="scale-90"></img>
+          <img src={partner2} className="scale-75"></img>
+          <img src={partner3} className="scale-140 ml-10"></img>
+          <img src={partner4} className="scale-90 ml-10"></img>
+          <img src={partner5} className="ml-5"></img>
+          <img src={partner6} className="scale-130 ml-5"></img>
+          <img src={partner7} className="scale-65"></img>
         </div>
       </div>
       {showModal && <FormModal onClose={() => setModal(false)} />}

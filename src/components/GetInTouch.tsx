@@ -15,7 +15,7 @@ const GetInTouch: React.FC<GetInTouchProps> = ({ onClick }) => {
         </p>
         <button
           onClick={onClick}
-          className="px-12 py-2.5 mt-2 bg-black text-white rounded-full text-m cursor-pointer"
+          className="px-12 py-2.5 mt-2 bg-black text-white rounded-full text-m cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white"
         >
           Contact us
         </button>
