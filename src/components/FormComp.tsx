@@ -160,7 +160,7 @@ const Formcomp = () => {
           </div>
 
           <button
-            className="px-10 py-3 mt-5 bg-gray-800 text-white rounded-full text-sm text-lg"
+            className="px-10 py-3 mt-5 bg-gray-800 text-white rounded-full text-sm text-lg cursor-pointer"
             onClick={spsnrFormSubmit}
           >
             Submit

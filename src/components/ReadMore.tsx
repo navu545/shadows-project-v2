@@ -47,7 +47,7 @@ const ReadMore = () => {
 
           {showReadButton && (
             <button
-              className="font-semibold underline underline-offset-2"
+              className="font-semibold underline underline-offset-2 cursor-pointer"
               onClick={() => setExpanded(!expanded)}
             >
               {expanded ? "read less" : "read more..."}

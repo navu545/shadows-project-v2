@@ -17,8 +17,8 @@ const AboutNew = () => {
             builds cultural resilience.
           </h1>
         </div>
-        <div className="about-new-para text-xl">
-          <p>
+        <div className="about-new-para text-xl mb-5">
+          <p className="text-2xl">
             Our mission is to create everyday opportunities for people to engage
             with culture.
             <br />
@@ -47,8 +47,8 @@ const AboutNew = () => {
           </p>
           <div className="mb-25" />
           <div className="ourvalues-wrap">
-            <h2 className="text-3xl font-semibold mb-2">Our Values</h2>
-            <p>
+            <h2 className="text-4xl font-semibold mb-2">Our Values</h2>
+            <p className="text-2xl">
               We believe in a world where culture is seen as the foundation of
               strong, sovereign, democratic societies.
             </p>
@@ -60,7 +60,7 @@ const AboutNew = () => {
         <div className="1point-wrap flex items-start">
           <img src={aboutnew0} className="h-8 w-8 mt-1 mr-2 object-contain" />
           <div className="1point-text">
-            <h2 className="font-semibold text-2xl mb-2 mt-1">
+            <h2 className="font-semibold text-3xl mb-2 mt-1">
               Nation Building
             </h2>
             <p className="leading-tight text-lg">
@@ -73,7 +73,7 @@ const AboutNew = () => {
         <div className="2point-wrap flex items-start">
           <img src={aboutnew0} className="h-8 w-8 mt-1 mr-2 object-contain" />
           <div className="2point-text">
-            <h2 className="font-semibold text-2xl mb-2 mt-1">Resilience</h2>
+            <h2 className="font-semibold text-3xl mb-2 mt-1">Resilience</h2>
             <p className="leading-tight text-lg">
               Cultural identity builds stronger, more unified communities and
               reinforces a nation’s sovereignty in times of crisis.
@@ -84,7 +84,7 @@ const AboutNew = () => {
         <div className="3point-wrap flex items-start">
           <img src={aboutnew0} className="h-8 w-8 mt-1 mr-2 object-contain" />
           <div className="3point-text">
-            <h2 className="font-semibold text-2xl mb-2 mt-1">Vitality</h2>
+            <h2 className="font-semibold text-3xl mb-2 mt-1">Vitality</h2>
             <p className="leading-tight text-lg">
               Culture isn’t just meant to be preserved — it should be felt,
               used, and lived, ensuring its sustainability for future

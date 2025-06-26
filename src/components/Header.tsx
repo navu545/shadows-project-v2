@@ -16,7 +16,10 @@ const Header: React.FunctionComponent<HeaderProps> = ({scroll}) => {
             We protect and preserve Ukrainian cultural heritage from destruction
             by Russia.
           </p>
-          <button className="px-12 py-3 mt-2 bg-black text-white rounded-full text-m cursor-pointer" onClick={scroll}>
+          <button
+            className="px-12 py-3 mt-2 bg-black text-white rounded-full text-m cursor-pointer"
+            onClick={scroll}
+          >
             Support us
           </button>
         </div>
@@ -45,31 +48,31 @@ const Header: React.FunctionComponent<HeaderProps> = ({scroll}) => {
         </p>
       </div>
 
-      <div className="aid-details w-full max-w-6xl grid grid-cols-3 bg-[#F8EF2433] p-5 rounded-lg">
+      <div className="aid-details w-full max-w-7xl grid grid-cols-3 bg-[#F8EF2433] p-5 rounded-2xl">
         <div className="aid-1 mt-5 mb-5 w-50 mx-auto">
-          <h2 className="aid-1-head font-bold text-2xl">
+          <h2 className="aid-1-head font-bold text-3xl">
             1 million UAH worth of aid
           </h2>
-          <p className="aid-1-text">
+          <p className="aid-1-text text-xl">
             delivered to cultural institutions across Ukraine.
           </p>
         </div>
 
-        <div className="aid-2 mt-5 mb-5 w-50 mx-auto">
-          <h2 className="aid-2-head font-bold text-2xl">
+        <div className="aid-2 mt-5 mb-5 w-60 mx-auto">
+          <h2 className="aid-2-head font-bold text-3xl">
             13 Ukrainian museums saved
           </h2>
-          <p className="aid-2-text">
+          <p className="aid-2-text text-xl">
             from potential destruction, ensuring their collections are
             preserved.
           </p>
         </div>
 
-        <div className="aid-3 mt-5 mb-5 w-50 mx-auto">
-          <h2 className="aid-3-head font-bold text-2xl">
+        <div className="aid-3 mt-5 mb-5 w-60 mx-auto">
+          <h2 className="aid-3-head font-bold text-3xl">
             100+ artworks protected
           </h2>
-          <p className="aid-3-text">
+          <p className="aid-3-text text-xl">
             including rare and valuable pieces from Ukrainian history.
           </p>
         </div>

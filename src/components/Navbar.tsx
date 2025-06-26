@@ -1,7 +1,15 @@
-
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  const navItems = [
+    { label: "About us", path: "/aboutpage" },
+    { label: "Creative Studio", path: "/creativePage" },
+    { label: "NGO", path: "/NGO" },
+  ];
 
   return (
     <div className="navbar-wrapper flex flex-col items-center border-b border-gray-200 w-full">
@@ -11,23 +19,36 @@ const Navbar = () => {
             <img
               src="https://ik.imagekit.io/shadows/Shadows-project/LogoNew.svg"
               alt="navbar-logo"
-            ></img>
+            />
           </Link>
         </div>
 
         <div className="links-wrpper flex items-center gap-20">
-          <div className="links-pages flex gap-10 mt-2 font-semibold">
-            <Link to="/aboutpage">
-              <p>About us</p>
-            </Link>
+          <div className="links-pages flex gap-6 mt-2 font-semibold relative">
+            {navItems.map(({ label, path }) => {
+              const isActive = currentPath === path;
 
-            <Link to="/creativePage">
-              <p>Creative Studio</p>
-            </Link>
-
-            <Link to="/NGO">
-              <p>NGO</p>
-            </Link>
+              return (
+                <Link
+                  key={path}
+                  to={path}
+                  className="relative px-4 py-2 rounded-full"
+                >
+                  {isActive && (
+                    <motion.div
+                      layoutId="pill"
+                      className="absolute inset-0 bg-gray-200 rounded-full"
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 25,
+                      }}
+                    />
+                  )}
+                  <span className="relative z-10">{label}</span>
+                </Link>
+              );
+            })}
           </div>
 
           <div className="navbar-btn-wrap flex gap-5">
@@ -54,6 +75,4 @@ const Navbar = () => {
   );
 };
 
-
 export default Navbar;
-
