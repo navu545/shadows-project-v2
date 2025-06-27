@@ -93,12 +93,11 @@ const Formcomp = () => {
 
       if (response.status === 200) {
         setLoading(false);
-        setThankYou(true);
 
         setTimeout(() => {
           setThankYou(true);
         }, 100);
-        
+
         setSpnsrMuseumForm({ name: "", email: "", subject: "", message: "" });
       } else {
         setLoading(false);
