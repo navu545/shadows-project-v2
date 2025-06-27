@@ -10,6 +10,11 @@ interface FormValues {
   message: string;
 }
 
+interface FormCompProps {
+  onClose: () => void;
+}
+
+
 const maxLengths: Record<string, number> = {
   name: 50,
   email: 100,
@@ -17,7 +22,7 @@ const maxLengths: Record<string, number> = {
   message: 450,
 };
 
-const Formcomp = () => {
+const Formcomp = ({onClose}: FormCompProps) => {
   const [spnsrMuseumForm, setSpnsrMuseumForm] = useState<FormValues>({
     name: "",
     email: "",
@@ -94,9 +99,7 @@ const Formcomp = () => {
       if (response.status === 200) {
         setLoading(false);
 
-        setTimeout(() => {
-          setThankYou(true);
-        }, 100);
+        setThankYou(true)
 
         setSpnsrMuseumForm({ name: "", email: "", subject: "", message: "" });
       } else {
@@ -182,7 +185,7 @@ const Formcomp = () => {
       )}
       {thankYou && (
         <div className="absolute inset-0 flex items-center justify-center z-20">
-          <ThankYou thankState={showThankYou} />
+          <ThankYou thankState={showThankYou} onClose={onClose} />
         </div>
       )}
     </div>

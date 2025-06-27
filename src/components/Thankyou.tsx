@@ -2,9 +2,10 @@ import { thankYou } from "../assets/images";
 
 interface ThankYouProp {
   thankState: () => void;
+  onClose: () => void
 }
 
-const ThankYou: React.FC<ThankYouProp> = ({ thankState }) => {
+const ThankYou: React.FC<ThankYouProp> = ({ thankState, onClose }) => {
   return (
     <div className="border rounded-2xl text-center px-10 py-8 min-w-lg mx-auto shadow-md bg-white max-w-xl">
       <img className="w-15 h-15 mx-auto mb-4" src={thankYou} alt="tick-mark" />
@@ -16,8 +17,11 @@ const ThankYou: React.FC<ThankYouProp> = ({ thankState }) => {
         shortly with more details.
       </p>
       <button
-        className="px-10 py-4 bg-gray-800 text-white rounded-full text-sm"
-        onClick={() => thankState()}
+        className="px-10 py-4 bg-gray-800 text-white rounded-full text-sm cursor-pointer"
+        onClick={() => {
+          thankState();
+          onClose();
+        }}
       >
         Got it
       </button>
