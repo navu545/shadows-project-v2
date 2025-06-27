@@ -11,7 +11,7 @@ interface FormValues {
 }
 
 interface FormCompProps {
-  onClose: () => void;
+  onClose?: () => void;
 }
 
 

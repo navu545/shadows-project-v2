@@ -2,7 +2,7 @@ import { thankYou } from "../assets/images";
 
 interface ThankYouProp {
   thankState: () => void;
-  onClose: () => void
+  onClose?: () => void
 }
 
 const ThankYou: React.FC<ThankYouProp> = ({ thankState, onClose }) => {
@@ -20,7 +20,7 @@ const ThankYou: React.FC<ThankYouProp> = ({ thankState, onClose }) => {
         className="px-10 py-4 bg-gray-800 text-white rounded-full text-sm cursor-pointer"
         onClick={() => {
           thankState();
-          onClose();
+          onClose?.();
         }}
       >
         Got it
