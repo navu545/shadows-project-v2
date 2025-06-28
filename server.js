@@ -19,6 +19,9 @@ const transporter = nodemailer.createTransport({
     },
 });
 
+app.get("/api/ping", (req, res) => {
+  res.send("Pong");
+});
 
 app.post("/api/contact", async(req, res) => {
   const { name, email, subject, message } = req.body;
