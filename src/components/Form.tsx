@@ -17,7 +17,7 @@ const Form = ({ formRef }: formProps) => {
             </h1>
           </div>
           <div className="z-10">
-            <Formcomp />
+            <Formcomp formOnNgo />
           </div>
         </div>
 

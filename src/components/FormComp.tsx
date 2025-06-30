@@ -12,6 +12,8 @@ interface FormValues {
 
 interface FormCompProps {
   onClose?: () => void;
+  formOnNgo?: boolean;
+ 
 }
 
 
@@ -22,7 +24,7 @@ const maxLengths: Record<string, number> = {
   message: 450,
 };
 
-const Formcomp = ({onClose}: FormCompProps) => {
+const Formcomp = ({onClose,formOnNgo}: FormCompProps) => {
   const [spnsrMuseumForm, setSpnsrMuseumForm] = useState<FormValues>({
     name: "",
     email: "",
@@ -114,9 +116,9 @@ const Formcomp = ({onClose}: FormCompProps) => {
   };
 
   return (
-    <div>
+    <div className="relative">
       {!thankYou && (
-        <div className="rounded-2xl text-center px-10 py-8 min-w-lg mx-auto shadow-xl bg-white relative min-h-[400px]">
+        <div className="rounded-2xl text-center px-10 py-8 min-w-lg mx-auto shadow-xl bg-white min-h-[400px]">
           <h1 className="text-3xl font-semibold text-gray-800 mb-6">
             Contact Us
           </h1>
@@ -184,9 +186,15 @@ const Formcomp = ({onClose}: FormCompProps) => {
         </div>
       )}
       {thankYou && (
-        <div className="absolute inset-0 flex items-center justify-center z-20">
-          <ThankYou thankState={showThankYou} onClose={onClose} />
-        </div>
+        <>
+          {formOnNgo ? (
+            <ThankYou inNGO thankState={showThankYou} onClose={onClose} />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center z-20">
+              <ThankYou thankState={showThankYou} onClose={onClose} />
+            </div>
+          )}
+        </>
       )}
     </div>
   );
