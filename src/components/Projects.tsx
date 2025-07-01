@@ -42,7 +42,7 @@ const Projects = () => {
         Our Recent Projects
       </h1>
 
-      <div className="projects-cards-holder grid grid-cols-4 gap-10 mb-15 group place-items-center">
+      <div className="projects-cards-holder mb-15 place-items-center grid grid-cols-1 sm:grid-cols-2 sm:gap-[30px] lg:grid-cols-3 xl:grid-cols-4 xl:gap-10 gap-y-10">
         <div>
           <ProjectCard />
         </div>

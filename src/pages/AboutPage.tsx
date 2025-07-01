@@ -12,7 +12,7 @@ const Aboutpage = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="font-inter">
+      <div className="font-inter min-h-screen">
         <Navbar />
         <Aboutnew />
         <Contacts />

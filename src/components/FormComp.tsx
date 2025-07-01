@@ -169,7 +169,7 @@ const Formcomp = ({onClose,formOnNgo}: FormCompProps) => {
           </div>
 
           <button
-            className="px-10 py-3 mt-5 bg-gray-800 text-white rounded-full text-sm text-lg cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white"
+            className="px-10 py-3 mt-5 bg-black text-white rounded-full text-sm text-lg cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white"
             onClick={spsnrFormSubmit}
           >
             Submit

@@ -9,8 +9,8 @@ const AboutNew = () => {
   const [showModal, setModal] = useState(false);
 
   return (
-    <div className="aboutnew-mainwrap flex flex-col items-center">
-      <div className="aboutnew-text flex-col max-w-6xl mb-15 mt-20">
+    <div className="aboutnew-mainwrap flex flex-col items-center px-5">
+      <div className="aboutnew-text flex-col max-w-6xl mb-15 mt-10 md:mt-20">
         <div className="aboutnew-heading text-6xl font-semibold leading-tight my-4 mb-10">
           <h1>
             The Shadows Project is a cultural NGO and creative studio that

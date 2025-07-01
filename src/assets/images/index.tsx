@@ -101,7 +101,17 @@ import shadowsngo from "./shadows_ngo.png";
 import contactsImage from "./contacts-image.png"
 import projectRibbon from "./projectRibbon.png"
 import crossPNG from "./crossPNG.png";
+import closeHamburger from "./closeHamburger.png";
+import hamburger from "./hamburger.png"
+import footerInsta from "./footerInsta.png";
+import footerLink from "./footerLink.png";
+import recentProjectRight from "./recentProjectRight.png";
 export {
+  recentProjectRight,
+  footerInsta,
+  footerLink,
+  hamburger,
+  closeHamburger,
   crossPNG,
   projectRibbon,
   contactsImage,

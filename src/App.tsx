@@ -15,7 +15,6 @@ const NewHome = lazy(() => import("./pages/NewHome"));
 const Aboutpage = lazy(() => import("./pages/AboutPage"));
 const Creativepage = lazy(() => import("./pages/CreativePage"));
 
-
 const AnimatedRoutes = () => {
   const location = useLocation();
 
@@ -23,9 +22,8 @@ const AnimatedRoutes = () => {
     <AnimatePresence
       mode="wait"
       onExitComplete={() => {
-          window.scrollTo({ top: 0 });
-        }
-      }
+        window.scrollTo({ top: 0 });
+      }}
     >
       <Routes location={location} key={location.pathname}>
         <Route
@@ -80,7 +78,6 @@ const AnimatedRoutes = () => {
     </AnimatePresence>
   );
 };
-
 
 const App = () => {
   const [delayPassed, setDelayPassed] = useState(false);

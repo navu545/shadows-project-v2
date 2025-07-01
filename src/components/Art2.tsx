@@ -11,7 +11,18 @@ const Art2 = () => {
 
   return (
     <div className="flex flex-col items-center mb-20">
-      <div className="relative max-w-7xl w-full overflow-hidden mt-10 mb-10 group fade-left fade-right">
+      <div
+        className="
+          relative w-full
+          max-w-xl
+          sm:max-w-2xl
+          md:max-w-3xl
+          lg:max-w-5xl
+          xl:max-w-6xl
+          2xl:max-w-7xl
+          overflow-hidden mt-10 mb-10 group fade-left fade-right
+        "
+      >
         <div className="flex gap-8 animate-marquee pause-on-hover w-max">
           {[...images, ...images].map((filename, index) => (
             <div

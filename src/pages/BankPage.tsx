@@ -10,7 +10,7 @@ const BankInformation = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="bank-information-container font-inter">
+      <div className="bank-information-container font-inter min-h-screen">
         <Navbar />
         <Bank />
         <Footer />

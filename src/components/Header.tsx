@@ -6,7 +6,7 @@ interface HeaderProps {
 
 const Header: React.FunctionComponent<HeaderProps> = ({scroll}) => {
   return (
-    <div className="flex flex-col items-center mt-20 mb-20">
+    <div className="flex flex-col items-center mt-5 md:mt-20 mb-20">
       <div className="ngo-header-wrap flex items-center gap-45 p-5 mb-20 max-w-6xl">
         <div className="ngo-header-text max-w-2xl">
           <h1 className="font-semibold text-6xl mb-10">

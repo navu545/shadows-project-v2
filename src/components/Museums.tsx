@@ -12,7 +12,7 @@ const Museums = () => {
           Museums We Are Working With
         </h1>
 
-        <div className="museum-cards-holder mb-15 place-items-center grid grid-cols-1 sm:grid-cols-2 sm:gap-[30px] lg:grid-cols-3 xl:grid-cols-4 xl:gap-35">
+        <div className="museum-cards-holder mb-15 place-items-center grid grid-cols-1 sm:grid-cols-2 sm:gap-[30px] lg:grid-cols-3 xl:grid-cols-4 xl:gap-35 gap-y-10">
           <MuseumCardOne {...msmOne} />
           <MuseumCardOne {...msmTwo} />
           <MuseumCardOne {...msmThree} />

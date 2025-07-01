@@ -1,4 +1,5 @@
 import { thankYou } from "../assets/images";
+import { useEffect } from "react";
 
 interface ThankYouProp {
   thankState: () => void;
@@ -7,6 +8,18 @@ interface ThankYouProp {
 }
 
 const ThankYou: React.FC<ThankYouProp> = ({ thankState, onClose, inNGO }) => {
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Enter") {
+        thankState();
+        onClose?.();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [thankState, onClose]);
+
   return (
     <div className={`rounded-2xl text-center px-10 py-8 min-w-lg mx-auto shadow-xl bg-white max-w-xl ${inNGO && "min-h-[534px] pt-30"}`}>
       <img className="w-15 h-15 mx-auto mb-4" src={thankYou} alt="tick-mark" />

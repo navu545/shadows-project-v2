@@ -1,8 +1,6 @@
 import {
   CNN,
   euro,
-  newhome1,
-  newhome2,
   euroblue,
   dld,
   politik,
@@ -13,13 +11,14 @@ import FormModal from "./FormModal";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import GetInTouch from "./GetInTouch";
+import ProjectImages from "./ProjectImages";
 
 const Homeheading = () => {
   const [showModal, setModal] = useState(false);
 
   return (
-    <div className="component-wrapper flex flex-col items-center">
-      <div className="heading-subheading-wrapper flex flex-col my-20 max-w-6xl">
+    <div className="component-wrapper flex flex-col items-center p-5">
+      <div className="heading-subheading-wrapper flex flex-col my-5 mb-10 md:my-20 max-w-6xl">
         <div className=" heading-wrap text-6xl font-semibold max-w-2xl leading-tight my-4">
           <h1>Protecting Our Culture, And Popularizing It.</h1>
         </div>
@@ -36,65 +35,52 @@ const Homeheading = () => {
             Our Recent Projects
           </h2>
           <Link to="/creativePage" state={{ scrollTo: "recent-projects" }}>
-            <button className="px-10 py-3 mt-4 bg-black text-white rounded-full cursor-pointer text-xl transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
+            <button className="hidden sm:inline-flex px-10 py-3 mt-4 bg-black text-white rounded-full cursor-pointer text-xl transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
               See more
             </button>
           </Link>
         </div>
-        <div className="project-imgs flex space-x-4">
-          <img
-            src={newhome1}
-            alt="Project 1"
-            className="w-1/2 h-auto object-cover rounded lg:scale-90 xl:scale-100"
-          />
-          <img
-            src={newhome2}
-            alt="Project 2"
-            onClick={() =>
-              window.open(
-                "https://graffiti-chronicles.shadowsproject.org/",
-                "_blank"
-              )
-            }
-            className="w-1/2 h-auto object-cover rounded cursor-pointer lg:scale-90 xl:scale-100"
-          />
-        </div>
+        <ProjectImages />
       </div>
-      <div className="news-outlet-wrapper max-w-6xl mb-25">
+      <div className="news-outlet-wrapper max-w-6xl mb-25 p-5">
         <div className="news-outlet-heading">
           <h2 className="text-3xl font-semibold mb-8">As seen on</h2>
         </div>
-        <div className="news-outlet-imgwrap flex flex-wrap justify-center gap-23">
-          <img src={vox} alt="Vox" className="w-20 h-auto object-contain" />
+        <div className="news-outlet-imgwrap flex flex-wrap justify-center gap-3 bg-[#F5F5F5] rounded-2xl sm:bg-white p-5 sm:gap-18">
+          <img
+            src={vox}
+            alt="Vox"
+            className="w-20 h-auto object-contain scale-70 sm:scale-100"
+          />
           <img
             src={guardian}
             alt="Guardian"
-            className="mt-1 w-30 h-auto object-contain"
+            className="mt-1 w-30 h-auto object-contain scale-70 sm:scale-100"
           />
           <img
             src={CNN}
             alt="CNN"
-            className="mt-1 w-20 h-auto object-contain"
+            className="mt-1 w-20 h-auto object-contain scale-70 sm:scale-100"
           />
           <img
             src={euroblue}
             alt="Euroblue"
-            className="mt-1 w-22 h-auto object-contain"
+            className="mt-1 w-22 h-auto object-contain scale-70 sm:scale-100"
           />
           <img
             src={euro}
             alt="Euro"
-            className="mt-1 w-28 h-auto object-contain"
+            className="mt-1 w-28 h-auto object-contain scale-70 sm:scale-100"
           />
           <img
             src={dld}
             alt="DLD"
-            className="mb-2 w-20 h-auto object-contain"
+            className="mb-2 w-20 h-auto object-contain scale-70 sm:scale-100"
           />
           <img
             src={politik}
             alt="Politik"
-            className="mt-1 w-10 h-auto object-contain"
+            className="mt-1 w-10 h-auto object-contain scale-70 sm:scale-100"
           />
         </div>
       </div>

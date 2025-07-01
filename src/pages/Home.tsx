@@ -25,7 +25,7 @@ const Home = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="home-page font-inter">
+      <div className="home-page font-inter min-h-screen">
         <Navbar />
         <div className="component-spacing-1"></div>
 

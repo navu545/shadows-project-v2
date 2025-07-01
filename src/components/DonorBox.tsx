@@ -17,7 +17,7 @@ const Donorbox = () => {
       <iframe
         src="https://donorbox.org/embed/friend-of-shadows?default_interval=o&show_content=true"
         name="donorbox"
-        onLoad={()=>console.log("loaded mitro")}
+        onLoad={() => console.log("loaded mitro")}
         allow="payment"
         seamless
         frameBorder="0"
