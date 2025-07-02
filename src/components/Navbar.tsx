@@ -27,8 +27,8 @@ const Navbar = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <div className="w-full">
-      <div className="navbar-wrap flex flex-row justify-between items-center border-b border-gray-200 pb-5 mt-5 max-w-6xl w-full px-3 mx-auto">
+    <div className="w-full border-b border-gray-200">
+      <div className="navbar-wrap flex flex-row justify-between items-center pb-5 mt-5 max-w-6xl w-full px-3 mx-auto">
         <div className="navbar-logo mt-2">
           <Link to="/">
             <img

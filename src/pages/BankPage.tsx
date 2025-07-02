@@ -9,9 +9,9 @@ const BankInformation = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
-      className="min-h-screen"
+      className="h-screen"
     >
-      <div className="bank-information-container font-inter min-h-screen flex flex-col">
+      <div className="flex flex-col h-screen">
         <Navbar />
         <div className="flex-1">
           <Bank />
