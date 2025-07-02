@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
-html,
-body,
-#root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
 @theme {
   --font-inter: "Inter", "sans-serif";
 
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --breakpoint-xxxs: 320px;
+  --breakpoint-xxs: 375px;
+  --breakpoint-xs: 475px;
 }
 
 @keyframes marquee {
@@ -52,7 +53,6 @@ body,
     right: 0;
     background: linear-gradient(to left, white, transparent);
   }
-  
-
-  
 }
+
+

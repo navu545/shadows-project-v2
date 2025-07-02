@@ -14,12 +14,12 @@ const Art2 = () => {
       <div
         className="
           relative w-full
-          max-w-xl
+          max-w-xs
+          xs:max-w-lg
           sm:max-w-2xl
           md:max-w-3xl
           lg:max-w-5xl
-          xl:max-w-6xl
-          2xl:max-w-7xl
+          xl:max-w-7xl
           overflow-hidden mt-10 mb-10 group fade-left fade-right
         "
       >

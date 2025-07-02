@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Bank from "../components/Bank";
 import Footer from "../components/Footer";
+
 const BankInformation = () => {
   return (
     <motion.div
@@ -9,16 +10,15 @@ const BankInformation = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
-      className="h-screen"
+      className="min-h-screen flex flex-col"
     >
-      <div className="flex flex-col h-screen">
-        <Navbar />
-        <div className="flex-1">
-          <Bank />
-        </div>
-        <Footer />
+      <Navbar />
+      <div className="flex-grow">
+        <Bank />
       </div>
+      <Footer />
     </motion.div>
   );
 };
+
 export default BankInformation;
