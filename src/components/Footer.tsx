@@ -15,7 +15,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer-wrapper flex items-center justify-center bg-black text-white">
+    <div className="footer-wrapper flex items-center justify-center bg-black text-white mt-auto">
       <div className="footer-links flex items-center gap-10 py-8">
         <div className="hidden md:flex items-center gap-10">
           <Link to="/aboutpage" onClick={(e) => scrollToTop(e, "/aboutpage")}>

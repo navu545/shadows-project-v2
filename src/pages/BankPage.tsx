@@ -10,7 +10,8 @@ const BankInformation = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
-      className="min-h-screen flex flex-col"
+      className="flex flex-col"
+      style={{ minHeight: "100dvh" }}
     >
       <Navbar />
       <div className="flex-grow">
