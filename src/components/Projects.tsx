@@ -37,8 +37,8 @@ const prjFour = {
 const Projects = () => {
   const [showModal, setModal] = useState(false);
   return (
-    <div className="projects-container max-w-6xl flex flex-col items-center mb-30">
-      <h1 className="projects-headline font-bold text-4xl mb-15">
+    <div className="projects-container max-w-6xl flex flex-col items-center sm:mb-30 mb-10 xxs:mb-15 xs:mb-20 ">
+      <h1 className="projects-headline sm:font-bold sm:text-4xl sm:mb-15 mb-3 font-semibold xxs:mb-7 xxs:text-xl xs:text-3xl xs:mb-9">
         Our Recent Projects
       </h1>
 
@@ -62,14 +62,24 @@ const Projects = () => {
 
       <div className="ProjectsBtn-wrap grid grid-cols-2 gap-10 items-center">
         <button
-          className="projectBtn w-full px-12 py-4 bg-black text-white rounded-full text-sm cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white"
+          className="
+          px-3 py-2 text-xs bg-black text-white rounded-full cursor-pointer transition-all duration-300
+          hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white
+          xxs:px-7 xxs:py-1.5 xxs:text-sm xs:text-base xs:mt-2
+          xs:px-10 xs:py-3 xs:mt-2 xs:text-m
+        "
           onClick={() => setModal(true)}
         >
           Work with us
         </button>
 
         <button
-          className="projectBtnTwo w-full px-12 py-3 border-3 border-black text-black rounded-full text-sm cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-black"
+          className="
+        px-3 py-2 text-xs bg-white text-black border-2 rounded-full cursor-pointer transition-all duration-300
+        hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white
+        xxs:px-7 xxs:py-1.5 xxs:text-sm xs:text-base xs:mt-2
+        xs:px-10 xs:py-2.5 xs:mt-2 xs:text-m
+      "
           onClick={() =>
             window.open(
               "https://docs.google.com/forms/d/e/1FAIpQLSftFAJCrFFyp4fIbNhBBEJEiXKCyY9Fp36bLcSyhXWCmN0A1Q/viewform?usp=dialog"
