@@ -38,24 +38,24 @@ const Projects = () => {
   const [showModal, setModal] = useState(false);
   return (
     <div className="projects-container max-w-6xl flex flex-col items-center sm:mb-30 mb-10 xxs:mb-15 xs:mb-20 ">
-      <h1 className="projects-headline sm:font-bold sm:text-4xl sm:mb-15 mb-3 font-semibold xxs:mb-7 xxs:text-xl xs:text-3xl xs:mb-9">
+      <h1 className="projects-headline sm:font-bold sm:text-4xl sm:mb-15 mb-2 font-semibold text-lg xxs:mb-7 xxs:text-xl xs:text-3xl xs:mb-9">
         Our Recent Projects
       </h1>
 
-      <div className="projects-cards-holder mb-15 place-items-center grid grid-cols-1 sm:grid-cols-2 sm:gap-[30px] lg:grid-cols-3 xl:grid-cols-4 xl:gap-10 gap-y-10">
-        <div>
+      <div className="projects-cards-holder mb-5 xxs:mb-15 place-items-center grid grid-cols-1 sm:grid-cols-2 sm:gap-[30px] lg:grid-cols-3 xl:grid-cols-4 xl:gap-10 xs:gap-y-10 xxs:gap-y-7 ">
+        <div className="scale-90 xxs:scale-100">
           <ProjectCard />
         </div>
 
-        <div>
+        <div className="scale-90 xxs:scale-100">
           <ProjectCardTwo {...prjTwo} />
         </div>
 
-        <div>
+        <div className="scale-90 xxs:scale-100">
           <ProjectCardTwo {...prjThree} />
         </div>
 
-        <div>
+        <div className="scale-90 xxs:scale-100">
           <ProjectCardTwo {...prjFour} />
         </div>
       </div>
@@ -63,7 +63,7 @@ const Projects = () => {
       <div className="ProjectsBtn-wrap grid grid-cols-2 gap-10 items-center">
         <button
           className="
-          px-3 py-2 text-xs bg-black text-white rounded-full cursor-pointer transition-all duration-300
+          px-4 py-2.5 text-xs bg-black text-white rounded-full cursor-pointer transition-all duration-300
           hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white
           xxs:px-7 xxs:py-1.5 xxs:text-sm xs:text-base xs:mt-2
           xs:px-10 xs:py-3 xs:mt-2 xs:text-m

@@ -23,7 +23,6 @@ const CreativeComp = () => {
   const targetRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    
     if (location.state?.scrollTo === "recent-projects") {
       const timeout = setTimeout(() => {
         targetRef.current?.scrollIntoView({
@@ -31,7 +30,7 @@ const CreativeComp = () => {
           block: "start",
         });
         navigate(location.pathname, { replace: true });
-      }, 50); 
+      }, 50);
 
       return () => clearTimeout(timeout);
     }
@@ -40,7 +39,7 @@ const CreativeComp = () => {
   return (
     <div className="creativecomp-wrap flex flex-col items-center">
       <div
-        className="relative creativeComp-headwrap-main flex items-center max-w-6xl mb-10 justify-between sm:mt-10 sm:p-5 mt-7 px-2 xs:px-5 overflow-hidden
+        className="relative creativeComp-headwrap-main flex items-center max-w-6xl mb-10 justify-between sm:mt-10 sm:p-5 mt-7 px-2 xs:px-5 overflow-hidden xxxs:scale-110 xxs:scale-100
       "
       >
         <div className="creativeComp-headwrap w-7/10 xs:w-7/10">
@@ -132,7 +131,7 @@ const CreativeComp = () => {
       </div>
 
       <div className="Ourwork-main flex flex-col items-center max-w-6xl sm:mb-40 mb-12 xxs:mb-20 xs:mb-30 ">
-        <h1 className="sm:text-4xl font-semibold sm:mb-5 text-base xxs:text-xl xs:text-3xl ">
+        <h1 className="sm:text-4xl font-semibold sm:mb-5 text-lg xxs:text-xl xs:text-3xl ">
           Our Work Practically
         </h1>
         <div
