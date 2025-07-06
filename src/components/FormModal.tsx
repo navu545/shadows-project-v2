@@ -1,5 +1,4 @@
 import Formcomp from "./FormComp";
-import { crossPNG } from "../assets/images";
 
 interface FormModalProps {
   onClose: () => void;
@@ -14,11 +13,6 @@ const FormModal: React.FC<FormModalProps> = ({ onClose }) => {
       <div className="flex flex-col max-w-2xl w-full items-center">
         <div className="relative" onClick={(e) => e.stopPropagation()}>
           <Formcomp onClose={onClose}/>
-          <img
-            src={crossPNG}
-            onClick={onClose}
-            className="absolute scale-15 bottom-102 left-95 cursor-pointer"
-          ></img>
         </div>
       </div>
     </div>

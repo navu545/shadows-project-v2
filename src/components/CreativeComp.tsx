@@ -46,7 +46,7 @@ const CreativeComp = () => {
           <h1
             className="
         font-semibold leading-tight
-        text-4xl mb-3 w-75 
+        text-4xl mb-3 w-75 mt-5
         xxs:text-4xl xxs:mb-5 xxs:w-90
         xs:text-5xl xs:mb-10 xs:w-auto
         md:text-6xl
@@ -186,7 +186,7 @@ const CreativeComp = () => {
         <Projects />
       </div>
 
-      <div className="past-partners flex flex-col mb-15 max-w-6xl mx-auto p-5">
+      <div className="past-partners flex flex-col mb-15 max-w-6xl mx-auto p-5 lg:scale-105">
         <h2
           className="
       text-4xl font-bold mb-10
@@ -237,7 +237,9 @@ const CreativeComp = () => {
         w-28 h-auto object-contain
         scale-90
         xxs:scale-105
-        sm:scale-110
+        sm:scale-140
+        sm:ml-8
+        sm:-mt-2
       "
           />
           <img
@@ -257,7 +259,7 @@ const CreativeComp = () => {
         w-24 h-auto object-contain
         scale-80
         xxs:scale-95
-        sm:scale-100
+        sm:scale-130
       "
           />
           <img
@@ -267,7 +269,7 @@ const CreativeComp = () => {
         w-28 h-auto object-contain
         scale-90
         xxs:scale-105
-        sm:scale-110
+        sm:scale-130
       "
           />
           <img
@@ -277,7 +279,7 @@ const CreativeComp = () => {
         w-20 h-auto object-contain
         scale-65
         xxs:scale-80
-        sm:scale-100
+        sm:scale-90
       "
           />
         </div>

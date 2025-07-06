@@ -14,7 +14,7 @@ const BankInformation = () => {
       style={{ minHeight: "100dvh" }}
     >
       <Navbar />
-      <div className="flex-grow">
+      <div className="flex-grow min-h-screen">
         <Bank />
       </div>
       <Footer />

@@ -6,7 +6,7 @@ interface GetInTouchProps {
 
 const GetInTouch: React.FC<GetInTouchProps> = ({ onClick }) => {
   return (
-    <div className="getintouch-wrapper relative flex sm:max-w-7xl sm:min-h-[320px] bg-[#E9F0ED] rounded-2xl mb-10 items-center overflow-hidden">
+    <div className="getintouch-wrapper relative flex sm:max-w-7xl sm:min-h-[320px] bg-[#E9F0ED] rounded-2xl xxs:mb-10 items-center overflow-hidden">
       <div className="getintouch-textwrap m-5 xs:m-10 sm:w-4/5 w-full pr-25 xs:pr-0">
         <h2 className="text-xl xs:text-2xl sm:text-3xl sm:mb-5 font-semibold mb-3">
           Get in Touch

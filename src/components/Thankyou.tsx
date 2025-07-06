@@ -3,11 +3,13 @@ import { useEffect } from "react";
 
 interface ThankYouProp {
   thankState: () => void;
-  onClose?: () => void
-  inNGO?: boolean
+  onClose?: () => void;
+  inNGO?: boolean;
+  width?: number;
+  height?: number;
 }
 
-const ThankYou: React.FC<ThankYouProp> = ({ thankState, onClose, inNGO }) => {
+const ThankYou: React.FC<ThankYouProp> = ({ thankState, onClose, inNGO, width, height }) => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -21,7 +23,21 @@ const ThankYou: React.FC<ThankYouProp> = ({ thankState, onClose, inNGO }) => {
   }, [thankState, onClose]);
 
   return (
-    <div className={`rounded-2xl text-center px-10 py-8 min-w-lg mx-auto shadow-xl bg-white max-w-xl ${inNGO && "min-h-[534px] pt-30"}`}>
+    <div
+      className={
+        inNGO
+          ? "rounded-2xl text-center mx-auto shadow-xl bg-white pt-30 px-5"
+          : "rounded-2xl text-center min-w-xs py-5 px-3 xs:px-10 xs:py-8 xs:min-w-lg mx-auto shadow-xl bg-white max-w-xl"
+      }
+      style={
+        inNGO
+          ? {
+              width: `${(width ?? 0) + 0.11 * (width ?? 0)}px`,
+              height: `${(height ?? 0) + 0.11 * (height ?? 0)}px`,
+            }
+          : {}
+      }
+    >
       <img className="w-15 h-15 mx-auto mb-4" src={thankYou} alt="tick-mark" />
       <h1 className="text-2xl font-semibold text-gray-800 mb-4">
         Thank you for your request

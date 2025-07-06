@@ -17,7 +17,7 @@ const Homeheading = () => {
   const [showModal, setModal] = useState(false);
 
   return (
-    <div className="component-wrapper flex flex-col items-center p-5">
+    <div className="component-wrapper flex flex-col items-center p-5 xs:mt-5">
       <div className="heading-subheading-wrapper flex flex-col mb-10 md:my-20 max-w-6xl">
         <div className=" heading-wrap text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-semibold max-w-2xl leading-tight my-4">
           <h1>Protecting Our Culture, And Popularizing It.</h1>
@@ -29,7 +29,7 @@ const Homeheading = () => {
           </p>
         </div>
       </div>
-      <div className="recent-projects-wrapper flex flex-col xs:max-w-6xl mx-auto space-y-4 md:mt-10 md:mb-20 mb-5">
+      <div className="recent-projects-wrapper flex flex-col xs:max-w-6xl mx-auto space-y-4 md:mt-10 md:mb-20 mb-10">
         <div className="project-headbtn flex items-center mb-10">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-semibold mr-10 ml-1">
             Our Recent Projects
@@ -44,7 +44,7 @@ const Homeheading = () => {
       </div>
       <div className="news-outlet-wrapper max-w-6xl md:mb-25 p-5 mb-10">
         <div className="news-outlet-heading">
-          <h2 className="text-xl xxs:text-2xl xs:text-3xl font-semibold mb-8">As seen on</h2>
+          <h2 className="text-xl xxs:text-2xl xs:text-3xl font-semibold mb-3 xxs:mb-8">As seen on</h2>
         </div>
         <div className="news-outlet-imgwrap flex flex-wrap justify-center bg-[#F5F5F5] rounded-2xl sm:bg-white p-5 sm:gap-18 gap-2">
           <img
