@@ -75,9 +75,9 @@ const MuseumsListHolder = () => {
   }
 
   return (
-    <div className="flex flex-col items-center mt-20 mb-20">
+    <div className="flex flex-col items-center mt-10 sm:mt-20 mb-20">
       <div className="max-w-7xl">
-        <h1 className="font-bold text-5xl mb-15 text-center">
+        <h1 className="font-bold text-2xl xs:text-3xl sm:text-4xl md:text-5xl sm:mb-15 text-center">
           Museums we are working with
         </h1>
         {pages[activePage]}

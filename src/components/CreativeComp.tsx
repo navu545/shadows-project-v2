@@ -47,7 +47,7 @@ const CreativeComp = () => {
             className="
         font-semibold leading-tight
         text-4xl mb-3 w-75 mt-5
-        xxs:text-4xl xxs:mb-5 xxs:w-90
+        xxs:text-[41px] xxs:mb-5 xxs:w-90
         xs:text-5xl xs:mb-10 xs:w-auto
         md:text-6xl
       "
@@ -86,7 +86,7 @@ const CreativeComp = () => {
           <img
             className="
         absolute scale-40 -bottom-20 left-20 ml-5
-        xxs:scale-55 xxs:-top-15 xxs:left-30
+        xxs:scale-55 xxs:-top-10 xxs:left-30
         xs:static xs:scale-100 xs:bottom-auto xs:left-auto xs:ml-0
       "
             src={projectMain}
@@ -95,7 +95,7 @@ const CreativeComp = () => {
         </div>
       </div>
 
-      <div className="creative3-point max-w-6xl mb-10 xxs:mb-15 xs:mb-20 sm:mb-30 bg-[#E9F0ED] min-h-[200px] grid grid-cols-3 gap-20 rounded-2xl place-items-center p-10 items-start">
+      <div className="creative3-point max-w-6xl mb-10 xxs:mb-15 xs:mb-20 sm:mb-30 bg-[#E9F0ED] min-h-[200px] grid grid-cols-3 gap-20 xs:rounded-2xl place-items-center p-10 items-start">
         <div className="creative1-point px-2">
           <h2 className="font-bold text-xs xxs:text-sm xs:text-lg sm:text-3xl mb-1">
             15+ digital partnerships
@@ -130,7 +130,7 @@ const CreativeComp = () => {
         </div>
       </div>
 
-      <div className="Ourwork-main flex flex-col items-center max-w-6xl sm:mb-40 mb-12 xxs:mb-20 xs:mb-30 ">
+      <div className="Ourwork-main flex flex-col items-center max-w-6xl sm:mb-40 mb-12 xxs:mb-20 xs:mb-30 xs:scale-100 scale-90 ">
         <h1 className="sm:text-4xl font-semibold sm:mb-5 text-lg xxs:text-xl xs:text-3xl ">
           Our Work Practically
         </h1>
