@@ -8,7 +8,7 @@ const Bank: React.FC = () => {
   }, []);
 
   return (
-    <div className="bank-info-wrap flex flex-col items-center p-2">
+    <div className="bank-info-wrap flex flex-col items-center p-3">
       <h1 className="font-semibold text-3xl xs:text-4xl sm:text-5xl md:text-6xl mt-10 mb-10 text-center">
         Bank Information
       </h1>
@@ -39,7 +39,7 @@ const Bank: React.FC = () => {
           </div>
         </div>
 
-        <div className="donor-box-wrap flex flex-col border-2 border-gray-300 max-w-6xl rounded-lg items-center mb-20 px-5 md:px-18">
+        <div className="donor-box-wrap flex flex-col border-2 border-gray-300 max-w-6xl rounded-lg items-center mb-10 px-5 md:px-18">
           <div className="donor-heading my-8 md:my-10 mx-4 text-center">
             <h1 className="text-2xl sm:text-3xl md:text-3xl font-semibold">
               Become a supporting monthly member

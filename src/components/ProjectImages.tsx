@@ -1,10 +1,12 @@
 import { useRef, useState, useEffect } from "react";
 import { newhome1, newhome2 } from "../assets/images";
+import { useNavigate } from "react-router-dom";
 
 const ProjectImages = () => {
   const images = [newhome1, newhome2];
   const scrollRef = useRef<HTMLDivElement>(null);
   const [scrollLeftPercent, setScrollLeftPercent] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const el = scrollRef.current;
@@ -26,7 +28,8 @@ const ProjectImages = () => {
         <img
           src={newhome1}
           alt="Project 1"
-          className="w-1/2 h-auto object-cover rounded"
+          // onClick={() => navigate("/campaign")}
+          className="w-1/2 h-auto object-cover rounded cursor-pointer"
         />
         <img
           src={newhome2}
@@ -56,10 +59,12 @@ const ProjectImages = () => {
                 alt={`Project ${i + 1}`}
                 className="w-full h-auto object-cover rounded"
                 onClick={() =>
-                  window.open(
-                    "https://graffiti-chronicles.shadowsproject.org/",
-                    "_blank"
-                  )
+                  i === 0
+                    ? navigate("/")
+                    : window.open(
+                        "https://graffiti-chronicles.shadowsproject.org/",
+                        "_blank"
+                      )
                 }
               />
             </div>

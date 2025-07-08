@@ -106,7 +106,76 @@ import hamburger from "./hamburger.png"
 import footerInsta from "./footerInsta.png";
 import footerLink from "./footerLink.png";
 import recentProjectRight from "./recentProjectRight.png";
+import campaign1 from "./campaign1.png";
+import campaign2 from "./campaign2.png";
+import campaign3 from "./campaign3.png";
+import campaign4 from "./campaign4.png";
+import campaign5 from "./campaign5.png";
+import campaign6 from "./campaign6.png";
+import curvedArrow from "./curvedArrow.png";
+import artistInfoLink from "./artistInfoLink.png";
+import databaseLink from "./databaseLink.png";
+import researchLink from  "./researchLink.png";
+import merchLink from "./merchLink.png";
+import digital1 from "./digital1.png";
+import digital2 from "./digital2.png";
+import artist1 from "./artist1.png";
+import artist2 from "./artist2.png";
+import artist3 from "./artist3.png";
+import artist4 from "./artist4.png";
+import artist5 from "./artist5.png";
+import kazymyr from "./kazymyr.png";
+import diary from "./diary.png";
+import resource1 from "./resource1.png";
+import resource2 from "./resource2.png";
+import resource3 from "./resource3.png";
+import davyd from "./davyd.png";
+import exter from "./exter.png";
+import kazymyrArrow from "./kazymyrArrow.png";
+import davydArrow from "./davydArrow.png";
+import mariia from "./mariia.png";
+import mariia2 from "./mariia2.png";
+import mariiaArrow from "./mariiaArrow.png"
+import ripyn from "./ripyn.png";
+import credit1 from "./credit1.png";
+import credit2 from "./credit2.png";
+import credit3 from "./credit3.png";
+import credit4 from "./credit4.png";
+import credit5 from "./credit5.png";
+import shadowsLogoPng from "./shadowslogoPng.png"
+
 export {
+  shadowsLogoPng,
+  credit1,
+  credit2,
+  credit3,
+  credit4,
+  credit5,
+  ripyn,
+  mariia2,
+  mariiaArrow,
+  mariia,
+  davydArrow,
+  kazymyrArrow,
+  exter,
+  davyd,
+  resource1,
+  resource2,
+  resource3,
+  diary,
+  kazymyr,
+  artist1,
+  artist2,
+  artist3,
+  artist4,
+  artist5,
+  artistInfoLink,
+  databaseLink,
+  researchLink,
+  merchLink,
+  digital1,
+  digital2,
+  curvedArrow,
   recentProjectRight,
   footerInsta,
   footerLink,
@@ -215,4 +284,10 @@ export {
   Twitter,
   NavbarShadowProject,
   FooterShadowProject,
+  campaign1,
+  campaign2,
+  campaign3,
+  campaign4,
+  campaign5,
+  campaign6,
 };

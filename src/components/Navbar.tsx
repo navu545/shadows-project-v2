@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { hamburger, closeHamburger } from "../assets/images";
+import { shadowsLogoPng } from "../assets/images";
 
 const Navbar = () => {
   const location = useLocation();
@@ -29,10 +30,10 @@ const Navbar = () => {
   return (
     <div className="w-full border-b border-gray-200">
       <div className="navbar-wrap flex flex-row justify-between items-center pb-5 mt-5 max-w-6xl w-full px-3 mx-auto">
-        <div className="navbar-logo mt-2">
+        <div className="navbar-logo mt-2 w-10">
           <Link to="/">
             <img
-              src="https://ik.imagekit.io/shadows/Shadows-project/LogoNew.svg"
+              src={shadowsLogoPng}
               alt="navbar-logo"
             />
           </Link>

@@ -18,7 +18,7 @@ const Homeheading = () => {
 
   return (
     <div className="component-wrapper flex flex-col items-center p-5 xs:mt-5">
-      <div className="heading-subheading-wrapper flex flex-col mb-10 md:my-20 max-w-6xl">
+      <div className="heading-subheading-wrapper flex flex-col mb-10 md:mb-20 md:mt-10 max-w-6xl">
         <div className=" heading-wrap text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-semibold max-w-2xl leading-tight my-4">
           <h1>Protecting Our Culture, And Popularizing It.</h1>
         </div>
