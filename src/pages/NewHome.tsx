@@ -15,8 +15,10 @@ const NewHome = () => {
     >
       <div className="font-inter min-h-screen flex flex-col">
         <Navbar />
-        <Homeheading />
-        <Contacts />
+        <main className="flex-grow">
+          <Homeheading />
+          <Contacts />
+        </main>
         <Footer />
       </div>
     </motion.div>

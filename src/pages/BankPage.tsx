@@ -13,7 +13,7 @@ const BankInformation = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="font-inter min-h-screen flex flex-col">
+      <div className="font-inter min-h-[115vh] flex flex-col">
         <Navbar />
         <Bank />
         <Contacts/>

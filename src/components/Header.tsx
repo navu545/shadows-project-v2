@@ -10,7 +10,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({ scroll }) => {
       <div className="flex flex-col items-center mt-5 md:mt-5 mb-20 overflow-hidden">
         <div
           className="ngo-header-wrap flex items-center gap-45 p-5 sm:mb-20 max-w-6xl
-    scale-53 ml-11 -mt-30
+    scale-53 ml-11 -mt-30 will-change-transform
     xxs:scale-61 xxs:-mt-24 xxs:ml-12
     xs:scale-77 xs:-mt-15 xs:ml-15
     sm:scale-100 sm:-mt-0 sm:ml-20
@@ -34,7 +34,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({ scroll }) => {
 
           <div
             className="ngo-imgs relative w-[20vw] min-w-70 aspect-[4/5]
-      scale-80 top-15 -left-10
+      scale-80 top-15 -left-10 will-change-transform
       xxs:scale-85 xxs:top-20
       xs:scale-85
       sm:scale-85
@@ -56,7 +56,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({ scroll }) => {
         <div
           className="About-new max-w-6xl mb-10 p-5
     -mt-40      
-    scale-44 
+    scale-44 will-change-transform
     xxs:scale-50 xxs:ml-0 xxs:-mt-30
     xs:scale-65 xs:ml-1 xs:-mt-15 xs:mb-15
     sm:scale-85 sm:ml-4 sm:mb-25
