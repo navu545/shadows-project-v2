@@ -4,7 +4,6 @@ import Bank from "../components/Bank";
 import Footer from "../components/Footer";
 import Contacts from "../components/Contacts";
 
-
 const BankInformation = () => {
   return (
     <motion.div
@@ -13,13 +12,15 @@ const BankInformation = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="font-inter min-h-[115vh] flex flex-col">
+      <div className="font-inter flex flex-col">
         <Navbar />
-        <Bank />
-        <Contacts/>
+        <div className="flex-grow min-h-screen">
+          <Bank />
+        </div>
+
+        <Contacts />
         <Footer />
       </div>
-
     </motion.div>
   );
 };

@@ -1,5 +1,3 @@
-
-
 const Art3 = () => {
   const images = [
     "campaignHome1.png",
@@ -30,12 +28,12 @@ const Art3 = () => {
           {[...images, ...images].map((filename, index) => (
             <div
               key={index}
-              className="w-[120px] sm:w-[150px] h-[140px] sm:h-[160px] flex-shrink-0"
+              className="w-[120px] sm:w-[150px] h-[140px] sm:h-[160px] lg:h-[200px] flex-shrink-0"
             >
               <img
                 src={`https://ik.imagekit.io/shadows/Shadows-project/${filename}`}
                 alt=""
-                className="w-full h-full object-cover rounded-md shadow-sm"
+                className="w-full h-full object-cover shadow-sm"
               />
             </div>
           ))}

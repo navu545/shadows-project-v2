@@ -12,13 +12,17 @@ import { Link } from "react-router-dom";
 
 const CampaignComp = () => {
   return (
-    <div className="campaign-page-wrapper flex flex-col items-center">
+    <div className="campaign-page-wrapper flex flex-col items-center bg-black text-white">
       <div className="max-w-7xl">
-        <div className="campaign-page-heading text-left">
-          <h1>
-            THE <span>STOLEN ART CAMPAIGN</span> IS A HYBRID INITIATIVE
-            CONFRONTING THE <span>ERASURE OF UKRANIAN IDENTITY</span> in{" "}
-            <span>WESTERN MUSEUMS.</span>
+        <div className="campaign-page-heading text-right text-7xl text-white mt-10 mb-5">
+          <h1 className="italic font-light">
+            THE{" "}
+            <span className="not-italic font-normal">STOLEN ART CAMPAIGN</span>{" "}
+            IS A HYBRID INITIATIVE CONFRONTING THE{" "}
+            <span className="not-italic font-normal">
+              ERASURE OF UKRANIAN IDENTITY
+            </span>{" "}
+            in <span className="not-italic font-normal">WESTERN MUSEUMS.</span>
           </h1>
         </div>
 
