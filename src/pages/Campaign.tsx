@@ -25,8 +25,7 @@ const Campaign = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black">
-     
+    <div className="relative w-full h-screen overflow-hidden bg-[#171717]">
       <div
         className="
           absolute
@@ -44,7 +43,6 @@ const Campaign = () => {
           sm:text-start
         "
       >
-        
         <div className="block sm:hidden">
           <h1
             className="
@@ -73,7 +71,6 @@ const Campaign = () => {
           </h1>
         </div>
 
- 
         <div className="hidden sm:block">
           <h1
             className="
@@ -113,9 +110,7 @@ const Campaign = () => {
         </div>
       </div>
 
-
       <div className="hidden sm:block lg:hidden w-full h-full">
-  
         <motion.img
           src={campaign1}
           alt=""
@@ -135,7 +130,6 @@ const Campaign = () => {
           className="absolute top-[62%] left-[0%] w-[30vw] sm:w-[26vw] cursor-pointer"
         />
 
-   
         <motion.img
           src={campaign4}
           alt=""
@@ -194,7 +188,6 @@ const Campaign = () => {
           className="absolute -bottom-[5vw] right-[24vw] w-[18vw] cursor-pointer"
         />
       </div>
-
 
       <Link to="/campaignHome">
         <button
