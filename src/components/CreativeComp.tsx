@@ -214,9 +214,9 @@ const CreativeComp = () => {
             src={partner1}
             alt="Partner 1"
             className="
-        w-24 h-auto object-contain
+        w-20 h-auto object-contain
         scale-75
-        xxs:scale-90
+        xs:w-24
         sm:scale-100
       "
           />
@@ -224,9 +224,9 @@ const CreativeComp = () => {
             src={partner2}
             alt="Partner 2"
             className="
-        w-24 h-auto object-contain
+        w-17 h-auto object-contain
         scale-70
-        xxs:scale-85
+        xs:w-24
         sm:scale-100
       "
           />
@@ -234,9 +234,9 @@ const CreativeComp = () => {
             src={partner3}
             alt="Partner 3"
             className="
-        w-24 h-auto object-contain
+        w-18 h-auto object-contain
         scale-90
-        xxs:scale-105
+        xs:w-24
         sm:scale-140
         sm:ml-8
         sm:-mt-2
@@ -246,9 +246,9 @@ const CreativeComp = () => {
             src={partner4}
             alt="Partner 4"
             className="
-        w-24 h-auto object-contain
+        w-20 h-auto object-contain
+        xs:w-24
         scale-75
-        xxs:scale-90
         sm:scale-100
       "
           />
@@ -256,9 +256,9 @@ const CreativeComp = () => {
             src={partner5}
             alt="Partner 5"
             className="
-        w-24 h-auto object-contain
+        w-20 h-auto object-contain
+        xs:w-24
         scale-80
-        xxs:scale-95
         sm:scale-130
       "
           />
@@ -266,9 +266,9 @@ const CreativeComp = () => {
             src={partner6}
             alt="Partner 6"
             className="
-        w-28 h-auto object-contain
+        w-22 h-auto object-contain
+        xs:w-24
         scale-90
-        xxs:scale-105
         sm:scale-130
       "
           />
@@ -276,9 +276,9 @@ const CreativeComp = () => {
             src={partner7}
             alt="Partner 7"
             className="
-        w-20 h-auto object-contain
+        w-18 h-auto object-contain
+        xs:w-20
         scale-65
-        xxs:scale-80
         sm:scale-90
       "
           />

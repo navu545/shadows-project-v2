@@ -189,7 +189,7 @@ const App = () => {
   }, []);
 
   return (
-    <div style={{ zoom: 1 }}>
+    <div style={{ zoom: .9 }}>
       {delayPassed ? (
         <Router>
           <AnimatedRoutes />

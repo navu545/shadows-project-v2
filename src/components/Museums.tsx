@@ -46,7 +46,7 @@ const Museums = () => {
               className="
              px-3 py-2 text-xs bg-white text-black border-2 rounded-full cursor-pointer transition-all duration-300
              hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white
-             xxs:px-7 xxs:py-2 xxs:text-sm xs:text-base xs:mt-2
+             xxs:px-6 xxs:py-2 xxs:text-sm xs:text-base xs:mt-2
              xs:px-10 xs:py-2.5 xs:mt-2 xs:text-m
            "
             >
