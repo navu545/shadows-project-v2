@@ -6,7 +6,7 @@ interface FormModalProps {
 }
 
 const FormModal: React.FC<FormModalProps> = ({ onClose }) => {
-  // Render directly into body to avoid transform issues
+  
   return ReactDOM.createPortal(
     <div
       className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50"

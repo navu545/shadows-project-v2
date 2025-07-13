@@ -50,7 +50,7 @@ const ProjectImages = () => {
 
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth cursor-grab pb-4"
+          className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth cursor-grab pb-4 scrollbar-hide"
         >
           {images.map((img, i) => (
             <div key={i} className="w-full flex-shrink-0 px-2 snap-center">

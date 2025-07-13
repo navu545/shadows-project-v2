@@ -182,6 +182,8 @@ const App = () => {
     /iPhone/.test(navigator.userAgent) &&
     typeof (window as WindowWithMSStream).MSStream === "undefined";
 
+    
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       setDelayPassed(true);
