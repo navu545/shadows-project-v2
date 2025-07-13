@@ -25,7 +25,7 @@ const Campaign = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-[#171717]">
+    <div className="relative w-full h-screen overflow-hidden bg-[#171717]" style={{zoom:1.11}}>
       <div
         className="
           absolute
