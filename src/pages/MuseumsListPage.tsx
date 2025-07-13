@@ -20,7 +20,7 @@ const MuseumsListPage = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="museums-list-page-container font-inter min-h-screen flex flex-col">
+      <div className="museums-list-page-container font-inter min-h-screen flex flex-col ios-footer-padding">
         <Navbar />
         <div className="museums-list-spacing-1"></div>
         <MuseumsListHolder />

@@ -25,7 +25,7 @@ const Home = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="home-page font-inter min-h-screen flex flex-col">
+      <div className="home-page font-inter min-h-screen flex flex-col ios-footer-padding">
         <Navbar />
 
         <Header scroll={scrollToForm} />

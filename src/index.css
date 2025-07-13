@@ -121,7 +121,7 @@ body {
 
 @supports (-webkit-touch-callout: none) {
   .ios-footer-padding {
-    padding-bottom: 65px;
+    padding-bottom: 70px;
   }
 }
 
