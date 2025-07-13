@@ -173,6 +173,13 @@ const AnimatedRoutes = () => {
 
 const App = () => {
   const [delayPassed, setDelayPassed] = useState(false);
+  const [isPhone, setIsPhone] = useState(window.innerWidth >= 475);
+
+  useEffect(() => {
+    const handleResize = () => setIsPhone(window.innerWidth >= 475);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -190,15 +197,20 @@ const App = () => {
 
   return (
     <div
-      style={{
-        top: 0,
-        left: 0,
-        transform: "scale(0.90)",
-        transformOrigin: "top left",
-        width: "111.11vw",
-        height: "111.11vh",
-      
-      }}
+      style={
+        isPhone
+          ? { zoom: 0.9 }
+          : {
+              position: "fixed",
+              top: 0,
+              left: 0,
+              transform: "scale(0.9)",
+              transformOrigin: "top left",
+              width: "111.11vw",
+              height: "111.11vh",
+              overflowY: "auto",
+            }
+      }
     >
       {delayPassed ? (
         <Router>

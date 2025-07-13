@@ -21,15 +21,11 @@ const NavbarTwo = () => {
         </div>
 
         <div className="flex gap-5">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSftFAJCrFFyp4fIbNhBBEJEiXKCyY9Fp36bLcSyhXWCmN0A1Q/viewform?usp=dialog"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link to="/bank-information">
             <div className="relative z-10 px-4 py-1 rounded-full border-2 border-transparent text-white cursor-pointer transition-all duration-300 group hover:bg-black hover:[background:linear-gradient(black,black)_padding-box,linear-gradient(to_right,#2597FF,#FFF500)_border-box]">
               Support Us
             </div>
-          </a>
+          </Link>
 
           <a
             href="https://www.rdnystreetwear.com/"
