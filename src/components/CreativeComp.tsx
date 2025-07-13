@@ -234,7 +234,7 @@ const CreativeComp = () => {
             src={partner3}
             alt="Partner 3"
             className="
-        w-28 h-auto object-contain
+        w-24 h-auto object-contain
         scale-90
         xxs:scale-105
         sm:scale-140
