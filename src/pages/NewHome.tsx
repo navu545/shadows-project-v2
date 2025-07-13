@@ -13,7 +13,7 @@ const NewHome = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="font-inter min-h-screen flex flex-col safari_only">
+      <div className="font-inter min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
           <Homeheading />

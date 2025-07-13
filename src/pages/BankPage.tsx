@@ -12,7 +12,7 @@ const BankInformation = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="font-inter flex flex-col safari_only">
+      <div className="font-inter flex flex-col">
         <Navbar />
         <div className="flex-grow min-h-screen">
           <Bank />
