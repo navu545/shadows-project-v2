@@ -171,21 +171,21 @@ const AnimatedRoutes = () => {
   );
 };
 
+interface WindowWithMSStream extends Window {
+  MSStream?: unknown;
+}
+
 const App = () => {
   const [delayPassed, setDelayPassed] = useState(false);
-  const [isPhone, setIsPhone] = useState(window.innerWidth >= 475);
 
-  useEffect(() => {
-    const handleResize = () => setIsPhone(window.innerWidth >= 475);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isIphone =
+    /iPhone/.test(navigator.userAgent) &&
+    typeof (window as WindowWithMSStream).MSStream === "undefined";
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setDelayPassed(true);
     }, 2000);
-
     return () => clearTimeout(timeout);
   }, []);
 
@@ -198,9 +198,8 @@ const App = () => {
   return (
     <div
       style={
-        isPhone
-          ? { zoom: 0.9 }
-          : {
+        isIphone
+          ? {
               position: "fixed",
               top: 0,
               left: 0,
@@ -210,6 +209,7 @@ const App = () => {
               height: "111.11vh",
               overflowY: "auto",
             }
+          : { zoom: 0.9 }
       }
     >
       {delayPassed ? (
@@ -222,5 +222,6 @@ const App = () => {
     </div>
   );
 };
+
 
 export default App;
