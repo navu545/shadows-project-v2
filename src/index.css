@@ -119,6 +119,12 @@ body {
   }
 }
 
+@supports (-webkit-touch-callout: none) {
+  .ios-footer-padding {
+    padding-bottom: 65px;
+  }
+}
+
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

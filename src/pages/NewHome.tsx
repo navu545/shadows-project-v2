@@ -13,7 +13,7 @@ const NewHome = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="font-inter min-h-screen flex flex-col">
+      <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
         <Navbar />
         <main className="flex-grow">
           <Homeheading />
