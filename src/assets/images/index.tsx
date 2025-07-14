@@ -143,8 +143,20 @@ import credit3 from "./credit3.png";
 import credit4 from "./credit4.png";
 import credit5 from "./credit5.png";
 import shadowsLogoPng from "./shadowslogoPng.png"
+import artist1txt from "./artist1txt.png";
+import artist2txt from "./artist2txt.png";
+import artist3txt from "./artist3txt.png";
+import artist4txt from "./artist4txt.png";
+import artist5txt from "./artist5txt.png";
+
+
 
 export {
+  artist1txt,
+  artist2txt,
+  artist3txt,
+  artist4txt,
+  artist5txt,
   shadowsLogoPng,
   credit1,
   credit2,
