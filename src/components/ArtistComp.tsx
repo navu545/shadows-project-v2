@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 const ArtistComp = () => {
   return (
-    <div className="artist-wrap flex flex-col items-center bg-[#171717] text-white">
+    <div className="artist-wrap flex flex-col items-center bg-[#171717] text-white overflow-hidden">
       <div className="artists relative max-w-7xl items-center mt-10 mb-40">
         <div className="artists-heading text-right text-7xl">
           <h1 className="italic font-light">

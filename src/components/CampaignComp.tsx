@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const CampaignComp = () => {
   return (
-    <div className="campaign-page-wrapper flex flex-col items-center bg-[#171717] text-white">
+    <div className="campaign-page-wrapper flex flex-col items-center bg-[#171717] text-white overflow-hidden">
       <div className="max-w-7xl">
         <div className="campaign-page-heading text-right text-7xl text-white mt-10 mb-5">
           <h1 className="italic font-light">
