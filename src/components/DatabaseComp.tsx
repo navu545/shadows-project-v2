@@ -82,7 +82,7 @@ const DatabaseComp = () => {
             style={{ height: "0", paddingBottom: "75%", position: "relative" }}
           >
             <iframe
-              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTdateNO8n92yZTqXplxPJa1sGGEl2QuZjXz7zyaszkXbz7KGumKV8PjZrXMMVp7XAQjL2bYBNXuwe/pubhtml?widget=true&amp;headers=false"
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTdateNO8n92yZTqXplxPJa1sGGEl2QuZjXz7zyaszkXbz7KGumKV8PjZrXMMVp7XAQjL2bYBNXuwe/pubhtml?gid=1732555911&amp;single=true&amp;widget=true&amp;headers=false"
               style={{
                 position: "absolute",
                 top: 0,

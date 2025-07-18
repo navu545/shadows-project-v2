@@ -25,9 +25,13 @@ const Campaign = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-[#171717]" style={{zoom:1.11}}>
+
       <div
-        className="
+        className="relative w-full h-screen overflow-hidden bg-[#171717]"
+        style={{ zoom: 1.11 }}
+      >
+        <div
+          className="
           absolute
           top-[30%]
           xl:top-[37%]
@@ -42,38 +46,38 @@ const Campaign = () => {
           text-white
           sm:text-start
         "
-      >
-        <div className="block sm:hidden">
-          <h1
-            className="
+        >
+          <div className="block sm:hidden">
+            <h1
+              className="
               text-2xl
               xxs:text-3xl
               font-light
               italic
               mb-4
             "
-          >
-            OUR CULTURE HAS BEEN
-            <br />
-            <span className="not-italic font-normal">STOLEN</span> FOR{" "}
-            <span className="not-italic font-normal">TOO LONG.</span>
-          </h1>
-          <h1
-            className="
+            >
+              OUR CULTURE HAS BEEN
+              <br />
+              <span className="not-italic font-normal">STOLEN</span> FOR{" "}
+              <span className="not-italic font-normal">TOO LONG.</span>
+            </h1>
+            <h1
+              className="
               text-2xl
               xxs:text-3xl
               font-light
               italic
             "
-          >
-            WE'RE HERE TO{" "}
-            <span className="not-italic font-normal">TAKE IT BACK.</span>
-          </h1>
-        </div>
+            >
+              WE'RE HERE TO{" "}
+              <span className="not-italic font-normal">TAKE IT BACK.</span>
+            </h1>
+          </div>
 
-        <div className="hidden sm:block">
-          <h1
-            className="
+          <div className="hidden sm:block">
+            <h1
+              className="
               text-xl
               xs:text-2xl
               sm:text-2xl
@@ -84,16 +88,16 @@ const Campaign = () => {
               italic
               font-light
             "
-          >
-            OUR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="not-italic font-normal">CULTURE</span>
-            &nbsp;&nbsp;&nbsp;&nbsp; HAS&nbsp;&nbsp;&nbsp;&nbsp; BEEN
-            <br />
-            <span className="not-italic font-normal">STOLEN</span> FOR{" "}
-            <span className="not-italic font-normal">TOO LONG.</span>
-          </h1>
-          <h1
-            className="
+            >
+              OUR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span className="not-italic font-normal">CULTURE</span>
+              &nbsp;&nbsp;&nbsp;&nbsp; HAS&nbsp;&nbsp;&nbsp;&nbsp; BEEN
+              <br />
+              <span className="not-italic font-normal">STOLEN</span> FOR{" "}
+              <span className="not-italic font-normal">TOO LONG.</span>
+            </h1>
+            <h1
+              className="
               text-xl
               xs:text-2xl
               sm:text-2xl
@@ -103,95 +107,95 @@ const Campaign = () => {
               font-light
               italic
             "
-          >
-            WE'RE HERE TO{" "}
-            <span className="not-italic font-normal">TAKE IT BACK.</span>
-          </h1>
+            >
+              WE'RE HERE TO{" "}
+              <span className="not-italic font-normal">TAKE IT BACK.</span>
+            </h1>
+          </div>
         </div>
-      </div>
 
-      <div className="hidden sm:block lg:hidden w-full h-full">
-        <motion.img
-          src={campaign1}
-          alt=""
-          {...tiltProps}
-          className="absolute -top-[6%] -left-[7%] w-[31vw] sm:w-[26vw] z-10 cursor-pointer"
-        />
-        <motion.img
-          src={campaign2}
-          alt=""
-          {...tiltProps}
-          className="absolute top-[30%] -left-[8%] w-[27vw] sm:w-[24vw] z-9 cursor-pointer"
-        />
-        <motion.img
-          src={campaign3}
-          alt=""
-          {...tiltProps}
-          className="absolute top-[62%] left-[0%] w-[30vw] sm:w-[26vw] cursor-pointer"
-        />
+        <div className="hidden sm:block lg:hidden w-full h-full">
+          <motion.img
+            src={campaign1}
+            alt=""
+            {...tiltProps}
+            className="absolute -top-[6%] -left-[7%] w-[31vw] sm:w-[26vw] z-10 cursor-pointer"
+          />
+          <motion.img
+            src={campaign2}
+            alt=""
+            {...tiltProps}
+            className="absolute top-[30%] -left-[8%] w-[27vw] sm:w-[24vw] z-9 cursor-pointer"
+          />
+          <motion.img
+            src={campaign3}
+            alt=""
+            {...tiltProps}
+            className="absolute top-[62%] left-[0%] w-[30vw] sm:w-[26vw] cursor-pointer"
+          />
 
-        <motion.img
-          src={campaign4}
-          alt=""
-          {...tiltProps}
-          className="absolute -top-[3%] right-[1%] w-[25vw] z-10 cursor-pointer"
-        />
-        <motion.img
-          src={campaign5}
-          alt=""
-          {...tiltProps}
-          className="absolute top-[30%] -right-[3%] w-[24vw] cursor-pointer"
-        />
-        <motion.img
-          src={campaign6}
-          alt=""
-          {...tiltProps}
-          className="absolute top-[70%] right-[5%] w-[24vw] cursor-pointer"
-        />
-      </div>
+          <motion.img
+            src={campaign4}
+            alt=""
+            {...tiltProps}
+            className="absolute -top-[3%] right-[1%] w-[25vw] z-10 cursor-pointer"
+          />
+          <motion.img
+            src={campaign5}
+            alt=""
+            {...tiltProps}
+            className="absolute top-[30%] -right-[3%] w-[24vw] cursor-pointer"
+          />
+          <motion.img
+            src={campaign6}
+            alt=""
+            {...tiltProps}
+            className="absolute top-[70%] right-[5%] w-[24vw] cursor-pointer"
+          />
+        </div>
 
-      <div className="hidden lg:block">
-        <motion.img
-          src={campaign1}
-          alt=""
-          {...tiltProps}
-          className="absolute -top-[5vw] left-[2vw] w-[22vw] z-10 cursor-pointer"
-        />
-        <motion.img
-          src={campaign2}
-          alt=""
-          {...tiltProps}
-          className="absolute top-[10vw] -left-[5vw] w-[17vw] z-9 cursor-pointer"
-        />
-        <motion.img
-          src={campaign3}
-          alt=""
-          {...tiltProps}
-          className="absolute top-[22vw] left-[6vw] w-[19vw] cursor-pointer"
-        />
-        <motion.img
-          src={campaign4}
-          alt=""
-          {...tiltProps}
-          className="absolute -top-[3vw] right-[4vw] w-[18vw] cursor-pointer"
-        />
-        <motion.img
-          src={campaign5}
-          alt=""
-          {...tiltProps}
-          className="absolute top-[7vw] -right-[6vw] w-[15vw] cursor-pointer"
-        />
-        <motion.img
-          src={campaign6}
-          alt=""
-          {...tiltProps}
-          className="absolute -bottom-[5vw] right-[24vw] w-[18vw] cursor-pointer"
-        />
-      </div>
+        <div className="hidden lg:block">
+          <motion.img
+            src={campaign1}
+            alt=""
+            {...tiltProps}
+            className="absolute -top-[5vw] left-[2vw] w-[22vw] z-10 cursor-pointer"
+          />
+          <motion.img
+            src={campaign2}
+            alt=""
+            {...tiltProps}
+            className="absolute top-[10vw] -left-[5vw] w-[17vw] z-9 cursor-pointer"
+          />
+          <motion.img
+            src={campaign3}
+            alt=""
+            {...tiltProps}
+            className="absolute top-[22vw] left-[6vw] w-[19vw] cursor-pointer"
+          />
+          <motion.img
+            src={campaign4}
+            alt=""
+            {...tiltProps}
+            className="absolute -top-[3vw] right-[4vw] w-[18vw] cursor-pointer"
+          />
+          <motion.img
+            src={campaign5}
+            alt=""
+            {...tiltProps}
+            className="absolute top-[7vw] -right-[6vw] w-[15vw] cursor-pointer"
+          />
+          <motion.img
+            src={campaign6}
+            alt=""
+            {...tiltProps}
+            className="absolute -bottom-[5vw] right-[24vw] w-[18vw] cursor-pointer"
+          />
+        </div>
 
-      <Link to="/campaignHome">
-        <button
-          className="
+        <Link to="/campaignHome">
+          <button
+            className="
             absolute
             left-1/2
             top-[65%]
@@ -225,11 +229,12 @@ const Campaign = () => {
             lg:w-[15vw]
             cursor-pointer
           "
-        >
-          ENTER
-        </button>
-      </Link>
-    </div>
+          >
+            ENTER
+          </button>
+        </Link>
+      </div>
+  
   );
 };
 

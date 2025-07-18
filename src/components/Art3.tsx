@@ -11,7 +11,7 @@ const Art3 = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center mb-20">
+    <div className="flex flex-col items-center sm:mb-20">
       <div
         className="
             relative w-full

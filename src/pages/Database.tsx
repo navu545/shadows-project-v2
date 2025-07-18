@@ -4,12 +4,14 @@ import Footer from "../components/Footer"
 
 const Database = () => {
   return (
-    <div>
-      <NavbarTwo/>
-      <DatabaseComp/>
-      <Footer/>
-    </div>
-  )
+   
+      <div>
+        <NavbarTwo />
+        <DatabaseComp />
+        <Footer />
+      </div>
+  
+  );
 }
 
 export default Database

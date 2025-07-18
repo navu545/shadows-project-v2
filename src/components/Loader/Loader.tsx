@@ -4,7 +4,7 @@ import "./loader.css"
 const Loader = () => {
 
   return (
-    <div className="flex justify-center items-center h-screen bg-white">
+    <div className="fixed inset-0 flex justify-center items-center bg-white z-50">
       <img
         src={loaderLogoColor}
         alt="Animated logo"
