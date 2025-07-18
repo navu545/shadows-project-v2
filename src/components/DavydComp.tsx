@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const DavydComp = () => {
   return (
-    <div className="Davyd-wrap flex flex-col items-center">
+    <div className="Davyd-wrap flex flex-col items-center bg-[#171717]">
       <div className="Davyd max-w-7xl items-center mb-10 overflow-hidden px-5">
         {/* IMAGE & HEADING SECTION */}
         <div className="davyd-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_40%] gap-10 lg:gap-25">

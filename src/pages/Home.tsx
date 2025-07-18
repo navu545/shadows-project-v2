@@ -1,52 +1,20 @@
-import { useRef } from "react";
+import Homeheading from "../components/HomeHeading";
 import Navbar from "../components/Navbar";
-import Header from "../components/Header";
-import Info from "../components/Info";
-import Museum from "../components/Museums";
-import Process from "../components/Process";
-import Art from "../components/Art";
-import Form from "../components/Form";
-import Contacts from "../components/Contacts";
 import Footer from "../components/Footer";
-import ReadMore from "../components/ReadMore";
-import { motion } from "framer-motion";
+import Contacts from "../components/Contacts";
+
 
 const Home = () => {
-  const formRef = useRef<HTMLDivElement | null>(null);
-
-  const scrollToForm = () => {
-    formRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
-      transition={{ duration: 0.3 }}
-    >
-      <div className="home-page font-inter min-h-screen flex flex-col ios-footer-padding">
-        <Navbar />
-
-        <Header scroll={scrollToForm} />
-
-        <ReadMore />
-
-        <Museum />
-
-        <Info />
-
-        <Process />
-
-        <Art />
-
-        <Form formRef={formRef} />
-
+    <div className="font-inter min-h-screen flex flex-col ios-footer-padding fix-ipad-chrome-footer">
+      <Navbar />
+      <main className="flex-grow">
+        <Homeheading />
         <Contacts />
-
-        <Footer />
-      </div>
-    </motion.div>
+      </main>
+      <Footer />
+    </div>
   );
 };
 

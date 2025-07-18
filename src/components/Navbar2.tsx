@@ -19,7 +19,7 @@ const NavbarTwo = () => {
   return (
     <div className="w-full bg-[#171717] text-white border-b border-neutral-800">
       <div className="navbar-wrap flex justify-between items-center pb-3 pt-7 max-w-7xl w-full px-3 mx-auto">
-        {/* Logo + Manifesto */}
+      
         <div className="flex items-center gap-6">
           <Link to="/">
             <img
@@ -29,7 +29,7 @@ const NavbarTwo = () => {
             />
           </Link>
 
-          <Link to="/campaignHome">
+          <Link to="/manifesto">
             <div className="relative z-10 px-4 py-1 rounded-full border-2 border-transparent cursor-pointer transition-all duration-300 group hover:bg-black hover:[background:linear-gradient(black,black)_padding-box,linear-gradient(to_right,#2597FF,#FFF500)_border-box] hidden md:block">
               Project Manifesto
             </div>
@@ -38,7 +38,7 @@ const NavbarTwo = () => {
 
         {/* Desktop Nav Items */}
         <div className="hidden md:flex gap-5">
-          <Link to="/bank-information">
+          <Link to="/donate">
             <div className="relative z-10 px-4 py-1 rounded-full border-2 border-transparent cursor-pointer transition-all duration-300 group hover:bg-black hover:[background:linear-gradient(black,black)_padding-box,linear-gradient(to_right,#2597FF,#FFF500)_border-box]">
               Support Us
             </div>
@@ -61,7 +61,7 @@ const NavbarTwo = () => {
           </Link>
         </div>
 
-        {/* Hamburger Toggle */}
+       
         <button
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           className="md:hidden focus:outline-none"
@@ -74,7 +74,7 @@ const NavbarTwo = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+    
       <motion.div
         layout
         initial={false}
@@ -88,13 +88,13 @@ const NavbarTwo = () => {
       >
         <div ref={contentRef}>
           <div className="flex flex-col items-start gap-3 py-4 px-4 text-white text-lg">
-            {/* Campaign Link */}
+           
             <div className="relative w-full">
-              {currentPath === "/campaignHome" && (
+              {currentPath === "/manifesto" && (
                 <div className="absolute inset-0 bg-white/10 rounded-full" />
               )}
               <Link
-                to="/campaignHome"
+                to="/manifesto"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <div className="relative z-10 w-full px-4 py-2 rounded-full hover:bg-neutral-800">
@@ -103,13 +103,13 @@ const NavbarTwo = () => {
               </Link>
             </div>
 
-            {/* Support Us Link */}
+           
             <div className="relative w-full">
-              {currentPath === "/bank-information" && (
+              {currentPath === "/donate" && (
                 <div className="absolute inset-0 bg-white/10 rounded-full" />
               )}
               <Link
-                to="/bank-information"
+                to="/donate"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <div className="relative z-10 w-full px-4 py-2 rounded-full hover:bg-neutral-800">
@@ -118,7 +118,7 @@ const NavbarTwo = () => {
               </Link>
             </div>
 
-            {/* Shop Activism Link */}
+         
             <div className="relative w-full">
               <a
                 href="https://www.rdnystreetwear.com/"

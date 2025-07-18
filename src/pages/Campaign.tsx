@@ -192,7 +192,7 @@ const Campaign = () => {
         />
       </div>
 
-      <Link to="/campaignHome">
+      <Link to="/manifesto">
         <button
           className="
             absolute

@@ -18,16 +18,16 @@ const Footer = () => {
     <div className="footer-wrapper flex items-center justify-center bg-black text-white mt-auto">
       <div className="footer-links flex items-center gap-10 py-8">
         <div className="hidden md:flex items-center gap-10">
-          <Link to="/aboutpage" onClick={(e) => scrollToTop(e, "/aboutpage")}>
+          <Link to="/about" onClick={(e) => scrollToTop(e, "/about")}>
             <p>About Us</p>
           </Link>
           <Link
-            to="/creativePage"
-            onClick={(e) => scrollToTop(e, "/creativePage")}
+            to="/creative"
+            onClick={(e) => scrollToTop(e, "/creative")}
           >
             <p>Creative Projects</p>
           </Link>
-          <Link to="/NGO" onClick={(e) => scrollToTop(e, "/NGO")}>
+          <Link to="/ngo" onClick={(e) => scrollToTop(e, "/ngo")}>
             <p>Aid Program</p>
           </Link>
           <a
@@ -38,8 +38,8 @@ const Footer = () => {
             <p>Join Us</p>
           </a>
           <Link
-            to="/bank-information"
-            onClick={(e) => scrollToTop(e, "/bank-information")}
+            to="/donate"
+            onClick={(e) => scrollToTop(e, "/donate")}
           >
             <p>Donate</p>
           </Link>

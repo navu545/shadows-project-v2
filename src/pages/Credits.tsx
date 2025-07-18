@@ -3,11 +3,13 @@ import CreditsComp from "../components/CreditsComp";
 import Footer from "../components/Footer";
 const Credits = () => {
   return (
-      <div>
-        <NavbarTwo />
+    <div>
+      <NavbarTwo />
+      <div className="flex-grow min-h-screen bg-[#171717]">
         <CreditsComp />
-        <Footer />
       </div>
+      <Footer />
+    </div>
   );
 }
 

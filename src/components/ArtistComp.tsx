@@ -174,7 +174,7 @@ const ArtistComp = () => {
               left: "75%",
             }}
           >
-            <Link to="/campaignHome">
+            <Link to="/manifesto">
               <button className="rounded-full border-2 border-white flex items-center justify-center cursor-pointer italic text-2xl lg:text-3xl px-10 lg:px-15 py-4 lg:py-5 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
                 HOMEPAGE
               </button>
@@ -184,7 +184,7 @@ const ArtistComp = () => {
 
         {/* Mobile Button */}
         <div className="block md:hidden mt-20 text-center">
-          <Link to="/campaignHome">
+          <Link to="/manifesto">
             <button className="rounded-full border-2 border-white italic text-xl px-10 py-4 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
               HOMEPAGE
             </button>

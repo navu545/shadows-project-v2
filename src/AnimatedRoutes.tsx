@@ -4,11 +4,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import Loader from "./components/Loader/Loader";
 import LoaderBlack from "./components/Loader/LoaderBlack";
 
-const Home = lazy(() => import("./pages/Home"));
+const Ngo = lazy(() => import("./pages/Ngo"));
 const MuseumsListPage = lazy(() => import("./pages/MuseumsListPage"));
-const BankInformation = lazy(() => import("./pages/BankPage"));
-const NewHome = lazy(() => import("./pages/NewHome"));
-const Aboutpage = lazy(() => import("./pages/AboutPage"));
+const Bank = lazy(() => import("./pages/Bank"));
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
 const Creativepage = lazy(() => import("./pages/CreativePage"));
 const Campaign = lazy(() => import("./pages/Campaign"));
 const CampaignHome = lazy(() => import("./pages/CampaignHome"));
@@ -52,13 +52,13 @@ const AnimatedRoutes = () => {
           element={
             <Suspense fallback={<Loader />}>
               <PageWrapper>
-                <NewHome />
+                <Home />
               </PageWrapper>
             </Suspense>
           }
         />
         <Route
-          path="/MuseumsListPage"
+          path="/museums"
           element={
             <Suspense fallback={<Loader />}>
               <PageWrapper>
@@ -68,37 +68,37 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/bank-information"
+          path="/donate"
           element={
             <Suspense fallback={<Loader />}>
               <PageWrapper>
-                <BankInformation />
+                <Bank />
               </PageWrapper>
             </Suspense>
           }
         />
         <Route
-          path="/NGO"
+          path="/ngo"
           element={
             <Suspense fallback={<Loader />}>
               <PageWrapper>
-                <Home />
+                <Ngo />
               </PageWrapper>
             </Suspense>
           }
         />
         <Route
-          path="/aboutpage"
+          path="/about"
           element={
             <Suspense fallback={<Loader />}>
               <PageWrapper>
-                <Aboutpage />
+                <About />
               </PageWrapper>
             </Suspense>
           }
         />
         <Route
-          path="/creativepage"
+          path="/creative"
           element={
             <Suspense fallback={<Loader />}>
               <PageWrapper>
@@ -119,7 +119,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/campaignHome"
+          path="/manifesto"
           element={
             <Suspense fallback={<LoaderBlack />}>
               <PageWrapper duration={0.3}>

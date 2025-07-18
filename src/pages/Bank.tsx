@@ -1,16 +1,16 @@
 
 import Navbar from "../components/Navbar";
-import Bank from "../components/Bank";
+import BankComp from "../components/BankComp";
 import Footer from "../components/Footer";
 import Contacts from "../components/Contacts";
 
-const BankInformation = () => {
+const Bank = () => {
   return (
     
       <div className="font-inter flex flex-col ios-footer-padding">
         <Navbar />
         <div className="flex-grow min-h-screen">
-          <Bank />
+          <BankComp />
         </div>
 
         <Contacts />
@@ -20,4 +20,4 @@ const BankInformation = () => {
   );
 };
 
-export default BankInformation;
+export default Bank;

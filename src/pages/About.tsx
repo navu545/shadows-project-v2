@@ -4,7 +4,7 @@ import Aboutnew from "../components/AboutComp";
 import Footer from "../components/Footer";
 import Contacts from "../components/Contacts";
 
-const Aboutpage = () => {
+const About = () => {
   return (
     
       <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
@@ -17,4 +17,4 @@ const Aboutpage = () => {
   );
 };
 
-export default Aboutpage;
+export default About;

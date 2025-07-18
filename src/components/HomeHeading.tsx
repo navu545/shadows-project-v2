@@ -34,7 +34,7 @@ const Homeheading = () => {
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-semibold mr-10 ml-1">
             Our Recent Projects
           </h2>
-          <Link to="/creativePage" state={{ scrollTo: "recent-projects" }}>
+          <Link to="/creative" state={{ scrollTo: "recent-projects" }}>
             <button className="hidden sm:inline-flex px-10 py-3 mt-4 bg-black text-white rounded-full cursor-pointer text-xl transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
               See more
             </button>

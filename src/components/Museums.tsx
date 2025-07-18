@@ -28,7 +28,7 @@ const Museums = () => {
         </div>
 
         <div className="museum-btn-wrap grid grid-cols-2 gap-10 items-center">
-          <Link to="/bank-information">
+          <Link to="/donate">
             <button
               className="
         w-full px-4 py-2.5 text-xs bg-black text-white rounded-full cursor-pointer transition-all duration-300
@@ -41,7 +41,7 @@ const Museums = () => {
             </button>
           </Link>
 
-          <Link to="/MuseumsListPage">
+          <Link to="/museums">
             <button
               className="
              px-3 py-2 text-xs bg-white text-black border-2 rounded-full cursor-pointer transition-all duration-300

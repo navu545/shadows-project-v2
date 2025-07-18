@@ -2,7 +2,7 @@ import { PayPal, PayPalQR, paypalTwo } from "../assets/images";
 import Donorbox from "./DonorBox";
 import { useEffect } from "react";
 
-const Bank: React.FC = () => {
+const BankComp: React.FC = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
   }, []);
@@ -54,4 +54,4 @@ const Bank: React.FC = () => {
   );
 };
 
-export default Bank;
+export default BankComp;

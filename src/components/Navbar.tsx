@@ -12,9 +12,9 @@ const Navbar = () => {
   const contentRef = useRef<HTMLDivElement>(null);
 
   const navItems = [
-    { label: "About us", path: "/aboutpage" },
-    { label: "Creative Studio", path: "/creativePage" },
-    { label: "NGO", path: "/NGO" },
+    { label: "About us", path: "/about" },
+    { label: "Creative Studio", path: "/creative" },
+    { label: "NGO", path: "/ngo" },
   ];
 
   useEffect(() => {
@@ -88,7 +88,7 @@ const Navbar = () => {
               Join Us
             </button>
 
-            <Link to="/bank-information">
+            <Link to="/donate">
               <button className="px-8 py-2 mt-2 bg-black text-white rounded-full text-sm cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
                 Donate
               </button>

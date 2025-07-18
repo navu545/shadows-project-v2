@@ -4,7 +4,7 @@ interface HeaderProps {
   scroll: () => void;
 }
 
-const Header: React.FunctionComponent<HeaderProps> = ({ scroll }) => {
+const NgoHeading: React.FunctionComponent<HeaderProps> = ({ scroll }) => {
   return (
     <div className="flex flex-col items-center mt-5 md:mt-20 mb-0 overflow-hidden">
       <div className="flex flex-col items-center mt-5 md:mt-5 mb-20 overflow-hidden">
@@ -225,4 +225,4 @@ const Header: React.FunctionComponent<HeaderProps> = ({ scroll }) => {
   );
 };
 
-export default React.memo(Header);
+export default React.memo(NgoHeading);
