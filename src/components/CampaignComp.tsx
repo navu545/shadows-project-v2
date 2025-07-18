@@ -40,7 +40,7 @@ const CampaignComp = () => {
         </div>
 
         <div className="background-features-wrap flex flex-col lg:flex-row w-full mt-12 mb-10 xxs:mb-10 lg:mb-40 border-t border-gray-600 md:gap-y-5 xl:mb-20 ">
-          {/* Background section */}
+  
           <div className="background-wrap w-full lg:w-[70%] lg:pr-8 mt-5 text-justify">
             <div className="flex items-center mb-5">
               <h1 className="text-md font-semibold">
@@ -71,8 +71,8 @@ const CampaignComp = () => {
             </div>
           </div>
 
-          {/* Features section */}
-          <div className="features-wrap w-full lg:w-[40%] flex flex-col justify-between relative mt-8">
+       
+          <div className="features-wrap w-full lg:w-[40%] flex flex-col justify-between relative mt-5">
             <div className="hidden md:block flex-col space-y-2 mb-6 w-full">
               {features.map(({ label, name }) => (
                 <div
@@ -88,8 +88,8 @@ const CampaignComp = () => {
             </div>
 
             {/* Arrow + Explore text */}
-            <div className="hidden lg:block absolute top-[60%] left-[60%] sm:left-[68%] lg:left-[75%] xl:top-[50%]">
-              <img src={curvedArrow} alt="Explore Arrow" className="h-70" />
+            <div className="hidden lg:block absolute top-[60%] left-[60%] sm:left-[68%] lg:left-[75%] xl:top-[45%]">
+              <img src={curvedArrow} alt="Explore Arrow" className="h-80" />
             </div>
             <div className="hidden lg:flex items-end justify-start mt-6 relative left-[10%] sm:left-[17%] bottom-[-25%] xl:top-[0%]">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl mr-4">EXPLORE</h1>

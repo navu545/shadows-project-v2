@@ -4,6 +4,7 @@ import {
   resource1,
   resource2,
   resource3,
+  ripynArrow,
 } from "../assets/images";
 import { Link } from "react-router-dom";
 
@@ -25,7 +26,7 @@ const RipynComp = () => {
             </div>
             {/* No arrow given — placeholder kept for layout consistency */}
             <div className="hidden lg:block absolute top-[50%] right-[65%]">
-              {/* <img src={...} className="scale-320" alt="Arrow" /> */}
+              <img src={ripynArrow} className="scale-320" alt="Arrow" />
             </div>
           </div>
 

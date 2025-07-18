@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import ThankYou from "./Thankyou";
-import Loader from "./Loader/Loader";
+import LoaderMini from "./Loader/LoaderMini";
 import { crossPNG } from "../assets/images";
 
 interface FormValues {
@@ -219,7 +219,7 @@ const Formcomp = ({onClose,formOnNgo}: FormCompProps) => {
 
       {loading && (
         <div className="absolute inset-0 bg-white bg-opacity-70 flex items-center justify-center z-20 overflow-hidden rounded-2xl">
-          <Loader />
+          <LoaderMini />
         </div>
       )}
 

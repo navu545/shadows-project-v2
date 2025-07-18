@@ -13,7 +13,7 @@ const MariiaComp = () => {
     <div className="Mariia-wrap flex flex-col items-center">
       <div className="Mariia max-w-7xl items-center mb-10 overflow-hidden px-5">
         {/* IMAGE & HEADING SECTION */}
-        <div className="mariia-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_45%] gap-10 lg:gap-25">
+        <div className="mariia-img-heading mt-20 mb-15 grid lg:grid-cols-[45%_55%] gap-10 lg:gap-25">
           {/* Heading first on small screens */}
           <div className="Mariia-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <div>
@@ -26,8 +26,8 @@ const MariiaComp = () => {
               </p>
             </div>
             {/* Arrow hidden below lg */}
-            <div className="hidden lg:block absolute top-[50%] right-[65%]">
-              <img src={mariiaArrow} className="scale-320" alt="Arrow" />
+            <div className="hidden lg:block absolute top-[40%] right-[45%]">
+              <img src={mariiaArrow} className="scale-140" alt="Arrow" />
             </div>
           </div>
 

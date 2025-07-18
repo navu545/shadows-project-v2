@@ -148,10 +148,32 @@ import artist2txt from "./artist2txt.png";
 import artist3txt from "./artist3txt.png";
 import artist4txt from "./artist4txt.png";
 import artist5txt from "./artist5txt.png";
+import ripynArrow from "./ripynArrow.png";
+import painting1 from "./painting1pop.png"
+import painting2 from "./painting2pop.png";
+import painting3 from "./painting3pop.png";
+import painting4 from "./painting4pop.png";
+import painting5 from "./painting5pop.png";
+import painting1a from "./painting1apop.png";
+import painting2a from "./painting2apop.png";
+import painting3a from "./painting3apop.png";
+import painting4a from "./painting4apop.png";
+import painting5a from "./painting5apop.png";
 
 
 
 export {
+  painting1,
+  painting1a,
+  painting2,
+  painting2a,
+  painting3,
+  painting3a,
+  painting4,
+  painting4a,
+  painting5,
+  painting5a,
+  ripynArrow,
   artist1txt,
   artist2txt,
   artist3txt,

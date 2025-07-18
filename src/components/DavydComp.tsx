@@ -13,21 +13,21 @@ const DavydComp = () => {
     <div className="Davyd-wrap flex flex-col items-center">
       <div className="Davyd max-w-7xl items-center mb-10 overflow-hidden px-5">
         {/* IMAGE & HEADING SECTION */}
-        <div className="davyd-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_45%] gap-10 lg:gap-25">
+        <div className="davyd-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_40%] gap-10 lg:gap-25">
           {/* Heading first on small screens */}
           <div className="Davyd-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <div>
               <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
                 DAVYD <span className="not-italic font-normal">BURLIUK</span>
               </h1>
-              <p className="text-lg sm:text-xl">
+              <p className="text-lg sm:text-xl w-[70%]">
                 Born in Semyrotivschyna, present-day Sumy region, Ukraine (1882
                 - 1967)
               </p>
             </div>
             {/* Arrow hidden below lg */}
-            <div className="hidden lg:block absolute top-[50%] right-[65%]">
-              <img src={davydArrow} className="scale-320" alt="Arrow" />
+            <div className="hidden lg:block absolute top-[37%] right-[35%]">
+              <img src={davydArrow} className="scale-150" alt="Arrow" />
             </div>
           </div>
 
