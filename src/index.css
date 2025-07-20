@@ -151,11 +151,3 @@ body {
     }
   }
 }
-
-@supports (-webkit-touch-callout: none) and (not (-webkit-overflow-scrolling: touch)) {
-  .fix-ipad-chrome-footer {
-    padding-bottom: 0px;
-    margin-bottom: -10vh;
-    overflow-anchor: none;
-  }
-}

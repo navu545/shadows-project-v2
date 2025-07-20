@@ -4,9 +4,9 @@ import ArtistComp from "../components/ArtistComp"
 
 const Artists = () => {
   return (
-    <div>
+    <div className="font-inter flex flex-col min-h-screen ios-footer-padding bg-[#171717]">
       <NavbarTwo />
-      <div className="flex-grow min-h-screen bg-[#171717]">
+      <div className="flex-grow min-h-screen">
         <ArtistComp />
       </div>
       <Footer />

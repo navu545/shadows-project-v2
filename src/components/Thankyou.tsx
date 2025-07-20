@@ -47,7 +47,10 @@ const ThankYou: React.FC<ThankYouProp> = ({ thankState, onClose, inNGO, width, h
         shortly with more details.
       </p>
       <button
-        className="px-10 py-4 bg-gray-800 text-white rounded-full text-sm cursor-pointer"
+        className="px-10 py-4 bg-black text-white rounded-full transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    focus:text-white
+    active:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    active:text-white text-sm cursor-pointer"
         onClick={() => {
           thankState();
           onClose?.();

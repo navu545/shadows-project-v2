@@ -4,9 +4,12 @@ import CampaignComp from "../components/CampaignComp";
 
 const CampaignHome = () => {
   return (
-    <div>
+    <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
       <NavbarTwo />
-      <CampaignComp />
+      <div className="flex-grow">
+        <CampaignComp />
+      </div>
+
       <Footer />
     </div>
   );

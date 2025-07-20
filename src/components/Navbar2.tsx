@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { hamburger, closeHamburger } from "../assets/images";
+import { shadowsLogoPng } from "../assets/images";
 
 const NavbarTwo = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,11 +20,10 @@ const NavbarTwo = () => {
   return (
     <div className="w-full bg-[#171717] text-white border-b border-neutral-800">
       <div className="navbar-wrap flex justify-between items-center pb-3 pt-7 max-w-7xl w-full px-3 mx-auto">
-      
         <div className="flex items-center gap-6">
           <Link to="/">
             <img
-              src="https://ik.imagekit.io/shadows/Shadows-project/LogoNew.svg"
+              src={shadowsLogoPng}
               alt="navbar-logo"
               className="filter brightness-0 invert w-10"
             />
@@ -61,7 +61,6 @@ const NavbarTwo = () => {
           </Link>
         </div>
 
-       
         <button
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           className="md:hidden focus:outline-none"
@@ -74,7 +73,6 @@ const NavbarTwo = () => {
         </button>
       </div>
 
-    
       <motion.div
         layout
         initial={false}
@@ -88,37 +86,28 @@ const NavbarTwo = () => {
       >
         <div ref={contentRef}>
           <div className="flex flex-col items-start gap-3 py-4 px-4 text-white text-lg">
-           
             <div className="relative w-full">
               {currentPath === "/manifesto" && (
                 <div className="absolute inset-0 bg-white/10 rounded-full" />
               )}
-              <Link
-                to="/manifesto"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
+              <Link to="/manifesto" onClick={() => setIsMobileMenuOpen(false)}>
                 <div className="relative z-10 w-full px-4 py-2 rounded-full hover:bg-neutral-800">
                   Project Manifesto
                 </div>
               </Link>
             </div>
 
-           
             <div className="relative w-full">
               {currentPath === "/donate" && (
                 <div className="absolute inset-0 bg-white/10 rounded-full" />
               )}
-              <Link
-                to="/donate"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
+              <Link to="/donate" onClick={() => setIsMobileMenuOpen(false)}>
                 <div className="relative z-10 w-full px-4 py-2 rounded-full hover:bg-neutral-800">
                   Support Us
                 </div>
               </Link>
             </div>
 
-         
             <div className="relative w-full">
               <a
                 href="https://www.rdnystreetwear.com/"

@@ -1,24 +1,10 @@
 import {
-  artist1,
-  artist2,
-  artist3,
-  artist4,
-  artist5,
   artist1txt,
   artist2txt,
   artist3txt,
   artist4txt,
   artist5txt,
-  painting1,
-  painting1a,
-  painting2,
-  painting2a,
-  painting3,
-  painting3a,
-  painting4,
-  painting4a,
-  painting5,
-  painting5a,
+
 } from "../assets/images";
 import { Link } from "react-router-dom";
 
@@ -34,11 +20,10 @@ const ArtistComp = () => {
         </div>
 
         <div className="artists-imgs grid grid-cols-2 sm:grid-cols-3 gap-x-6 sm:gap-x-10 lg:gap-x-20 gap-y-20 lg:gap-y-30 mt-20 justify-items-center">
-          {/* Artist 1 */}
           <div className="relative w-36 xs:w-44 sm:w-48 md:w-56 lg:w-84 group">
             <Link to="/kazymyr">
               <img
-                src={artist1}
+                src="https://ik.imagekit.io/shadows/Shadows-project/artist1.png"
                 alt="Artist 1"
                 className="w-full object-contain"
               />
@@ -55,16 +40,23 @@ const ArtistComp = () => {
               }}
             />
             <div className="absolute -bottom-[11%] left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out flex -space-x-6 z-10 pointer-events-none">
-              <img src={painting1} alt="" className="w-35 rotate-[-8deg]" />
-              <img src={painting1a} alt="" className="w-35 rotate-[8deg]" />
+              <img
+                src="https://ik.imagekit.io/shadows/Shadows-project/painting1pop.png"
+                alt=""
+                className="w-35 rotate-[-8deg]"
+              />
+              <img
+                src="https://ik.imagekit.io/shadows/Shadows-project/painting1apop.png"
+                alt=""
+                className="w-35 rotate-[8deg]"
+              />
             </div>
           </div>
 
-          {/* Artist 2 */}
           <div className="relative w-36 xs:w-44 sm:w-48 md:w-56 lg:w-84 group">
             <Link to="/davyd">
               <img
-                src={artist2}
+                src="https://ik.imagekit.io/shadows/Shadows-project/artist2.png"
                 alt="Artist 2"
                 className="w-full object-contain"
               />
@@ -81,16 +73,23 @@ const ArtistComp = () => {
               }}
             />
             <div className="absolute -bottom-[11%] left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out flex -space-x-6 z-10 pointer-events-none">
-              <img src={painting2} alt="" className="w-35 rotate-[-8deg]" />
-              <img src={painting2a} alt="" className="w-35 rotate-[8deg]" />
+              <img
+                src="https://ik.imagekit.io/shadows/Shadows-project/painting2pop.png"
+                alt=""
+                className="w-35 rotate-[-8deg]"
+              />
+              <img
+                src="https://ik.imagekit.io/shadows/Shadows-project/painting2apop.png"
+                alt=""
+                className="w-35 rotate-[8deg]"
+              />
             </div>
           </div>
 
-          {/* Artist 3 */}
           <div className="relative w-36 xs:w-44 sm:w-48 md:w-56 lg:w-84 group">
             <Link to="/ripyn">
               <img
-                src={artist3}
+                src="https://ik.imagekit.io/shadows/Shadows-project/artist3.png"
                 alt="Artist 3"
                 className="w-full object-contain"
               />
@@ -107,16 +106,23 @@ const ArtistComp = () => {
               }}
             />
             <div className="absolute -bottom-[11%] left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out flex -space-x-6 z-10 pointer-events-none">
-              <img src={painting3} alt="" className="w-35 rotate-[-8deg]" />
-              <img src={painting3a} alt="" className="w-35 rotate-[8deg]" />
+              <img
+                src="https://ik.imagekit.io/shadows/Shadows-project/painting3pop.png"
+                alt=""
+                className="w-35 rotate-[-8deg]"
+              />
+              <img
+                src="https://ik.imagekit.io/shadows/Shadows-project/painting3apop.png"
+                alt=""
+                className="w-35 rotate-[8deg]"
+              />
             </div>
           </div>
 
-          {/* Artist 4 */}
           <div className="relative w-36 xs:w-44 sm:w-48 md:w-56 lg:w-84 group">
             <Link to="/exter">
               <img
-                src={artist4}
+                src="https://ik.imagekit.io/shadows/Shadows-project/artist4.png"
                 alt="Artist 4"
                 className="w-full object-contain"
               />
@@ -133,16 +139,23 @@ const ArtistComp = () => {
               }}
             />
             <div className="absolute -bottom-[11%] left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out flex -space-x-6 z-10 pointer-events-none">
-              <img src={painting4} alt="" className="w-35 rotate-[-8deg]" />
-              <img src={painting4a} alt="" className="w-35 rotate-[8deg]" />
+              <img
+                src="https://ik.imagekit.io/shadows/Shadows-project/painting4pop.png"
+                alt=""
+                className="w-35 rotate-[-8deg]"
+              />
+              <img
+                src="https://ik.imagekit.io/shadows/Shadows-project/painting4apop.png"
+                alt=""
+                className="w-35 rotate-[8deg]"
+              />
             </div>
           </div>
 
-          {/* Artist 5 */}
           <div className="relative w-36 xs:w-44 sm:w-48 md:w-56 lg:w-84 group">
             <Link to="/mariia">
               <img
-                src={artist5}
+                src="https://ik.imagekit.io/shadows/Shadows-project/artist5.png"
                 alt="Artist 5"
                 className="w-full object-contain"
               />
@@ -159,13 +172,20 @@ const ArtistComp = () => {
               }}
             />
             <div className="absolute -bottom-[11%] left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out flex -space-x-6 z-10 pointer-events-none">
-              <img src={painting5} alt="" className="w-35 rotate-[-8deg]" />
-              <img src={painting5a} alt="" className="w-35 rotate-[8deg]" />
+              <img
+                src="https://ik.imagekit.io/shadows/Shadows-project/painting5pop.png"
+                alt=""
+                className="w-35 rotate-[-8deg]"
+              />
+              <img
+                src="https://ik.imagekit.io/shadows/Shadows-project/painting5apop.png"
+                alt=""
+                className="w-35 rotate-[8deg]"
+              />
             </div>
           </div>
         </div>
 
-        {/* Desktop Button */}
         <div className="hidden md:block">
           <div
             className="absolute mt-10 transition-all duration-300"
@@ -175,17 +195,26 @@ const ArtistComp = () => {
             }}
           >
             <Link to="/manifesto">
-              <button className="rounded-full border-2 border-white flex items-center justify-center cursor-pointer italic text-2xl lg:text-3xl px-10 lg:px-15 py-4 lg:py-5 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
+              <button
+                className="rounded-full border-2 border-white flex items-center justify-center cursor-pointer italic text-2xl lg:text-3xl px-10 lg:px-15 py-4 lg:py-5 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    focus:text-white
+    active:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    active:text-white"
+              >
                 HOMEPAGE
               </button>
             </Link>
           </div>
         </div>
 
-        {/* Mobile Button */}
         <div className="block md:hidden mt-20 text-center">
           <Link to="/manifesto">
-            <button className="rounded-full border-2 border-white italic text-xl px-10 py-4 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
+            <button
+              className="rounded-full border-2 border-white italic text-xl px-10 py-4 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    focus:text-white
+    active:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    active:text-white"
+            >
               HOMEPAGE
             </button>
           </Link>

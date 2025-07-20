@@ -2,9 +2,7 @@ const DatabaseComp = () => {
   return (
     <div className="database-wrap flex flex-col items-center bg-[#171717] text-white px-4">
       <div className="database max-w-7xl w-full items-center mt-10 lg:mt-15">
-        {/* Heading and Buttons (always stacked vertically) */}
         <div className="database-heading-btn flex flex-col items-end">
-          {/* Heading */}
           <div className="database-heading text-right italic font-light w-full">
             <h1
               className="
@@ -24,7 +22,6 @@ const DatabaseComp = () => {
             </h1>
           </div>
 
-          {/* Buttons (stacked) */}
           <div className="database-btn flex flex-col items-end gap-4 mt-10 w-full">
             <button
               className="
@@ -36,6 +33,10 @@ const DatabaseComp = () => {
                 px-6 xs:px-10 md:px-15
                 py-4 md:py-5
                 font-light
+                hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    focus:text-white
+    active:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    active:text-white
               "
               onClick={() => window.open("https://forms.gle/7tHM7hSF3nHcUnbGA")}
             >
@@ -52,7 +53,16 @@ const DatabaseComp = () => {
                 px-6 xs:px-10 md:px-15
                 py-4 md:py-5
                 font-light
+                hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    focus:text-white
+    active:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    active:text-white
               "
+              onClick={() =>
+                window.open(
+                  "https://docs.google.com/spreadsheets/d/1ujP1yZdNV4lQl7lksxq0OwHYx4zExI7CZBtEPitnVPs/edit?usp=sharing"
+                )
+              }
             >
               SEE THE&nbsp;
               <span className="not-italic font-normal">FULL DATABASE</span>
@@ -60,7 +70,6 @@ const DatabaseComp = () => {
           </div>
         </div>
 
-        {/* Chart */}
         <div className="database-chart mt-10 mb-20">
           <h1
             className="
@@ -76,7 +85,6 @@ const DatabaseComp = () => {
             DATABASE
           </h1>
 
-          {/* Responsive iframe */}
           <div
             className="w-full"
             style={{ height: "0", paddingBottom: "75%", position: "relative" }}

@@ -156,7 +156,7 @@ const Navbar = () => {
                   Join Us
                 </button>
               </Link>
-              <Link to="/bank-information" className="w-full">
+              <Link to="/donate" className="w-full">
                 <button className="w-full px-6 py-2 bg-black text-white rounded-full text-lg cursor-pointer transition-colors duration-300 hover:bg-gray-700">
                   Donate
                 </button>

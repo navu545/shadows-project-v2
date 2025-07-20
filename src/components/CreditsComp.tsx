@@ -20,7 +20,7 @@ const CreditsComp = () => {
   return (
     <div className="credits-wrapper flex flex-col items-center bg-[#171717] text-white px-4">
       <div className="credits max-w-7xl mt-10 lg:mt-15 mb-20 w-full">
-        {/* Heading */}
+     
         <div className="credits-heading text-right italic font-light">
           <h1
             className="
@@ -38,7 +38,7 @@ const CreditsComp = () => {
           </h1>
         </div>
 
-        {/* Credits List */}
+      
         <div className="credit-details flex flex-col justify-between mt-10 lg:mt-15">
           <div className="flex flex-col space-y-2 w-full">
             {credits.map(({ label, name }) => (
@@ -73,7 +73,7 @@ const CreditsComp = () => {
           </div>
         </div>
 
-        {/* Partners */}
+        
         <div
           className="
   partners flex flex-col
@@ -104,7 +104,7 @@ const CreditsComp = () => {
           </div>
           <div
             className="
-    partners-img flex flex-wrap justify-center lg:justify-start items-center gap-4 lg:gap-7
+    partners-img flex flex-wrap justify-center lg:justify-start items-center gap-4 lg:gap-5
   "
           >
             <img
@@ -135,7 +135,7 @@ const CreditsComp = () => {
           </div>
         </div>
 
-        {/* Thank You */}
+
         <div className="thankyou italic font-light text-center mt-10">
           <h1
             className="

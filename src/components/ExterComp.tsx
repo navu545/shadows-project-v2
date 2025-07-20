@@ -1,6 +1,4 @@
 import {
-  exter,
-  diary,
   resource1,
   resource2,
   resource3,
@@ -11,9 +9,7 @@ const ExterComp = () => {
   return (
     <div className="Exter-wrap flex flex-col items-center bg-[#171717]">
       <div className="Exter max-w-7xl items-center mb-10 overflow-hidden px-5">
-        {/* IMAGE & HEADING */}
         <div className="Exter-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_45%] gap-10 lg:gap-25">
-          {/* Heading first on small screens */}
           <div className="Exter-heading order-1 lg:order-2 mb-10 lg:mb-0">
             <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
               ALEXANDRA <span className="not-italic font-normal">EXTER</span>
@@ -23,13 +19,15 @@ const ExterComp = () => {
             </p>
           </div>
 
-          {/* Image below heading on mobile */}
           <div className="exter-img order-2 lg:order-1">
-            <img src={exter} alt="Exter" className="w-full" />
+            <img
+              src="https://ik.imagekit.io/shadows/Shadows-project/exter.png"
+              alt="Exter"
+              className="w-full"
+            />
           </div>
         </div>
 
-        {/* MAIN TEXT */}
         <div className="Exter-text text-lg xs:text-xl sm:text-2xl mb-10 text-justify">
           <p>
             Oleksandra Exter was one of Ukraine’s most influential modernist
@@ -82,12 +80,14 @@ const ExterComp = () => {
           </p>
         </div>
 
-        {/* DIARY IMAGE */}
         <div className="diary-img">
-          <img src={diary} alt="Diary" className="w-full" />
+          <img
+            src="https://ik.imagekit.io/shadows/Shadows-project/diary.png"
+            alt="Diary"
+            className="w-full"
+          />
         </div>
 
-        {/* RESOURCES */}
         <div className="resources flex flex-col items-center justify-center mt-10 mb-15">
           <div className="resources-heading text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-light italic mb-5 text-center">
             <h1>
@@ -101,10 +101,14 @@ const ExterComp = () => {
           </div>
         </div>
 
-        {/* BACK TO ARTISTS */}
         <div className="back-to-artists mt-10 text-center">
           <Link to="/artists">
-            <button className="rounded-full border-2 border-white flex items-center justify-center cursor-pointer italic text-xl sm:text-2xl lg:text-3xl px-6 sm:px-10 lg:px-15 py-3 sm:py-4 lg:py-5 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
+            <button
+              className="rounded-full border-2 border-white flex items-center justify-center cursor-pointer italic text-xl sm:text-2xl lg:text-3xl px-6 sm:px-10 lg:px-15 py-3 sm:py-4 lg:py-5 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    focus:text-white
+    active:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    active:text-white"
+            >
               ALL&nbsp; <span className="not-italic font-normal">ARTISTS</span>
             </button>
           </Link>

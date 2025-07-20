@@ -6,14 +6,14 @@ import Contacts from "../components/Contacts";
 
 const About = () => {
   return (
-    
-      <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
-        <Navbar />
+    <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
+      <Navbar />
+      <div className="flex-grow">
         <Aboutnew />
         <Contacts />
-        <Footer />
       </div>
-   
+      <Footer />
+    </div>
   );
 };
 

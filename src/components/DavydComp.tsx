@@ -1,6 +1,4 @@
 import {
-  davyd,
-  diary,
   resource1,
   resource2,
   resource3,
@@ -12,9 +10,7 @@ const DavydComp = () => {
   return (
     <div className="Davyd-wrap flex flex-col items-center bg-[#171717]">
       <div className="Davyd max-w-7xl items-center mb-10 overflow-hidden px-5">
-        {/* IMAGE & HEADING SECTION */}
         <div className="davyd-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_40%] gap-10 lg:gap-25">
-          {/* Heading first on small screens */}
           <div className="Davyd-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <div>
               <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
@@ -25,19 +21,21 @@ const DavydComp = () => {
                 - 1967)
               </p>
             </div>
-            {/* Arrow hidden below lg */}
+
             <div className="hidden lg:block absolute top-[37%] right-[35%]">
               <img src={davydArrow} className="scale-150" alt="Arrow" />
             </div>
           </div>
 
-          {/* Image below heading on mobile */}
           <div className="davyd-img order-2 lg:order-1">
-            <img src={davyd} alt="Davyd Burliuk" className="w-full" />
+            <img
+              src="https://ik.imagekit.io/shadows/Shadows-project/davyd.png"
+              alt="Davyd Burliuk"
+              className="w-full"
+            />
           </div>
         </div>
 
-        {/* MAIN TEXT */}
         <div className="Davyd-text text-lg xs:text-xl sm:text-2xl mb-10 text-justify">
           <p>
             Davyd Burliuk is often celebrated as the “father of Russian
@@ -66,12 +64,14 @@ const DavydComp = () => {
           </p>
         </div>
 
-        {/* DIARY IMAGE */}
         <div className="diary-img">
-          <img src={diary} alt="Diary" className="w-full" />
+          <img
+            src="https://ik.imagekit.io/shadows/Shadows-project/diary.png"
+            alt="Diary"
+            className="w-full"
+          />
         </div>
 
-        {/* SECOND TEXT BLOCK */}
         <div className="Davyd-second-text text-lg xs:text-xl sm:text-2xl text-justify mt-10 mb-25">
           <p>
             It is no surprise that Burliuk’s Cossack heritage and his Ukrainian
@@ -104,7 +104,6 @@ const DavydComp = () => {
           </p>
         </div>
 
-        {/* RESOURCES SECTION */}
         <div className="resources flex flex-col items-center justify-center mb-15">
           <div className="resources-heading text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-light italic mb-5 text-center">
             <h1>
@@ -118,10 +117,14 @@ const DavydComp = () => {
           </div>
         </div>
 
-        {/* BACK TO ARTISTS BUTTON */}
         <div className="back-to-artists mt-10 text-center">
           <Link to="/artists">
-            <button className="rounded-full border-2 border-white flex items-center justify-center cursor-pointer italic text-xl sm:text-2xl lg:text-3xl px-6 sm:px-10 lg:px-15 py-3 sm:py-4 lg:py-5 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
+            <button
+              className="rounded-full border-2 border-white flex items-center justify-center cursor-pointer italic text-xl sm:text-2xl lg:text-3xl px-6 sm:px-10 lg:px-15 py-3 sm:py-4 lg:py-5 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    focus:text-white
+    active:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    active:text-white"
+            >
               ALL&nbsp; <span className="not-italic font-normal">ARTISTS</span>
             </button>
           </Link>

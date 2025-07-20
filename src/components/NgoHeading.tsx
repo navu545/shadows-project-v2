@@ -25,7 +25,10 @@ const NgoHeading: React.FunctionComponent<HeaderProps> = ({ scroll }) => {
               destruction by Russia.
             </p>
             <button
-              className="px-12 py-3 mt-2 bg-black text-white rounded-full text-m cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white"
+              className="px-12 py-3 mt-2 bg-black text-white rounded-full text-m cursor-pointer transition-all duration-300 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    focus:text-white
+    active:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    active:text-white"
               onClick={scroll}
             >
               Support us

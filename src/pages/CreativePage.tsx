@@ -6,14 +6,14 @@ import CreativeComp from "../components/CreativeComp";
 
 const Creativepage = () => {
   return (
-   
-      <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
-        <Navbar />
+    <div className="font-inter min-h-screen flex flex-col">
+      <Navbar />
+      <div className="flex-grow">
         <CreativeComp />
         <Contacts />
-        <Footer />
       </div>
-  
+      <Footer />
+    </div>
   );
 };
 

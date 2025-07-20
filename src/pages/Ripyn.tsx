@@ -1,15 +1,18 @@
-import NavbarTwo from "../components/Navbar2"
-import RipynComp from "../components/RipynComp"
-import Footer from "../components/Footer"
+import NavbarTwo from "../components/Navbar2";
+import RipynComp from "../components/RipynComp";
+import Footer from "../components/Footer";
 
 const Ripyn = () => {
   return (
-    <div>
-      <NavbarTwo/>
-      <RipynComp/>
-      <Footer/>
-    </div>
-  )
-}
+    <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
+      <NavbarTwo />
+      <div className="flex-grow">
+        <RipynComp />
+      </div>
 
-export default Ripyn
+      <Footer />
+    </div>
+  );
+};
+
+export default Ripyn;

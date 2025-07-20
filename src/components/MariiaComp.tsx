@@ -1,20 +1,11 @@
-import {
-  mariia,
-  mariia2,
-  resource1,
-  resource2,
-  resource3,
-  mariiaArrow,
-} from "../assets/images";
+import { resource1, resource2, resource3, mariiaArrow } from "../assets/images";
 import { Link } from "react-router-dom";
 
 const MariiaComp = () => {
   return (
     <div className="Mariia-wrap flex flex-col items-center bg-[#171717]">
       <div className="Mariia max-w-7xl items-center mb-10 overflow-hidden px-5">
-        {/* IMAGE & HEADING SECTION */}
         <div className="mariia-img-heading mt-20 mb-15 grid lg:grid-cols-[45%_55%] gap-10 lg:gap-25">
-          {/* Heading first on small screens */}
           <div className="Mariia-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <div>
               <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
@@ -25,19 +16,21 @@ const MariiaComp = () => {
                 Born in Havrontsi, Ukraine (1858 - 1884)
               </p>
             </div>
-            {/* Arrow hidden below lg */}
+
             <div className="hidden lg:block absolute top-[40%] right-[45%]">
               <img src={mariiaArrow} className="scale-140" alt="Arrow" />
             </div>
           </div>
 
-          {/* Image below heading on mobile */}
           <div className="mariia-img order-2 lg:order-1">
-            <img src={mariia} alt="Mariia Bashkirtseva" className="w-full" />
+            <img
+              src="https://ik.imagekit.io/shadows/Shadows-project/mariia.png"
+              alt="Mariia Bashkirtseva"
+              className="w-full"
+            />
           </div>
         </div>
 
-        {/* MAIN TEXT */}
         <div className="Mariia-text text-lg xs:text-xl sm:text-2xl mb-10 text-justify">
           <p>
             An artist with a very gentle but strong soul, she always wanted to
@@ -95,12 +88,14 @@ const MariiaComp = () => {
           </p>
         </div>
 
-        {/* DIARY IMAGE */}
         <div className="diary-img">
-          <img src={mariia2} alt="Mariia Diary" className="w-full" />
+          <img
+            src="https://ik.imagekit.io/shadows/Shadows-project/mariia2.png"
+            alt="Mariia Diary"
+            className="w-full"
+          />
         </div>
 
-        {/* RESOURCES SECTION */}
         <div className="resources flex flex-col items-center justify-center mb-15 mt-10">
           <div className="resources-heading text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-light italic mb-5 text-center">
             <h1>
@@ -114,10 +109,14 @@ const MariiaComp = () => {
           </div>
         </div>
 
-        {/* BACK TO ARTISTS BUTTON */}
         <div className="back-to-artists mt-10 text-center">
           <Link to="/artists">
-            <button className="rounded-full border-2 border-white flex items-center justify-center cursor-pointer italic text-xl sm:text-2xl lg:text-3xl px-6 sm:px-10 lg:px-15 py-3 sm:py-4 lg:py-5 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white">
+            <button
+              className="rounded-full border-2 border-white flex items-center justify-center cursor-pointer italic text-xl sm:text-2xl lg:text-3xl px-6 sm:px-10 lg:px-15 py-3 sm:py-4 lg:py-5 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    focus:text-white
+    active:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
+    active:text-white"
+            >
               ALL&nbsp; <span className="not-italic font-normal">ARTISTS</span>
             </button>
           </Link>

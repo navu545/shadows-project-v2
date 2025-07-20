@@ -1,12 +1,6 @@
 import Art3 from "./Art3";
 import {
   curvedArrow,
-  artistInfoLink,
-  databaseLink,
-  researchLink,
-  merchLink,
-  digital1,
-  digital2,
 } from "../assets/images";
 import { Link } from "react-router-dom";
 
@@ -40,7 +34,6 @@ const CampaignComp = () => {
         </div>
 
         <div className="background-features-wrap flex flex-col lg:flex-row w-full mt-12 mb-10 xxs:mb-10 lg:mb-40 border-t border-gray-600 md:gap-y-5 xl:mb-20 ">
-  
           <div className="background-wrap w-full lg:w-[70%] lg:pr-8 mt-5 text-justify">
             <div className="flex items-center mb-5">
               <h1 className="text-md font-semibold">
@@ -71,7 +64,6 @@ const CampaignComp = () => {
             </div>
           </div>
 
-       
           <div className="features-wrap w-full lg:w-[40%] flex flex-col justify-between relative mt-5">
             <div className="hidden md:block flex-col space-y-2 mb-6 w-full">
               {features.map(({ label, name }) => (
@@ -87,7 +79,6 @@ const CampaignComp = () => {
               ))}
             </div>
 
-            {/* Arrow + Explore text */}
             <div className="hidden lg:block absolute top-[60%] left-[60%] sm:left-[68%] lg:left-[75%] xl:top-[45%]">
               <img src={curvedArrow} alt="Explore Arrow" className="h-80" />
             </div>
@@ -97,20 +88,17 @@ const CampaignComp = () => {
           </div>
         </div>
 
-        {/* Mobile-only headline for Features */}
         <div className="block md:hidden w-full mb-6 text-xl font-semibold border-b border-gray-600 pb-2">
           ⬤&nbsp;&nbsp;&nbsp;FEATURES
         </div>
 
-        {/* Campaign Cards */}
         <div className="campaign-links flex flex-wrap justify-center gap-6 mt-8 mb-20 text-justify xl:scale-104">
-          {/* Card 1 */}
           <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[31%]">
             <h2 className="text-2xl sm:text-3xl mb-4 text-center">
               ARTIST INFORMATION
             </h2>
             <img
-              src={artistInfoLink}
+              src="https://ik.imagekit.io/shadows/Shadows-project/artistInfoLink.png"
               alt="Artist Info"
               className="mb-4 mx-auto scale-100 xs:scale-90 sm:scale-100"
             />
@@ -124,13 +112,12 @@ const CampaignComp = () => {
             </Link>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[31%]">
             <h2 className="text-2xl sm:text-3xl mb-4 text-center">
               PUBLIC DATABASE
             </h2>
             <img
-              src={databaseLink}
+              src="https://ik.imagekit.io/shadows/Shadows-project/databaseLink.png"
               alt="Public Database"
               className="mb-4 mx-auto"
             />
@@ -144,12 +131,15 @@ const CampaignComp = () => {
             </Link>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[31%]">
             <h2 className="text-2xl sm:text-3xl mb-6 text-center">
               RESEARCH REPORT
             </h2>
-            <img src={researchLink} alt="Research" className="mb-4 xs:mb-0 md:mb-4 mx-auto scale-110 xs:scale-110 sm:scale-130 " />
+            <img
+              src="https://ik.imagekit.io/shadows/Shadows-project/researchLink.png"
+              alt="Research"
+              className="mb-4 xs:mb-0 md:mb-4 mx-auto scale-110 xs:scale-110 sm:scale-130 "
+            />
             <p className="text-base mb-4">
               Read and share the findings of our investigative research paper
               where we expose Russia’s disinformation tactics online in the
@@ -160,12 +150,15 @@ const CampaignComp = () => {
             </Link>
           </div>
 
-          {/* Card 4 */}
           <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[35%]">
             <h2 className="text-2xl sm:text-3xl mb-4 text-center">
               ARTIVISM COLLECTION
             </h2>
-            <img src={merchLink} alt="Artivism" className="mb-4 mx-auto" />
+            <img
+              src="https://ik.imagekit.io/shadows/Shadows-project/merchLink.png"
+              alt="Artivism"
+              className="mb-4 mx-auto"
+            />
             <p className="text-base mb-4">
               Together with Ukrainian streetwear brand RDNY, we’ve launched
               Artivism — a limited-edition collection inspired by stolen
@@ -183,19 +176,18 @@ const CampaignComp = () => {
             </a>
           </div>
 
-          {/* Card 5 */}
           <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[35%]">
             <h2 className="text-2xl sm:text-3xl mb-20 text-center">
               THE DIGITAL CAMPAIGN
             </h2>
             <div className="relative mb-4 h-48 scale-120 sm:scale-100 md:scale-120">
               <img
-                src={digital1}
+                src="https://ik.imagekit.io/shadows/Shadows-project/digital1.png"
                 alt="Digital 1"
                 className="absolute w-full h-full object-contain z-10 right-[50px] top-[8px]"
               />
               <img
-                src={digital2}
+                src="https://ik.imagekit.io/shadows/Shadows-project/digital2.png"
                 alt="Digital 2"
                 className="absolute w-full h-full object-contain left-[35px]"
               />
@@ -216,7 +208,6 @@ const CampaignComp = () => {
           </div>
         </div>
 
-        {/* Final heading */}
         <div className="ending-heading text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-16">
           <h1>
             Join us in defending Ukraine’s cultural front.

@@ -1,15 +1,12 @@
-import {
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
-import {useEffect, useState } from "react";
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Loader from "./components/Loader/Loader";
 import LoaderBlack from "./components/Loader/LoaderBlack";
-import AnimatedRoutes from "./AnimatedRoutes"
+import AnimatedRoutes from "./AnimatedRoutes";
 
 const blackLoaderPaths = [
   "/campaign",
-  "/campaignHome",
+  "/manifesto",
   "/artists",
   "/kazymyr",
   "/davyd",
@@ -77,7 +74,6 @@ const AppContent = () => {
     </div>
   );
 };
-
 
 const App = () => (
   <Router>

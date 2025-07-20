@@ -6,17 +6,14 @@ import Contacts from "../components/Contacts";
 
 const Bank = () => {
   return (
-    
-      <div className="font-inter flex flex-col ios-footer-padding">
-        <Navbar />
-        <div className="flex-grow min-h-screen">
-          <BankComp />
-        </div>
-
-        <Contacts />
-        <Footer />
+    <div className="font-inter flex flex-col min-h-screen ios-footer-padding">
+      <Navbar />
+      <div className="flex-grow min-h-screen">
+        <BankComp />
       </div>
-   
+      <Contacts />
+      <Footer />
+    </div>
   );
 };
 

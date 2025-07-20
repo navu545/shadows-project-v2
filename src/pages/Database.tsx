@@ -4,13 +4,13 @@ import Footer from "../components/Footer"
 
 const Database = () => {
   return (
-   
-      <div>
-        <NavbarTwo />
+    <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
+      <NavbarTwo />
+      <div className="flex-grow">
         <DatabaseComp />
-        <Footer />
       </div>
-  
+      <Footer />
+    </div>
   );
 }
 

@@ -3,9 +3,9 @@ import CreditsComp from "../components/CreditsComp";
 import Footer from "../components/Footer";
 const Credits = () => {
   return (
-    <div>
+    <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
       <NavbarTwo />
-      <div className="flex-grow min-h-screen bg-[#171717]">
+      <div className="flex-grow bg-[#171717]">
         <CreditsComp />
       </div>
       <Footer />
