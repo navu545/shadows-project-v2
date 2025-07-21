@@ -3,10 +3,9 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import CreativeComp from "../components/CreativeComp";
 
-
 const Creativepage = () => {
   return (
-    <div className="font-inter min-h-screen flex flex-col">
+    <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
       <Navbar />
       <div className="flex-grow">
         <CreativeComp />
