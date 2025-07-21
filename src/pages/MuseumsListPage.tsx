@@ -13,20 +13,19 @@ const MuseumsListPage = () => {
   }, []);
 
   return (
-   
-      <div className="museums-list-page-container font-inter min-h-screen flex flex-col ios-footer-padding">
-        <Navbar />
-        <div className="museums-list-spacing-1"></div>
-        <MuseumsListHolder />
-        <div className="museums-list-spacing-2"></div>
-        <div className="form-museumslistpage">
-          <Form />
-        </div>
-        <div className="museums-list-spacing-4"></div>
-        <Contacts></Contacts>
-        <Footer />
+    <div className="museums-list-page-container font-inter min-h-screen flex flex-col">
+      <Navbar />
+      <div className="museums-list-spacing-1"></div>
+      <MuseumsListHolder />
+      <div className="museums-list-spacing-2"></div>
+      <div className="form-museumslistpage">
+        <Form />
       </div>
-
+      <div className="museums-list-spacing-4"></div>
+      <Contacts></Contacts>
+      <Footer />
+      <div className="ios-footer-padding w-full bg-black"></div>
+    </div>
   );
 };
 export default MuseumsListPage;

@@ -5,13 +5,14 @@ import CreativeComp from "../components/CreativeComp";
 
 const Creativepage = () => {
   return (
-    <div className="font-inter min-h-screen flex flex-col ios-footer-padding">
+    <div className="font-inter min-h-screen flex flex-col">
       <Navbar />
       <div className="flex-grow">
         <CreativeComp />
         <Contacts />
       </div>
       <Footer />
+      <div className="ios-footer-padding w-full bg-black"></div>
     </div>
   );
 };

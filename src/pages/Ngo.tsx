@@ -25,7 +25,7 @@ const Home = () => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="home-page font-inter min-h-screen flex flex-col ios-footer-padding">
+      <div className="home-page font-inter min-h-screen flex flex-col">
         <Navbar />
 
         <NgoHeading scroll={scrollToForm} />
@@ -45,6 +45,7 @@ const Home = () => {
         <Contacts />
 
         <Footer />
+        <div className="ios-footer-padding w-full bg-black"></div>
       </div>
     </motion.div>
   );

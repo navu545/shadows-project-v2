@@ -7,13 +7,14 @@ import Contacts from "../components/Contacts";
 const Home = () => {
 
   return (
-    <div className="font-inter min-h-screen flex flex-col ios-footer-padding fix-ipad-chrome-footer">
+    <div className="font-inter min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
         <Homeheading />
         <Contacts />
       </main>
       <Footer />
+      <div className="ios-footer-padding w-full bg-black"></div>
     </div>
   );
 };
