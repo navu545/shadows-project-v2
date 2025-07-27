@@ -197,7 +197,7 @@ const ArtistComp = () => {
                 <img
                   src={artist.artist}
                   alt={artist.artistAlt}
-                  className={`relative z-20 w-full h-full object-contain transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] group-hover:scale-[1.02] ${getTransformClass(
+                  className={`relative z-20 w-full h-full scale-101 object-contain transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] group-hover:scale-[1.02] ${getTransformClass(
                     index,
                     "front"
                   )}`}
