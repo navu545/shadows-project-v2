@@ -79,7 +79,7 @@ const CreditsComp = () => {
     justify-center
   "
         >
-          {/* Heading */}
+          
           <div
             className="
       partners-heading italic font-light text-center xl:text-left
@@ -158,27 +158,27 @@ const CreditsComp = () => {
             <div className="xl:hidden flex flex-wrap justify-center gap-4 lg:gap-4">
               <img
                 src={credit1}
-                className="w-14 h-14 xs:w-16 xs:h-16 sm:w-20 sm:h-20 object-contain mr-2 mt-1"
+                className="w-16 h-16 xs:w-16 xs:h-16 sm:w-20 sm:h-20 object-contain mr-2 mt-1"
                 alt=""
               />
               <img
                 src={credit2}
-                className="w-16 h-16 xs:w-18 xs:h-18 sm:w-22 sm:h-22 object-contain mr-2"
+                className="w-18 h-18 xs:w-18 xs:h-18 sm:w-22 sm:h-22 object-contain mr-2"
                 alt=""
               />
               <img
                 src={credit3}
-                className="w-16 h-16 xs:w-17 xs:h-17 sm:w-21 sm:h-21 object-contain mr-2 mt-1"
+                className="w-17 h-17 xs:w-17 xs:h-17 sm:w-21 sm:h-21 object-contain mr-2 mt-1"
                 alt=""
               />
               <img
                 src={credit4}
-                className="w-18 h-18 xs:w-20 xs:h-20 sm:w-23 sm:h-23 object-contain"
+                className="w-20 h-20 xs:w-20 xs:h-20 sm:w-23 sm:h-23 object-contain"
                 alt=""
               />
               <img
                 src={credit5}
-                className="w-20 h-20 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
+                className="w-20 h-20 -ml-3 xs:-ml-0 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
                 alt=""
               />
               <img
