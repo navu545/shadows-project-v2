@@ -142,6 +142,9 @@ import credit2 from "./credit2.png";
 import credit3 from "./credit3.png";
 import credit4 from "./credit4.png";
 import credit5 from "./credit5.png";
+import credit6 from "./credit6.png";
+import credit7 from "./credit7.png";
+import credit8 from "./credit8.png";
 import shadowsLogoPng from "./shadowslogoPng.png"
 import artist1txt from "./artist1txt.png";
 import artist2txt from "./artist2txt.png";
@@ -159,10 +162,12 @@ import painting2a from "./painting2apop.png";
 import painting3a from "./painting3apop.png";
 import painting4a from "./painting4apop.png";
 import painting5a from "./painting5apop.png";
+import comingsoonCamp from "./comingsoonCamp.png";
 
 
 
 export {
+  comingsoonCamp,
   painting1,
   painting1a,
   painting2,
@@ -185,6 +190,9 @@ export {
   credit3,
   credit4,
   credit5,
+  credit6,
+  credit7,
+  credit8,
   ripyn,
   mariia2,
   mariiaArrow,

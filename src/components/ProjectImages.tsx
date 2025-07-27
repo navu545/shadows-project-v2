@@ -39,7 +39,7 @@ const ProjectImages = () => {
           src={newhome1}
           alt="Project 1"
           className="w-1/2 h-auto object-cover rounded cursor-pointer"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/campaign")}
         />
         <img
           src={newhome2}

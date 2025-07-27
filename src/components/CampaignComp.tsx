@@ -1,5 +1,6 @@
 import Art3 from "./Art3";
 import {
+  comingsoonCamp,
   curvedArrow,
 } from "../assets/images";
 import { Link } from "react-router-dom";
@@ -93,7 +94,7 @@ const CampaignComp = () => {
         </div>
 
         <div className="campaign-links flex flex-wrap justify-center gap-6 mt-8 mb-20 text-justify xl:scale-104">
-          <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[31%]">
+          <div className="bg-[#2c2d2c] relative text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[31%]">
             <h2 className="text-2xl sm:text-3xl mb-4 text-center">
               ARTIST INFORMATION
             </h2>
@@ -107,9 +108,13 @@ const CampaignComp = () => {
               complied for you to cite and reference on 5 major Ukrainian
               artists.
             </p>
-            <Link to="/artists" className="underline">
+            <Link to="" className="underline"> {/*artists*/}
               → Explore their Biographies
             </Link>
+            <img
+              src={comingsoonCamp}
+              className="absolute top-60 left-0 scale-110 overflow-hidden object-cover"
+            ></img>
           </div>
 
           <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[31%]">
@@ -131,7 +136,7 @@ const CampaignComp = () => {
             </Link>
           </div>
 
-          <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[31%]">
+          <div className="bg-[#2c2d2c] relative text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[31%]">
             <h2 className="text-2xl sm:text-3xl mb-6 text-center">
               RESEARCH REPORT
             </h2>
@@ -148,6 +153,10 @@ const CampaignComp = () => {
             <Link to="#" className="underline">
               → View the Research
             </Link>
+            <img
+              src={comingsoonCamp}
+              className="absolute top-60 left-0 scale-110 overflow-hidden object-cover"
+            ></img>
           </div>
 
           <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[35%]">

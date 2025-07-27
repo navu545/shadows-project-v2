@@ -96,22 +96,31 @@ focus:text-white active:bg-[linear-gradient(to_right,#2597FF,#FFF500)] active:te
           </Link>
 
           <div className="flex justify-center gap-4">
-            {[4, 5, 6].map((num, idx) => (
-              <motion.img
-                key={num}
-                src={`https://ik.imagekit.io/shadows/Shadows-project/campaign${num}.png`}
-                alt=""
-                className="w-[28vw] xxs:w-[24vw]"
-                initial={{ opacity: 0.3 }}
-                animate={{ opacity: [0.3, 1, 0.3] }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: idx * 0.3,
-                }}
-              />
-            ))}
+            {[4, 5, 6].map((num, idx) => {
+              const customClass =
+                num === 4
+                  ? "scale-85 -rotate-7"
+                  : num === 5
+                  ? "scale-90 rotate-4"
+                  : "";
+
+              return (
+                <motion.img
+                  key={num}
+                  src={`https://ik.imagekit.io/shadows/Shadows-project/campaign${num}.png`}
+                  alt=""
+                  className={`w-[28vw] xxs:w-[24vw] ${customClass}`}
+                  initial={{ opacity: 0.3 }}
+                  animate={{ opacity: [0.3, 1, 0.3] }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: idx * 0.3,
+                  }}
+                />
+              );
+            })}
           </div>
         </div>
       ) : (
@@ -182,16 +191,16 @@ focus:text-white active:bg-[linear-gradient(to_right,#2597FF,#FFF500)] active:te
               className="absolute top-[62%] left-[0%] w-[30vw] sm:w-[26vw] cursor-pointer"
             />
             <motion.img
-              src="https://ik.imagekit.io/shadows/Shadows-project/campaign4.png"
+              src="https://ik.imagekit.io/shadows/Shadows-project/campaignHome5.png"
               alt=""
               {...tiltProps}
-              className="absolute -top-[3%] right-[1%] w-[25vw] z-10 cursor-pointer"
+              className="absolute -top-[3%] right-[1%] w-[25vw] z-10 cursor-pointer scale-85 -rotate-7"
             />
             <motion.img
-              src="https://ik.imagekit.io/shadows/Shadows-project/campaign5.png"
+              src="https://ik.imagekit.io/shadows/Shadows-project/campaignHome6.png"
               alt=""
               {...tiltProps}
-              className="absolute top-[30%] -right-[3%] w-[24vw] cursor-pointer"
+              className="absolute top-[30%] -right-[3%] w-[24vw] cursor-pointer scale-90 rotate-4"
             />
             <motion.img
               src="https://ik.imagekit.io/shadows/Shadows-project/campaign6.png"
@@ -221,16 +230,16 @@ focus:text-white active:bg-[linear-gradient(to_right,#2597FF,#FFF500)] active:te
               className="absolute top-[22vw] left-[6vw] w-[19vw] cursor-pointer"
             />
             <motion.img
-              src="https://ik.imagekit.io/shadows/Shadows-project/campaign4.png"
+              src="https://ik.imagekit.io/shadows/Shadows-project/campaignHome5.png"
               alt=""
               {...tiltProps}
-              className="absolute -top-[3vw] right-[4vw] w-[18vw] cursor-pointer"
+              className="absolute -top-[4vw] right-[4vw] w-[18vw] cursor-pointer scale-85 -rotate-7"
             />
             <motion.img
-              src="https://ik.imagekit.io/shadows/Shadows-project/campaign5.png"
+              src="https://ik.imagekit.io/shadows/Shadows-project/campaignHome6.png"
               alt=""
               {...tiltProps}
-              className="absolute top-[7vw] -right-[6vw] w-[15vw] cursor-pointer"
+              className="absolute top-[7vw] -right-[6vw] w-[15vw] cursor-pointer scale-90 rotate-4"
             />
             <motion.img
               src="https://ik.imagekit.io/shadows/Shadows-project/campaign6.png"

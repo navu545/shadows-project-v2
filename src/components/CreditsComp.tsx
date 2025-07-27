@@ -1,4 +1,4 @@
-import { credit1, credit2, credit3, credit4, credit5 } from "../assets/images";
+import { credit1, credit2, credit3, credit4, credit5, credit6, credit7, credit8 } from "../assets/images";
 
 const credits = [
   { label: "⬤\u2003PROJECT ADVISORY", name: "Oksana Semenko" },
@@ -20,7 +20,6 @@ const CreditsComp = () => {
   return (
     <div className="credits-wrapper flex flex-col items-center bg-[#171717] text-white px-4">
       <div className="credits max-w-7xl mt-10 lg:mt-15 mb-20 w-full">
-     
         <div className="credits-heading text-right italic font-light">
           <h1
             className="
@@ -38,7 +37,6 @@ const CreditsComp = () => {
           </h1>
         </div>
 
-      
         <div className="credit-details flex flex-col justify-between mt-10 lg:mt-15">
           <div className="flex flex-col space-y-2 w-full">
             {credits.map(({ label, name }) => (
@@ -73,68 +71,134 @@ const CreditsComp = () => {
           </div>
         </div>
 
-        
         <div
           className="
-  partners flex flex-col
-  lg:flex-row
-  lg:items-center
-  mt-16 lg:mt-20 mb-20 lg:mb-50
-  gap-8 lg:gap-12
-  justify-center
-  
-"
+    partners mt-16 lg:mt-20 mb-20 lg:mb-50
+    flex flex-col xl:grid xl:grid-cols-[auto_1fr] xl:items-start
+    gap-8 xl:gap-12
+    justify-center
+  "
         >
+          {/* Heading */}
           <div
             className="
-    partners-heading italic font-light text-center lg:text-left
-  "
+      partners-heading italic font-light text-center xl:text-left
+    "
           >
             <h1
               className="
-      text-3xl
-      xxxs:text-4xl
-      xs:text-5xl
-      md:text-5xl
-      xl:text-7xl
-    "
+        text-3xl
+        xxxs:text-4xl
+        xs:text-5xl
+        md:text-5xl
+        xl:text-7xl
+      "
             >
               AND OUR <span className="not-italic font-normal">PARTNERS:</span>
             </h1>
           </div>
+
+          
           <div
             className="
-    partners-img flex flex-wrap justify-center lg:justify-start items-center gap-4 lg:gap-5
-  "
+      partners-img flex flex-wrap justify-center xl:justify-start
+      gap-4 lg:gap-5
+      xl:flex-col xl:gap-4 xl:items-start
+    "
           >
-            <img
-              src={credit1}
-              className="w-14 h-14 xs:w-16 xs:h-16 sm:w-20 sm:h-20 object-contain"
-              alt=""
-            />
-            <img
-              src={credit2}
-              className="w-16 h-16 xs:w-18 xs:h-18 sm:w-22 sm:h-22 object-contain"
-              alt=""
-            />
-            <img
-              src={credit3}
-              className="w-16 h-16 xs:w-17 xs:h-17 sm:w-21 sm:h-21 object-contain"
-              alt=""
-            />
-            <img
-              src={credit4}
-              className="w-18 h-18 xs:w-20 xs:h-20 sm:w-23 sm:h-23 object-contain"
-              alt=""
-            />
-            <img
-              src={credit5}
-              className="w-20 h-20 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
-              alt=""
-            />
+            
+            <div className="hidden xl:flex flex-wrap gap-4 xl:gap-5">
+              <img
+                src={credit1}
+                className="w-14 h-14 xs:w-16 xs:h-16 sm:w-20 sm:h-20 object-contain"
+                alt=""
+              />
+              <img
+                src={credit2}
+                className="w-16 h-16 xs:w-18 xs:h-18 sm:w-23 sm:h-22 object-contain -mt-1"
+                alt=""
+              />
+              <img
+                src={credit3}
+                className="w-16 h-16 xs:w-17 xs:h-17 sm:w-21 sm:h-21 object-contain"
+                alt=""
+              />
+              <img
+                src={credit4}
+                className="w-18 h-18 xs:w-20 xs:h-20 sm:w-23 sm:h-23 object-contain -mt-1"
+                alt=""
+              />
+            </div>
+
+            
+            <div className="hidden xl:flex flex-wrap gap-4 xl:gap-2 xl:-ml-4">
+              <img
+                src={credit5}
+                className="w-20 h-20 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
+                alt=""
+              />
+              <img
+                src={credit6}
+                className="w-20 h-20 scale-190 mt-1 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
+                alt=""
+              />
+              <img
+                src={credit7}
+                className="w-20 h-20 scale-115 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
+                alt=""
+              />
+              <img
+                src={credit8}
+                className="w-20 h-20 scale-145 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
+                alt=""
+              />
+            </div>
+
+            
+            <div className="xl:hidden flex flex-wrap justify-center gap-4 lg:gap-4">
+              <img
+                src={credit1}
+                className="w-14 h-14 xs:w-16 xs:h-16 sm:w-20 sm:h-20 object-contain mr-2 mt-1"
+                alt=""
+              />
+              <img
+                src={credit2}
+                className="w-16 h-16 xs:w-18 xs:h-18 sm:w-22 sm:h-22 object-contain mr-2"
+                alt=""
+              />
+              <img
+                src={credit3}
+                className="w-16 h-16 xs:w-17 xs:h-17 sm:w-21 sm:h-21 object-contain mr-2 mt-1"
+                alt=""
+              />
+              <img
+                src={credit4}
+                className="w-18 h-18 xs:w-20 xs:h-20 sm:w-23 sm:h-23 object-contain"
+                alt=""
+              />
+              <img
+                src={credit5}
+                className="w-20 h-20 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
+                alt=""
+              />
+              <img
+                src={credit6}
+                className="w-20 h-20 scale-190 mt-1 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
+                alt=""
+              />
+              <img
+                src={credit7}
+                className="w-20 h-20 scale-115 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
+                alt=""
+              />
+              <img
+                src={credit8}
+                className="w-20 h-20 scale-145 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-
 
         <div className="thankyou italic font-light text-center mt-10">
           <h1
