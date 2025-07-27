@@ -73,7 +73,7 @@ const ProjectImages = () => {
                 className="w-full h-auto object-cover rounded"
                 onClick={() =>
                   i === 0
-                    ? navigate("/")
+                    ? navigate("/campaign")
                     : window.open(
                         "https://graffiti-chronicles.shadowsproject.org/",
                         "_blank"
