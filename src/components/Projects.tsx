@@ -43,19 +43,19 @@ const Projects = () => {
       </h1>
 
       <div className="projects-cards-holder mb-5 xxs:mb-15 place-items-center grid grid-cols-1 sm:grid-cols-2 sm:gap-[30px] lg:grid-cols-3 xl:grid-cols-4 xl:gap-10 xs:gap-y-10 xxs:gap-y-7 ">
-        <div className="scale-90 xxs:scale-100">
+        <div className="scale-90 xxs:scale-100 transition-transform duration-300 hover:scale-[1.03]">
           <ProjectCard />
         </div>
 
-        <div className="scale-90 xxs:scale-100">
+        <div className="scale-90 xxs:scale-100 transition-transform duration-300 hover:scale-[1.03]">
           <ProjectCardTwo {...prjTwo} />
         </div>
 
-        <div className="scale-90 xxs:scale-100">
+        <div className="scale-90 xxs:scale-100 transition-transform duration-300 hover:scale-[1.03]">
           <ProjectCardTwo {...prjThree} />
         </div>
 
-        <div className="scale-90 xxs:scale-100">
+        <div className="scale-90 xxs:scale-100 transition-transform duration-300 hover:scale-[1.03]">
           <ProjectCardTwo {...prjFour} />
         </div>
       </div>

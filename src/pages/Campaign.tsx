@@ -9,17 +9,22 @@ const tiltProps = {
 
 const Campaign = () => {
   const [useSimpleLayout, setUseSimpleLayout] = useState(false);
+  const [isPhonePortrait, setIsPhonePortrait] = useState(false);
   const [isLandscape, setIsLandscape] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
       const height = window.innerHeight;
-      const isPhone = width <= 768;
-      const landscape = width > height;
 
-      setUseSimpleLayout(isPhone || height > width);
-      setIsLandscape(isPhone && landscape);
+      const isPhone = Math.min(width, height) <= 480;
+      const isLandscape = width > height;
+      const isPortraitPhone = isPhone && !isLandscape;
+      const isPortraitTablet = width > 480 && !isLandscape;
+
+      setIsPhonePortrait(isPortraitPhone);
+      setUseSimpleLayout((isPhone && isLandscape) || isPortraitTablet);
+      setIsLandscape(isLandscape);
     };
 
     window.addEventListener("resize", handleResize);
@@ -32,23 +37,89 @@ const Campaign = () => {
   }, []);
 
   useEffect(() => {
-    if (useSimpleLayout && isLandscape) {
+    if ((useSimpleLayout && isLandscape)) {
       document.body.style.overflow = "auto";
     } else {
       document.body.style.overflow = "hidden";
     }
-  }, [useSimpleLayout, isLandscape]);
+  }, [useSimpleLayout, isLandscape, isPhonePortrait]);
 
   return (
     <div
       className={`relative w-full bg-[#171717] ${
-        useSimpleLayout
+        useSimpleLayout || isPhonePortrait
           ? "min-h-screen overflow-auto"
           : "h-screen overflow-hidden"
       }`}
       style={{ zoom: 1.12 }}
     >
-      {useSimpleLayout ? (
+      {isPhonePortrait ? (
+        <div className="relative w-full min-h-screen px-6 py-10 text-white text-center overflow-hidden">
+          <img
+            src="https://ik.imagekit.io/shadows/Shadows-project/campaign1.png"
+            alt=""
+            className="absolute z-11 w-[34vw] rotate-0 scale-120"
+            style={{ top: "-5vh", left: "13%" }}
+          />
+
+          <img
+            src="https://ik.imagekit.io/shadows/Shadows-project/campaign2.png"
+            alt=""
+            className="absolute z-10 w-[30vw] rotate-0 scale-120"
+            style={{ top: "6vh", left: "-8%" }}
+          />
+
+          <img
+            src="https://ik.imagekit.io/shadows/Shadows-project/campaign3.png"
+            alt=""
+            className="absolute z-10 w-[36vw] rotate-12 scale-120"
+            style={{ top: "-7vh", left: "60%" }}
+          />
+
+          <img
+            src="https://ik.imagekit.io/shadows/Shadows-project/campaign4.png"
+            alt=""
+            className="absolute z-11 w-[28vw] -rotate-5 scale-120"
+            style={{ top: "80vh", left: "65%" }}
+          />
+
+          <img
+            src="https://ik.imagekit.io/shadows/Shadows-project/campaign5.png"
+            alt=""
+            className="absolute z-10 w-[32vw] rotate-8 scale-120"
+            style={{ top: "60vh", left: "80%" }}
+          />
+
+          <img
+            src="https://ik.imagekit.io/shadows/Shadows-project/campaign6.png"
+            alt=""
+            className="absolute z-10 w-[38vw] rotate-0 scale-120"
+            style={{ top: "78vh", left: "-9%" }}
+          />
+
+          <div className="relative z-20 mt-48 xxs:mt-[65%] promax:mt-[70%] px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto ">
+            <h1 className="text-left text-2xl xxs:text-2xl promax:text-3xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 italic font-light">
+              OUR&nbsp;&nbsp;
+              <span className="not-italic font-normal">CULTURE</span>
+              &nbsp; HAS&nbsp; BEEN
+              <br />
+              <span className="not-italic font-normal">STOLEN</span> FOR{" "}
+              <span className="not-italic font-normal">TOO LONG.</span>
+            </h1>
+
+            <h1 className="text-left text-2xl xxs:text-2xl promax:text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-light italic mb-6">
+              WE'RE&nbsp;&nbsp; HERE&nbsp;&nbsp; TO&nbsp;&nbsp;{" "}
+              <span className="not-italic font-normal">TAKE IT BACK.</span>
+            </h1>
+
+            <Link to="/manifesto">
+              <button className="w-23 xxs:w-25 xxs:-mt-5 promax:mt-0 xs:w-28 aspect-square rounded-full border-2 border-white text-white italic text-xl flex items-center justify-center mx-auto hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)] focus:text-white active:bg-[linear-gradient(to_right,#2597FF,#FFF500)] active:text-white glow-button">
+                ENTER
+              </button>
+            </Link>
+          </div>
+        </div>
+      ) : useSimpleLayout ? (
         <div
           className={`flex flex-col justify-center items-center text-white px-6 text-center py-10 ${
             isLandscape
@@ -87,10 +158,7 @@ const Campaign = () => {
           </h1>
 
           <Link to="/manifesto">
-            <button
-              className="w-32 aspect-square rounded-full border-2 border-white text-white italic text-xl flex items-center justify-center hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
-focus:text-white active:bg-[linear-gradient(to_right,#2597FF,#FFF500)] active:text-white mb-6"
-            >
+            <button className="w-32 aspect-square rounded-full border-2 border-white text-white italic text-xl flex items-center justify-center hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)] focus:text-white active:bg-[linear-gradient(to_right,#2597FF,#FFF500)] active:text-white mb-6">
               ENTER
             </button>
           </Link>
@@ -125,23 +193,7 @@ focus:text-white active:bg-[linear-gradient(to_right,#2597FF,#FFF500)] active:te
         </div>
       ) : (
         <>
-          <div
-            className="
-              absolute
-              top-[30%]
-              xl:top-[37%]
-              w-full
-              px-5
-              sm:px-0
-              sm:w-auto
-              sm:left-1/2
-              sm:transform
-              sm:-translate-x-1/2
-              text-center
-              text-white
-              sm:text-start
-            "
-          >
+          <div className="absolute top-[30%] xl:top-[37%] w-full px-5 sm:px-0 sm:w-auto sm:left-1/2 sm:transform sm:-translate-x-1/2 text-center text-white sm:text-start">
             <div className="block sm:hidden">
               <h1 className="text-2xl xxs:text-3xl font-light italic mb-4">
                 OUR CULTURE HAS BEEN
@@ -250,48 +302,7 @@ focus:text-white active:bg-[linear-gradient(to_right,#2597FF,#FFF500)] active:te
           </div>
 
           <Link to="/manifesto">
-            <button
-              className="
-                absolute
-                
-                left-1/2
-                top-[65%]
-                xs:top-[62%]
-                sm:top-[65%]
-                md:top-[70%]
-                lg:top-[60%]
-                transform
-                -translate-x-1/2
-                hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
-                hover:text-white
-                focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
-    focus:text-white
-    active:bg-[linear-gradient(to_right,#2597FF,#FFF500)]
-    active:text-white
-                w-30
-                xs:w-36
-                aspect-square
-                rounded-full
-                border-2
-                border-white
-                text-white
-                flex
-                items-center
-                justify-center
-                italic
-                text-lg
-                xs:w-28
-                xs:text-xl
-                sm:w-32
-                md:w-36
-                md:text-2xl
-                lg:left-[79vw]
-                lg:-translate-x-0
-                lg:w-[15vw]
-                cursor-pointer
-                
-              "
-            >
+            <button className="absolute left-1/2 top-[65%] xs:top-[62%] sm:top-[65%] md:top-[70%] lg:top-[60%] transform -translate-x-1/2 hover:bg-[linear-gradient(to_right,#2597FF,#FFF500)] hover:text-white focus:bg-[linear-gradient(to_right,#2597FF,#FFF500)] focus:text-white active:bg-[linear-gradient(to_right,#2597FF,#FFF500)] active:text-white w-30 xs:w-36 aspect-square rounded-full border-2 border-white text-white flex items-center justify-center italic text-lg xs:w-28 xs:text-xl sm:w-32 md:w-36 md:text-2xl lg:left-[79vw] lg:-translate-x-0 lg:w-[15vw] cursor-pointer">
               ENTER
             </button>
           </Link>

@@ -8,7 +8,7 @@ interface MuseumCardProps {
 
 const MuseumCardOne:React.FC<MuseumCardProps> = ({source,msmheading,msmtext}) => {
   return (
-    <div className="museum-card-wrap border-1 border-gray-300 rounded-sm h-81 overflow-hidden w-70">
+    <div className="museum-card-wrap border-1 border-gray-300 rounded-sm h-81 overflow-hidden w-70 transition-transform duration-300 hover:scale-[1.03]">
       <div className="museum-card flex flex-col ">
         <div className="museum-card-img-div h-45 overflow-hidden shadow-xl">
           <img src={source} alt="museum-bw" className="scale-110"></img>

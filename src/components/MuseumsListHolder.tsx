@@ -67,7 +67,7 @@ const MuseumsListHolder = () => {
     pages.push(
       <div
         key={i}
-        className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-[30px] lg:grid-cols-3 xl:grid-cols-4 xl:gap-10 mt-10 mb-15 place-items-center items-start"
+        className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-[30px] lg:grid-cols-3 xl:grid-cols-4 xl:gap-10 mt-10 mb-15 place-items-center items-start "
       >
         {batch}
       </div>

@@ -33,18 +33,17 @@ const ProjectImages = () => {
 
   return (
     <div className="w-full max-w-6xl mx-auto">
-  
       <div className="hidden xs:flex space-x-4">
         <img
           src={newhome1}
           alt="Project 1"
-          className="w-1/2 h-auto object-cover rounded` cursor-pointer"
+          className="w-1/2 h-auto object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-[1.03]"
           onClick={() => navigate("/campaign")}
         />
         <img
           src={newhome2}
           alt="Project 2"
-          className="w-1/2 h-auto object-cover rounded cursor-pointer"
+          className="w-1/2 h-auto object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-[1.03]"
           onClick={() =>
             window.open(
               "https://graffiti-chronicles.shadowsproject.org/",
@@ -54,13 +53,10 @@ const ProjectImages = () => {
         />
       </div>
 
-   
       <div className="relative xs:hidden w-full rounded">
-     
         <div className="pointer-events-none absolute top-0 left-0 h-full w-8 bg-gradient-to-r from-white/90 to-transparent z-10" />
         <div className="pointer-events-none absolute top-0 right-0 h-full w-8 bg-gradient-to-l from-white/90 to-transparent z-10" />
 
-      
         <div
           ref={scrollRef}
           className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth cursor-grab pb-4 scrollbar-hide"
@@ -84,7 +80,6 @@ const ProjectImages = () => {
           ))}
         </div>
 
-     
         <div className="absolute bottom-0 left-0 w-full h-1 bg-gray-200 rounded overflow-hidden">
           <div
             ref={indicatorRef}
