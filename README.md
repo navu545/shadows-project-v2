@@ -1,54 +1,117 @@
-# React + TypeScript + Vite
+# 🎨 Shadows Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast and modern full-stack web app built using **Vite**, **React (TypeScript)**, **Tailwind CSS**, and **Express**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚡️ [Vite](https://vitejs.dev/) — blazing-fast frontend build tool  
+- ⚛️ [React (TypeScript)](https://reactjs.org/) — component-based UI  
+- 💨 [Tailwind CSS](https://tailwindcss.com/) — utility-first styling  
+- 🌐 [Express](https://expressjs.com/) — minimal and flexible Node.js backend  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📁 Folder Structure
+
+```
+.
+├── public/              # Static assets
+├── src/
+│   ├── assets/          # Images, fonts, etc.
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # App views / screens
+│   ├── animatedRoutes.tsx  # Centralized route animation & routing
+│   ├── App.tsx          # Root component
+│   ├── main.tsx         # Entry point
+│   └── index.css        # Tailwind and global styles
+├── server.js            # Express server
+├── index.html           # Main HTML template 
+├── package.json         # Project manifest
+├── package-lock.json    # Dependency lockfile
+├── .eslintrc.js         # ESLint configuration (or .json / .cjs depending on your format)
+├── netlify.toml         # Netlify deployment config
+└── README.md # Project overview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 1. Clone the repo
+
 ```
+git clone https://github.com/navu545/shadows-project-v2.git
+cd shadows-project
+```
+
+### 2. Install dependencies
+
+```
+npm install
+# or
+yarn install
+```
+
+### 3. Run the frontend (Vite)
+
+```
+npm run dev
+# or
+yarn dev
+```
+
+### 4. Run the backend (Express)
+
+```
+node server.js
+```
+
+> Make sure to run both frontend and backend if using them together.
+
+---
+
+## 🧪 Available Scripts
+
+- `dev` — Start development server  
+- `build` — Create a production build  
+- `preview` — Preview the production build  
+- `start` — Run the Express server (`node server.js`)  
+- `format` — Format code (if Prettier is configured)  
+
+---
+
+## 💡 Notes
+
+- Most files are written in TypeScript (`.tsx`).
+- Styling is centralized in `src/index.css`.
+- Routing is handled through `animatedRoutes.tsx` using animated transitions.
+- `server.js` contains backend logic and validation and is located outside `src/`.
+
+---
+
+## 📦 Deployment
+
+You can deploy this app using:
+
+- [Netlify](https://www.netlify.com/)
+- [Render](https://render.com/)
+- Any platform that supports static frontend + Node.js backend
+
+---
+
+## 🧑‍💻 Author
+
+- **Name:** Navdeep Singh  
+- **GitHub:** [@navu545](https://github.com/navu545)
+
+---
+
+## 📄 License
+
+This project is currently not licensed. All rights reserved.
+
+---
+
+> Built with passion using TypeScript, Vite, Tailwind, and Express.
