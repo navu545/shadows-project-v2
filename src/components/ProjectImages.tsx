@@ -1,9 +1,11 @@
 import { useRef, useEffect } from "react";
-import { newhome1, newhome2 } from "../assets/images";
 import { useNavigate } from "react-router-dom";
 
 const ProjectImages = () => {
-  const images = [newhome1, newhome2];
+  const images = [
+    "https://ik.imagekit.io/shadows/Shadows-project/newhome1.png?updatedAt=1754567393824",
+    "https://ik.imagekit.io/shadows/Shadows-project/newhome2.png?updatedAt=1754567392970",
+  ];
   const scrollRef = useRef<HTMLDivElement>(null);
   const indicatorRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
@@ -35,13 +37,13 @@ const ProjectImages = () => {
     <div className="w-full max-w-6xl mx-auto">
       <div className="hidden xs:flex space-x-4">
         <img
-          src={newhome1}
+          src="https://ik.imagekit.io/shadows/Shadows-project/newhome1.png?updatedAt=1754567393824"
           alt="Project 1"
           className="w-1/2 h-auto object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-[1.03]"
           onClick={() => navigate("/campaign")}
         />
         <img
-          src={newhome2}
+          src="https://ik.imagekit.io/shadows/Shadows-project/newhome2.png?updatedAt=1754567392970"
           alt="Project 2"
           className="w-1/2 h-auto object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-[1.03]"
           onClick={() =>
@@ -61,10 +63,10 @@ const ProjectImages = () => {
           ref={scrollRef}
           className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth cursor-grab pb-4 scrollbar-hide"
         >
-          {images.map((img, i) => (
+          {images.map((source, i) => (
             <div key={i} className="w-full flex-shrink-0 px-2 snap-center">
               <img
-                src={img}
+                src={source}
                 alt={`Project ${i + 1}`}
                 className="w-full h-auto object-cover rounded"
                 onClick={() =>
