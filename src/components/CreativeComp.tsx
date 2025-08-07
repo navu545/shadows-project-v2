@@ -10,7 +10,6 @@ import {
   partner5,
   partner6,
   partner7,
-  projectMain,
   projectpoint1,
   projectpoint2,
   projectpoint3,
@@ -92,7 +91,7 @@ const CreativeComp = () => {
         xxs:scale-55 xxs:-top-10 xxs:left-30
         xs:static xs:scale-100 xs:bottom-auto xs:left-auto xs:ml-0
       "
-            src={projectMain}
+            src="https://ik.imagekit.io/shadows/Shadows-project/creativeCompMain.png?updatedAt=1754580200156"
             alt=""
           />
         </div>
