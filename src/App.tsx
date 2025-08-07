@@ -34,6 +34,10 @@ const AppContent = () => {
   const wrapperClass = isBlackLoaderRoute
     ? "bg-black text-white"
     : "bg-white text-black";
+  
+  useEffect(() => {
+    fetch("https://shadows-v2-backend.onrender.com/api/ping").catch(() => {});
+  }, []);
 
   useEffect(() => {
     const timeout = setTimeout(() => setDelayPassed(true), 2000);
