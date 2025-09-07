@@ -163,10 +163,12 @@ import painting3a from "./painting3apop.png";
 import painting4a from "./painting4apop.png";
 import painting5a from "./painting5apop.png";
 import comingsoonCamp from "./comingsoonCamp.png";
+import resource4 from "./resource4.png";
 
 
 
 export {
+  resource4,
   comingsoonCamp,
   painting1,
   painting1a,

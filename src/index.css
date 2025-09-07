@@ -188,3 +188,19 @@ body {
     opacity: 0.6;
   }
 }
+@keyframes slide-bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%); /* adjust distance as needed */
+  }
+}
+
+.animate-slide-bounce {
+  animation: slide-bounce 20s ease-in-out infinite;
+}
+.animate-slide-bounce:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
