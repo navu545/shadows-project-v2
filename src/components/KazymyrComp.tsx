@@ -4,6 +4,29 @@ import {
 import MoreResources from "./MoreResources";
 import { Link } from "react-router-dom";
 
+const resources = [
+  {
+    src: "https://ik.imagekit.io/shadows/Shadows-project/resource1.png?updatedAt=1757349410191",
+    link: "https://rodovid.net/en/product/215/malevych-avtobiografichni-zapysky-19181933-malevich-autobiographic-notes-19181933/",
+    alt: "Resource 1",
+  },
+  {
+    src: "https://ik.imagekit.io/shadows/Shadows-project/resource2.png?updatedAt=1757349410109",
+    link: "https://rodovid.net/en/product/250/kazimir-malevich-kyiv-aspect/",
+    alt: "Resource 2",
+  },
+  {
+    src: "https://ik.imagekit.io/shadows/Shadows-project/resource3.png?updatedAt=1757349409909",
+    link: "https://drive.google.com/drive/folders/1wAciBckFFA0OD0_T4TXTzMX656CUA4L1?usp=sharing",
+    alt: "Resource 3",
+  },
+  {
+    src: "https://ik.imagekit.io/shadows/Shadows-project/resource4.png?updatedAt=1757349408983",
+    link: "https://en.uartlib.org/kazimir-malevich-ukraine/",
+    alt: "Resource 4",
+  },
+];
+
 const KazymyrComp = () => {
   return (
     <div className="kazymyr-wrap flex flex-col items-center bg-[#171717]">
@@ -539,7 +562,7 @@ const KazymyrComp = () => {
               MORE <span className="not-italic font-normal">RESOURCES</span>
             </h1>
           </div>
-          <MoreResources/>
+          <MoreResources resource={resources}/>
         </div>
 
         <div>
