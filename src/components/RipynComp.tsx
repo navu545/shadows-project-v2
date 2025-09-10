@@ -30,15 +30,15 @@ const RipynComp = () => {
           <div className="ripyn-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <div>
               <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
-                ILIA <span className="not-italic font-normal">RIPYN</span>
+                ILIA<br/> <span className="not-italic font-normal">RIPYN</span>
               </h1>
               <p className="text-lg sm:text-xl">
                 Born in Chuhuiv, Ukraine (1844 - 1930)
               </p>
             </div>
 
-            <div className="hidden lg:block absolute top-[50%] right-[65%]">
-              <img src={ripynArrow} className="scale-320" alt="Arrow" />
+            <div className="hidden lg:block absolute top-[-10%] right-[15%]">
+              <img src={ripynArrow} className="scale-90" alt="Arrow" />
             </div>
           </div>
 

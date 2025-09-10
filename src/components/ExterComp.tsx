@@ -1,5 +1,6 @@
 import MoreResources from "./MoreResources";
 import { Link } from "react-router-dom";
+import { exterArrow } from "../assets/images";
 
 const resources = [
   {
@@ -24,13 +25,18 @@ const ExterComp = () => {
     <div className="Exter-wrap flex flex-col items-center bg-[#171717]">
       <div className="Exter max-w-7xl items-center mb-10 overflow-hidden px-5">
         <div className="Exter-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_45%] gap-10 lg:gap-25">
-          <div className="Exter-heading order-1 lg:order-2 mb-10 lg:mb-0">
+          <div className="Exter-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
               ALEXANDRA <span className="not-italic font-normal">EXTER</span>
             </h1>
             <p className="text-lg sm:text-xl">
               Born in Białystok, Poland (1882 - 1949)
             </p>
+
+            <div className="hidden lg:block absolute top-[35%] right-[15%]">
+              <img src={exterArrow} className="scale-100" alt="Arrow" />
+            </div>
+
           </div>
 
           <div className="exter-img order-2 lg:order-1">
@@ -41,7 +47,6 @@ const ExterComp = () => {
             />
           </div>
         </div>
-
 
         <div className="Exter-text text-lg xs:text-xl sm:text-[22px] mb-10 text-justify">
           <p>

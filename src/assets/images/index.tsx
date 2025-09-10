@@ -164,10 +164,12 @@ import painting4a from "./painting4apop.png";
 import painting5a from "./painting5apop.png";
 import comingsoonCamp from "./comingsoonCamp.png";
 import resource4 from "./resource4.png";
+import exterArrow from "./exter_arrow.png";
 
 
 
 export {
+  exterArrow,
   resource4,
   comingsoonCamp,
   painting1,

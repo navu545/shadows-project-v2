@@ -83,12 +83,12 @@ const DavydComp = () => {
               </span>
             </a>
             (Semirotivka) near the village of Ryabushki, in the Kharkiv province
-            (now the Burliuk tract of Lebedynsky district, Sumy region). His
-            mother, Jewish-Belarusian Lyudmila Mikhnevich, strongly encouraged
-            Davyd in his artistic endeavours. His father, David Fedorovich
-            Burliuk, was a Ukrainian whose pride transcended generations and
-            would influence Burliuk's beliefs about Ukraine and artwork
-            strongly.
+            (now the Burliuk tract of Lebedynsky district, Sumy region).Burliuk
+            was born to the Jewish-Belarusian Lyudmila Mikhnevich, who strongly
+            encouraged Davyd in his artistic endeavours. His father, Davyd
+            Fedorovich Burliuk, was a Ukrainian whose pride transcended
+            generations and would influence Burliuk's beliefs about Ukraine and
+            artwork strongly.
             <br />
             <br />
             Davyd Burliuk was a descendant of Zaporozhian Cossacks—a heritage he
@@ -157,6 +157,13 @@ const DavydComp = () => {
             an art style he was heavily interested in.
             <br />
             <br />
+            During his interim period from 1901 to 1910, Burliuk would become
+            acquainted with Olexandra Ekster. Together, they would organize the
+            first exhibition of modern art in 1908, which took place on the main
+            street of Kyiv, Khreshchatyk, thereby bolstering his popularity
+            among Ukrainians.
+            <br />
+            <br />
             Following his time in Odessa, Burliuk would relocate to Moscow to
             study at the{" "}
             <a
@@ -174,41 +181,23 @@ const DavydComp = () => {
             throughout the, at this point, ailing Russian Empire.
             <br />
             <br />
-            As the Russian Empire collapsed, Davyd Burliuk expressed his
-            fondness for the newly independent Ukraine between 1917 and 1922,
-            writing,{" "}
             <a
               href="https://imwerden.de/pdf/burlyuk_david_fragmenty_iz_vospominany_1994__ocr.pdf"
               target="_blank"
             >
               <span className="underline">
-                “While I’m currently writing in Russian, I might switch to my
-                native Ukrainian later. Because I was born in Ukraine, which has
-                now become free and unbelievably beautiful under the storm of
-                the great Revolution. Ukraine, fraternally connected to the
-                great Union of Soviet Republics of Lenin, has been and remains
-                my homeland.”
+                Due to the erratic events of the Russian civil war, Davyd
+                Burliuk opted to leave the newly founded USSR in 1918,
               </span>
             </a>
+            traveling through Siberia, China, Japan, and Canada, reaching New
+            York in 1922, where he would settle.
           </p>
         </div>
 
         <div className="davyd-child-div grid lg:flex text-justify gap-10 overflow-hidden">
           <div className="text-lg xs:text-xl sm:text-[22px] mb-10 text-justify lg:w-[50%]">
             <p>
-              <a
-                href="https://imwerden.de/pdf/burlyuk_david_fragmenty_iz_vospominany_1994__ocr.pdf"
-                target="_blank"
-              >
-                <span className="underline">
-                  Due to the erratic events of the Russian civil war, Davyd
-                  Burliuk opted to leave the newly founded USSR in 1918,
-                </span>
-              </a>
-              traveling through Siberia, China, Japan, and Canada, reaching New
-              York in 1922, where he would settle.
-              <br />
-              <br />
               While residing in the United States of America, Davyd Burliuk
               would often express Ukrainian themes within his artwork,
               <a
@@ -228,6 +217,13 @@ const DavydComp = () => {
               Kharkiv, Odessa, and the Crimean Peninsula.
               <br />
               <br />
+              In 1962, Burliuk would try his luck by requesting the Soviet
+              authorities' permission to return to Ukraine and host an
+              exhibition; however, this time his request was denied, and he was
+              forced to stay in the USA, away from Ukraine, which he missed
+              dearly.
+              <br />
+              <br />
               <span className="italic font-light">
                 Farm, Davyd Burliuk. Photo: Sotheby’s
               </span>
@@ -244,6 +240,13 @@ const DavydComp = () => {
 
         <div className="Davyd-more-text text-lg xs:text-xl sm:[22px] text-justify mt-10 mb-25">
           <p>
+            After Burliuk's passing, some of his artworks returned to Ukraine to
+            be put on display; however, with the onset of Russia's full-scale
+            war against Ukraine in 2022, many paintings were stolen from the
+            Kherson regional art museum by Soldiers of the Russian Federation,
+            once again separating his art from his homeland.
+            <br />
+            <br />
             Burliuk’s deep pride in his Cossack heritage and his bond with the
             Ukrainian landscape permeated his creative vision. According to his
             friends, Burliuk often wore a Cossack-style earring and mimicked the
