@@ -55,7 +55,7 @@ const MariiaComp = () => {
             Mariia is the{" "}
             <a href="https://ukr.radio/prog.html?id=1110" target="_blank">
               <span className="underline">first Ukrainian female artist</span>
-            </a>
+            </a>{" "}
             to be bought by the Louvre. Her diary, which she kept from the age
             of 12, was the 2nd one written by a woman published in the history
             of France. Mariia had no connection to Russia, but her identity
@@ -72,7 +72,7 @@ const MariiaComp = () => {
               target="_blank"
             >
               <span className="underline">originated</span>
-            </a>
+            </a>{" "}
             from the Chuhuiv region of Ukraine, with the earliest mentions of
             their last name there dating back to the 18th century. Mariia’s
             mother, a Kharkiv local at the time, came from the{" "}
@@ -94,7 +94,7 @@ const MariiaComp = () => {
               <span className="underline">
                 At the age of 12, Mariia and her mother moved to Europe:
               </span>
-            </a>
+            </a>{" "}
             first to Italy and then ultimately settling down in France. Mariia
             moved frequently between various European cities, where she began
             documenting her experiences in a diary, a practice she continued
@@ -153,11 +153,11 @@ const MariiaComp = () => {
           />
         </div>
 
-        <div className="Mariia-text text-lg xs:text-xl sm:text-[22px] mb-10 text-justify">
+        <div className="Mariia-text text-lg xs:text-xl sm:text-[22px] mb-25 text-justify">
           <p>
             <a href="" target="_blank">
               <span className="underline">At first,</span>
-            </a>
+            </a>{" "}
             Mariia dreamed of becoming a singer, but health complications from
             tuberculosis forced her to give up that path. She turned to painting
             instead, studying at the prestigious Académie R. Julian in Paris,
@@ -191,7 +191,7 @@ const MariiaComp = () => {
               <span className="underline">
                 given that most of them were lost during World War II.
               </span>
-            </a>
+            </a>{" "}
             Her writings, however, remain an important historical account of a
             young woman living in 19th-century Europe.
           </p>

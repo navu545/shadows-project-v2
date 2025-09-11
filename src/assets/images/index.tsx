@@ -145,6 +145,9 @@ import credit5 from "./credit5.png";
 import credit6 from "./credit6.png";
 import credit7 from "./credit7.png";
 import credit8 from "./credit8.png";
+import credit9 from "./credit9.png";
+import credit10 from "./credit10.png";
+import credit11 from "./credit11.png";
 import shadowsLogoPng from "./shadowslogoPng.png"
 import artist1txt from "./artist1txt.png";
 import artist2txt from "./artist2txt.png";
@@ -169,6 +172,9 @@ import exterArrow from "./exter_arrow.png";
 
 
 export {
+  credit11,
+  credit9,
+  credit10,
   exterArrow,
   resource4,
   comingsoonCamp,

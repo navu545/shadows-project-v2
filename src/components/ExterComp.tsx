@@ -27,7 +27,7 @@ const ExterComp = () => {
         <div className="Exter-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_45%] gap-10 lg:gap-25">
           <div className="Exter-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
-              ALEXANDRA <span className="not-italic font-normal">EXTER</span>
+              OLEXANDRA <span className="not-italic font-normal">EKSTER</span>
             </h1>
             <p className="text-lg sm:text-xl">
               Born in Białystok, Poland (1882 - 1949)
@@ -36,7 +36,6 @@ const ExterComp = () => {
             <div className="hidden lg:block absolute top-[35%] right-[15%]">
               <img src={exterArrow} className="scale-100" alt="Arrow" />
             </div>
-
           </div>
 
           <div className="exter-img order-2 lg:order-1">
@@ -97,7 +96,7 @@ const ExterComp = () => {
             was{" "}
             <a href="https://www.mdpi.com/2076-0752/11/6/110" target="_blank">
               <span className="underline">sparked through her heritage</span>
-            </a>
+            </a>{" "}
             and her friendship with Natalia Davydova, a Ukrainian noblewoman who
             was a patron to peasant handicrafts. Ekster’s earliest work shows
             the influence of Impressionism and Ukrainian folk art.
@@ -125,7 +124,7 @@ const ExterComp = () => {
                 target="_blank"
               >
                 <span className="underline">As Bowlt highlights,</span>
-              </a>
+              </a>{" "}
               ‘...Ekster’s abstract paintings seem also to derive from a more
               local and domestic source, for the angularities of these works
               bring to mind the zigzag lines of flowers in Ukrainian peasant
@@ -182,7 +181,7 @@ const ExterComp = () => {
               target="_blank"
             >
               <span className="underline">which Ekster inspired,</span>
-            </a>
+            </a>{" "}
             was present throughout the play: ‘Pieces of traditional Ukrainian
             plakhta, an ancient female patterned garment worn like a skirt over
             a traditional long full-sleeved shirt, were organically balanced in

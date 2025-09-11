@@ -218,7 +218,7 @@ const KazymyrComp = () => {
           </p>
         </div>
 
-        <div className="malevych-moretext2 text-lg xs:text-xl sm:text-[22px] mb-10 text-justify">
+        <div className="malevych-moretext2 text-lg xs:text-xl sm:text-[22px] mb-15 text-justify">
           <p>
             In 1914,{" "}
             <a
@@ -285,7 +285,7 @@ const KazymyrComp = () => {
           </p>
         </div>
 
-        <div className="malevych-child-div grid lg:flex text-justify gap-10 overflow-hidden">
+        <div className="malevych-child-div grid lg:flex text-justify gap-10 overflow-hidden mb-8">
           <div className="text-lg xs:text-xl sm:text-[22px] mb-10 text-justify lg:w-[40%]">
             <p>
               Clearly, the concept of Suprematism didn’t come out of nowhere -

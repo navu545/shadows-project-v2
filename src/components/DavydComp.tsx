@@ -108,7 +108,7 @@ const DavydComp = () => {
               <span className="underline">
                 Fragments from the Memoirs of a Futurist.
               </span>
-            </a>
+            </a>{" "}
             His Ukrainian heritage would later be a defining influence on his
             style.
           </p>
@@ -122,7 +122,7 @@ const DavydComp = () => {
           />
         </div>
 
-        <div className="Davyd-second-text text-lg xs:text-xl sm:[22px] text-justify mt-10 mb-25">
+        <div className="Davyd-second-text text-lg xs:text-xl sm:text-[22px] text-justify mt-10 mb-10">
           <p>
             As Burliuk became increasingly invested in art, he enrolled in the
             Odessa Academy of Art between{" "}
@@ -131,14 +131,14 @@ const DavydComp = () => {
               target="_blank"
             >
               <span className="underline">1900 and 1901</span>
-            </a>
+            </a>{" "}
             at the age of 18-19. During his first stay in Odessa,{" "}
             <a
               href="https://gallerix.org/pr/vystavka-david-burlyuk/"
               target="_blank"
             >
               <span className="underline">he was mentored</span>
-            </a>
+            </a>{" "}
             by the prominent{" "}
             <a
               href="https://www.getty.edu/vow/ULANFullDisplay?find=500119324&role=&nation=&subjectid=500026962"
@@ -147,7 +147,7 @@ const DavydComp = () => {
               <span className="underline">
                 Ukrainian realist artist Kyriak Kostandi.
               </span>
-            </a>
+            </a>{" "}
             During his time there, he developed a liking for Odessa, stating,
             “It was there that I met the artist and student of Isaak Brodsky, as
             well as Timofey Kolts, Anisfeld, Martyshchenko, and Ovsyany (who
@@ -175,7 +175,7 @@ const DavydComp = () => {
                 taught there from 1911 until 1914. His strong and public support
                 for futurism would result in his expulsion from the school.
               </span>
-            </a>
+            </a>{" "}
             However, despite his expulsion, he did not leave Moscow, instead
             actively organizing the Russian/Ukrainian avant-garde community
             throughout the, at this point, ailing Russian Empire.
@@ -189,17 +189,17 @@ const DavydComp = () => {
                 Due to the erratic events of the Russian civil war, Davyd
                 Burliuk opted to leave the newly founded USSR in 1918,
               </span>
-            </a>
+            </a>{" "}
             traveling through Siberia, China, Japan, and Canada, reaching New
             York in 1922, where he would settle.
           </p>
         </div>
 
-        <div className="davyd-child-div grid lg:flex text-justify gap-10 overflow-hidden">
+        <div className="davyd-child-div grid lg:flex text-justify gap-10 overflow-hidden sm:text-[22px]">
           <div className="text-lg xs:text-xl sm:text-[22px] mb-10 text-justify lg:w-[50%]">
             <p>
               While residing in the United States of America, Davyd Burliuk
-              would often express Ukrainian themes within his artwork,
+              would often express Ukrainian themes within his artwork,{" "}
               <a
                 href="https://shron1.chtyvo.org.ua/Myroslav_Shkandrij/Steppe_Son_David_Burliuks_Identity_anhl.pdf?"
                 target="_blank"
@@ -207,12 +207,12 @@ const DavydComp = () => {
                 <span className="underline">
                   reminiscing and reflecting on his bond with Ukraine.
                 </span>
-              </a>
+              </a>{" "}
               Burliuk wanted to travel to the USSR to visit the Ukrainian SSR,
               hoping to work on his art there; however was only granted{" "}
               <a href="https://www.kyivpost.com/post/19679" target="_blank">
                 <span className="underline">permission once, in 1956.</span>
-              </a>
+              </a>{" "}
               During his journey throughout the USSR, he would return to
               Kharkiv, Odessa, and the Crimean Peninsula.
               <br />
@@ -238,7 +238,7 @@ const DavydComp = () => {
           </div>
         </div>
 
-        <div className="Davyd-more-text text-lg xs:text-xl sm:[22px] text-justify mt-10 mb-25">
+        <div className="Davyd-more-text text-lg xs:text-xl sm:text-[22px] text-justify mb-25">
           <p>
             After Burliuk's passing, some of his artworks returned to Ukraine to
             be put on display; however, with the onset of Russia's full-scale
@@ -273,7 +273,7 @@ const DavydComp = () => {
                 Burliuk can be quoted as saying, “My color palette is deeply
                 national. Yellow-Orange, Green-yellow-red, and blue tones pour
                 from my brush like Niagara Falls,”
-              </span>
+              </span>{" "}
             </a>
             demonstrating and explaining how Ukrainian influences can be traced
             back through the majority of his works.
@@ -300,7 +300,7 @@ const DavydComp = () => {
               <span className="underline">
                 “Ukraine has its most faithful son in me. My color .”
               </span>
-            </a>
+            </a>{" "}
             It’s clear that Burliuk drew inspiration from the strength and
             determination of his ancestors and his native land, Ukraine.
           </p>
@@ -341,7 +341,7 @@ const DavydComp = () => {
             <br />
             <br />
             David Burliuk, Alexander Kruchenykh, Vladmir Mayakovsky, and Victor
-            Khlebnikov. “A Slap in the Face of Public Taste.” 1917.
+            Khlebnikov. “A Slap in the Face of Public Taste.” 1917.{" "}
             <a
               href="https://www.marxists.org/subject/art/literature/mayakovsky/1917/slap-in-face-public-taste.htm"
               target="_blank"
@@ -352,7 +352,7 @@ const DavydComp = () => {
             <br />
             <br />
             David Burliuk Foundation. “Archival Photographs • David Burliuk
-            Foundation.” Accessed September 2, 2025.
+            Foundation.” Accessed September 2, 2025.{" "}
             <a
               href="https://davidburliuk.org/archival-photographs/"
               target="_blank"
@@ -374,7 +374,7 @@ const DavydComp = () => {
             <br />
             <br />
             John Perreault. “David Burliuk, the Ukrainian Father of Japanese
-            Futurism | Artopia.” November 1, 2009.
+            Futurism | Artopia.” November 1, 2009.{" "}
             <a
               href="https://www.artsjournal.com/artopia/2009/01/david_burliuk_the_ukrainian_fa.html"
               target="_blank"
@@ -389,7 +389,7 @@ const DavydComp = () => {
             <br />
             <br />
             Oleksandra Sakorska. “The Art of the Ukraine. David Burliuk –
-            Liebermann-Villa.” November 28, 2023.
+            Liebermann-Villa.” November 28, 2023.{" "}
             <a
               href="https://liebermann-villa.de/en/blog/the-art-of-the-ukraine-david-burliuk/"
               target="_blank"
@@ -400,7 +400,7 @@ const DavydComp = () => {
             <br />
             <br />
             uartlib.org. “Єдиний і неповторний Давид Бурлюк.” Бібліотека
-            українського мистецтва, November 3, 2014.
+            українського мистецтва, November 3, 2014.{" "}
             <a
               href="https://uartlib.org/yediniy-nepovtorniy-david-burlyuk/"
               target="_blank"
@@ -411,7 +411,7 @@ const DavydComp = () => {
             <br />
             <br />
             “Давид Бурлюк.” Бібліотека українського мистецтва, n.d. Accessed
-            September 2, 2025.
+            September 2, 2025.{" "}
             <a
               href="https://uartlib.org/ukrayinski-hudozhniki/burlyuk-david/"
               target="_blank"
@@ -421,7 +421,7 @@ const DavydComp = () => {
             </a>
             <br />
             <br />
-            Капітоненко А. М. НАШ ДАВИД БУРЛЮК. D. Burliuk Foundation, 2007.
+            Капітоненко А. М. НАШ ДАВИД БУРЛЮК. D. Burliuk Foundation, 2007.{" "}
             <a
               href="https://irbis-nbuv.gov.ua/ulib/item/ukr0000015256"
               target="_blank"
@@ -432,7 +432,7 @@ const DavydComp = () => {
             <br />
             <br />
             Херсонська обласна бібліотека для дітей ім. Дніпрової Чайки. “Бурлюк
-            Давид Давидович.” Accessed September 2, 2025.
+            Давид Давидович.” Accessed September 2, 2025.{" "}
             <a
               href="http://unalib.ks.ua/burlyuk-david-davidovich.htm"
               target="_blank"

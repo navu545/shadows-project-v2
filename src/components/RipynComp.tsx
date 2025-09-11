@@ -30,7 +30,8 @@ const RipynComp = () => {
           <div className="ripyn-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <div>
               <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
-                ILIA<br/> <span className="not-italic font-normal">RIPYN</span>
+                ILLIA
+                <br /> <span className="not-italic font-normal">REPIN</span>
               </h1>
               <p className="text-lg sm:text-xl">
                 Born in Chuhuiv, Ukraine (1844 - 1930)
@@ -51,7 +52,7 @@ const RipynComp = () => {
           </div>
         </div>
 
-        <div className="ripyn-text text-lg xs:text-xl sm:[22px] mb-10 text-justify">
+        <div className="ripyn-text text-lg xs:text-xl sm:text-[22px] mb-10 text-justify">
           <p>
             Today, Repin is often called “one of the key representatives of
             Russian realism,” but, like many others, he was from Ukraine.
@@ -92,7 +93,7 @@ const RipynComp = () => {
               target="_blank"
             >
               <span className="underline">Since</span>
-            </a>
+            </a>{" "}
             childhood, Illia cherished the dream of becoming an artist, which at
             the time was a respectable profession in the region. Repin’s parents
             supported his ambitions, first arranging for him to enter a school
@@ -107,7 +108,7 @@ const RipynComp = () => {
               target="_blank"
             >
               <span className="underline">19th-century</span>
-            </a>
+            </a>{" "}
             Chuguiv school of icon painting had its own original style, which
             was formed under the influence of academic painting. Chuguiv icon
             painters were invited to work in neighboring provinces. While
@@ -170,7 +171,7 @@ const RipynComp = () => {
           </div>
         </div>
 
-        <div className="ripyn-text text-lg xs:text-xl sm:[22px] mb-10 text-justify">
+        <div className="ripyn-text text-lg xs:text-xl sm:text-[22px] mb-10 text-justify">
           <p>
             In{" "}
             <a
@@ -178,7 +179,7 @@ const RipynComp = () => {
               target="_blank"
             >
               <span className="underline">1871,</span>
-            </a>
+            </a>{" "}
             Repin wrote his thesis "The Resurrection of Jairus's Daughter,"
             which was awarded the Great Gold Medal - the highest award of the
             Academy, and gave him the right to a six-year trip abroad. Traveling
@@ -246,7 +247,7 @@ const RipynComp = () => {
           />
         </div>
 
-        <div className="ripyn-text text-lg xs:text-xl sm:text-2xl text-justify mt-10 mb-25">
+        <div className="ripyn-text text-lg xs:text-xl sm:text-[22px] text-justify mt-10 mb-25">
           <p>
             <a
               href="https://drive.google.com/file/d/1mXinzmhfgSntbT3LUx6HT0yTzPhF_TZi/view?usp=sharing"
@@ -257,7 +258,7 @@ const RipynComp = () => {
                 personal connection to Ukraine but also helped shape its
                 artistic movements
               </span>
-            </a>
+            </a>{" "}
             .Repin taught many famous Ukrainian artists, including Oleksandr
             Murashko, and instilled in them several core beliefs. These included
             advocating for the expression of national identity through art,
@@ -291,7 +292,7 @@ const RipynComp = () => {
               target="_blank"
             >
               <span className="underline">returned</span>
-            </a>
+            </a>{" "}
             to Chuguev for the last time in 1914, on the eve of his 70th
             anniversary. The trip was dedicated to his long-cherished dream of
             creating the "Business Yard" - a kind of folk Academy of Arts, based
@@ -307,7 +308,7 @@ const RipynComp = () => {
               target="_blank"
             >
               <span className="underline">In 1900,</span>
-            </a>
+            </a>{" "}
             Repin moved to the village of Kuokkala, Finland (part of Finland
             until 1940), where he lived until his death in 1930. Once the
             Russian Empire collapsed in 1917, Illia Repin refused to endorse the
@@ -330,7 +331,7 @@ const RipynComp = () => {
               target="_blank"
             >
               <span className="underline">impossible</span>
-            </a>
+            </a>{" "}
             to read the lines of I.Yu. Repin's last letter to his countrymen,
             without emotion: “Dear, beloved compatriots... I ask you to believe
             in the feelings of my loyalty and endless regret that I cannot move
