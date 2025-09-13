@@ -93,7 +93,7 @@ const ArtistComp = () => {
       textStyle: {
         width: "50%",
         top: "40%",
-        left: "95%",
+        left: "90%",
         transform: "translate(-50%, -50%)",
       },
     },

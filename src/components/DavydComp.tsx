@@ -25,7 +25,7 @@ const resources = [
 const DavydComp = () => {
   return (
     <div className="Davyd-wrap flex flex-col items-center bg-[#171717]">
-      <div className="Davyd max-w-7xl items-center mb-10 overflow-hidden px-5">
+      <div className="Davyd w-full max-w-7xl items-center mb-10 overflow-hidden px-5">
         <div className="davyd-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_40%] gap-10 lg:gap-25">
           <div className="Davyd-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <div>
@@ -324,7 +324,7 @@ const DavydComp = () => {
           <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
             WORKS <span className="not-italic font-normal">CITED</span>
           </h1>
-          <p className="text-lg xs:text-xl sm:text-[22px] text-justify mt-10 mb-20">
+          <p className="text-lg xs:text-xl sm:text-[22px] text-justify mt-10 mb-20 break-words">
             Biedarieva, Svitlana. Ambicoloniality and War: The Ukrainian-Russian
             Case. 2024.{" "}
             <a
@@ -345,7 +345,7 @@ const DavydComp = () => {
             <a
               href="https://www.marxists.org/subject/art/literature/mayakovsky/1917/slap-in-face-public-taste.htm"
               target="_blank"
-              className="underline"
+              className="underline break-words"
             >
               https://www.marxists.org/subject/art/literature/mayakovsky/1917/slap-in-face-public-taste.htm.
             </a>

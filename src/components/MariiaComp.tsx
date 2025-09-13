@@ -23,7 +23,7 @@ const resources = [
 const MariiaComp = () => {
   return (
     <div className="Mariia-wrap flex flex-col items-center bg-[#171717]">
-      <div className="Mariia max-w-7xl items-center mb-10 overflow-hidden px-5">
+      <div className="Mariia w-full max-w-7xl items-center mb-10 overflow-hidden px-5">
         <div className="mariia-img-heading mt-20 mb-15 grid lg:grid-cols-[45%_55%] gap-10 lg:gap-25">
           <div className="Mariia-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <div>
@@ -137,9 +137,9 @@ const MariiaComp = () => {
             </p>
           </div>
 
-          <div className="lg:w-[50%] mt-20 absolute left-135 bottom-5">
+          <div className="hidden lg:block lg:w-[50%] mt-20 absolute left-123 xlg:left-130 xl:left-135 xl:bottom-5">
             <img
-              className="w-full h-[92%] lg:scale-150 scale-90"
+              className="w-full h-[92%] xl:scale-150 scale-150"
               src="https://ik.imagekit.io/shadows/Shadows-project/maria_dp_2.png?updatedAt=1757437542287"
             ></img>
           </div>
@@ -225,7 +225,7 @@ const MariiaComp = () => {
           <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
             WORKS <span className="not-italic font-normal">CITED</span>
           </h1>
-          <p className="text-lg xs:text-xl sm:text-[22px] text-justify mt-10 mb-20">
+          <p className="text-lg xs:text-xl sm:text-[22px] text-justify mt-10 mb-20 break-words">
             Башкірцева Марія Костянтинівна. “Башкірцева Марія Костянтинівна - 31
             твір - живопис.” Www.wikiart.org, 2025,
             www.wikiart.org/uk/bashkirtseva-mariya-kostyantinivna. Accessed 3

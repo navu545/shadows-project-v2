@@ -23,7 +23,7 @@ const resources = [
 const ExterComp = () => {
   return (
     <div className="Exter-wrap flex flex-col items-center bg-[#171717]">
-      <div className="Exter max-w-7xl items-center mb-10 overflow-hidden px-5">
+      <div className="Exter w-full max-w-7xl items-center mb-10 overflow-hidden px-5">
         <div className="Exter-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_45%] gap-10 lg:gap-25">
           <div className="Exter-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">

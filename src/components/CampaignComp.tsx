@@ -108,13 +108,13 @@ const CampaignComp = () => {
               complied for you to cite and reference on 5 major Ukrainian
               artists.
             </p>
-            <Link to="" className="underline"> {/*artists*/}
+            <Link to="/artists" className="underline"> {/*artists*/}
               → Explore their Biographies
             </Link>
-            <img
+            {/* <img
               src={comingsoonCamp}
               className="absolute top-60 left-0 scale-110 overflow-hidden object-cover"
-            ></img>
+            ></img> */}
           </div>
 
           <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[31%]">

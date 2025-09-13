@@ -1,6 +1,4 @@
-import {
-  kazymyrArrow,
-} from "../assets/images";
+import { kazymyrArrow } from "../assets/images";
 import MoreResources from "./MoreResources";
 import { Link } from "react-router-dom";
 
@@ -29,8 +27,8 @@ const resources = [
 
 const KazymyrComp = () => {
   return (
-    <div className="kazymyr-wrap flex flex-col items-center bg-[#171717]">
-      <div className="kazymyr max-w-7xl items-center mb-10 overflow-hidden px-5">
+    <div className="kazymyr-wrap flex flex-col items-center bg-[#171717] overflow-hidden">
+      <div className="kazymyr w-full max-w-7xl items-center mb-10 overflow-hidden px-5">
         <div className="kazy-img-head mt-20 mb-15 grid lg:grid-cols-[55%_45%] gap-10 lg:gap-25">
           <div className="kazymyr-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <div>
@@ -562,7 +560,7 @@ const KazymyrComp = () => {
               MORE <span className="not-italic font-normal">RESOURCES</span>
             </h1>
           </div>
-          <MoreResources resource={resources}/>
+          <MoreResources resource={resources} />
         </div>
 
         <div>
@@ -637,9 +635,9 @@ const KazymyrComp = () => {
             uinp.gov.ua/istorychnyy-kalendar/lyutyy/23/1879-narodyvsya-kazymyr-malevych.
             Accessed 12 Aug. 2025.
             <br />
-            <br /> 
-            Vogue.ua. “10 цікавих фактів про художника Казимира
-            Малевича.” Vogue.ua, 23 Feb. 2025,
+            <br />
+            Vogue.ua. “10 цікавих фактів про художника Казимира Малевича.”
+            Vogue.ua, 23 Feb. 2025,
             vogue.ua/article/culture/art/10-cikavih-faktiv-pro-hudozhnika-kazimira-malevicha-51428.html.
             Accessed 12 Aug. 2025.
           </p>

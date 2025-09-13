@@ -42,6 +42,47 @@ const credits = [
   },
 ];
 
+// const credits2 = [
+//   {
+//     label: "⬤\u2003PROJECT ADVISORY",
+//     name: "",
+//   },
+//   {
+//     label: "",
+//     name: "Oksana Semenko, Tetyana Filevska, Oleksandr Alforov, Museum of Repin in Kharkiv, Ukrainian Cultural Center in Paris, Ukranian Museum in New York",
+//   },
+//   { label: "", name: "" },
+//   {
+//     label: "⬤\u2003RESEARCH",
+//     name: "",
+//   },
+//   { label: "", name: "Alina Kaliuha, Lili Zhao, Andrew Nazarenko" },
+//   { label: "", name: "" },
+//   {
+//     label: "⬤\u2003CONTENT",
+//     name: "",
+//   },
+//   {
+//     label: "",
+//     name: "Naomi Nemickas, Viktor Gorskiy, Viktoriia Shevchenko, Bozhena Nadopta, Costanza Russo, Yde Bosma, Daria Honokhova",
+//   },
+//   { label: "", name: "" },
+//   { label: "⬤\u2003INSTAGRAM FILTER", name: "" },
+//   { label: "", name: "Hannah Tomczyk" },
+//   { label: "", name: "" },
+//   { label: "⬤\u2003WEBSITE DESIGN", name: "" },
+//   { label: "", name: "Navdeep Singh" },
+//   { label: "", name: "" },
+//   {
+//     label: "⬤\u2003INSTAGRAM DESIGN",
+//     name: "",
+//   },
+//   {
+//     label: "",
+//     name: "Hannah Tomczyk, Yelyzaveta Volkova, Nataliia Ratushniak, Iryna Kovalenko, Mariia Derevianko",
+//   },
+// ];
+
 const CreditsComp = () => {
   return (
     <div className="credits-wrapper flex flex-col items-center bg-[#171717] text-white px-4">

@@ -25,7 +25,7 @@ const resources = [
 const RipynComp = () => {
   return (
     <div className="ripyn-wrap flex flex-col items-center bg-[#171717]">
-      <div className="ripyn max-w-7xl items-center mb-10 overflow-hidden px-5">
+      <div className="ripyn w-full max-w-7xl items-center mb-10 overflow-hidden px-5">
         <div className="ripyn-img-heading mt-20 mb-15 grid lg:grid-cols-[55%_45%] gap-10 lg:gap-25">
           <div className="ripyn-heading relative order-1 lg:order-2 mb-10 lg:mb-0">
             <div>
@@ -231,7 +231,7 @@ const RipynComp = () => {
             </p>
           </div>
 
-          <div className="lg:w-[50%] mt-20 absolute left-175 -top-30">
+          <div className="hidden lg:block lg:w-[50%] mt-20 absolute lg:left-160 xlg:left-165 sxl:left-170 xl:left-175 -top-30">
             <img
               className="w-full h-[92%] lg:scale-75 scale-50"
               src="https://ik.imagekit.io/shadows/Shadows-project/ripyn_tag2.png?updatedAt=1757439766928"
@@ -375,7 +375,7 @@ const RipynComp = () => {
           <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl italic font-light mb-4">
             WORKS <span className="not-italic font-normal">CITED</span>
           </h1>
-          <p className="text-lg xs:text-xl sm:text-[22px] text-justify mt-10 mb-20">
+          <p className="text-lg xs:text-xl sm:text-[22px] text-justify mt-10 mb-20 break-words">
             Музей видатних діячів української культури Лесі Українки, Миколи
             Лисенка, Панаса Саксаганського, Михайла Старицького. Роль визначних
             особистостей – митців, діячів науки та культури у процесі формування

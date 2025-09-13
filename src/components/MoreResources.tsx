@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 type Resource = {
   src: string;
@@ -15,6 +15,17 @@ const MoreResources = ({ resource }: MoreResourcesProps) => {
   const scrollBigRef = useRef<HTMLDivElement>(null);
   const indicatorRef = useRef<HTMLDivElement>(null);
   const bigIndicatorRef = useRef<HTMLDivElement>(null);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+   const showScrollLarge =  windowWidth < 1280 || resource.length > 3;
 
   // Scroll indicator logic
   useEffect(() => {
@@ -65,7 +76,7 @@ const MoreResources = ({ resource }: MoreResourcesProps) => {
     return () => cleanups.forEach((fn) => fn());
   }, [resource.length]); // optional dependency if number of items can change
 
-  const showScrollLarge = resource.length > 3;
+  
 
   return (
     <div className="flex flex-col items-center sm:mb-20 w-full">
@@ -100,7 +111,7 @@ const MoreResources = ({ resource }: MoreResourcesProps) => {
               className={`flex-shrink-0 ${
                 showScrollLarge
                   ? "w-1/3 max-w-[400px] snap-center"
-                  : "w-auto max-w-[390px]"
+                  : "w-auto max-w-[400px] snap-center"
               } `}
             >
               <a
