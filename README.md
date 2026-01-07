@@ -23,24 +23,23 @@ The repository is maintained on my GitHub for development and maintenance purpos
 ---
 
 ## 📁 Folder Structure
-
 .
 ├── public/              # Static assets
 ├── src/
 │   ├── assets/          # Images, fonts, etc.
 │   ├── components/      # Reusable UI components
 │   ├── pages/           # App views / screens
-│   ├── animatedRoutes.tsx  # Centralized routing with animations
+│   ├── animatedRoutes.tsx  # Centralized route animation & routing
 │   ├── App.tsx          # Root component
 │   ├── main.tsx         # Entry point
-│   └── index.css        # Global styles and Tailwind setup
-├── server.js            # Express backend
-├── index.html           # Main HTML template
+│   └── index.css        # Tailwind and global styles
+├── server.js            # Express server
+├── index.html           # Main HTML template 
 ├── package.json         # Project manifest
 ├── package-lock.json    # Dependency lockfile
-├── .eslintrc.js         # ESLint configuration
+├── .eslintrc.js         # ESLint configuration (or .json / .cjs depending on your format)
 ├── netlify.toml         # Netlify deployment config
-└── README.md            # Project overview
+└── README.md # Project overview
 
 ---
 
