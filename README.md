@@ -72,8 +72,6 @@ yarn dev
 node server.js
 ```
 
-> Both frontend and backend should be running when developing locally.
-
 ---
 
 ## 🧪 Development Scripts
