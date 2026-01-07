@@ -6,7 +6,7 @@ A modern, frontend-focused website with a lightweight backend, built and deploye
 
 ## 🏷️ Project Context
 
-This website was developed and deployed for an NGO.
+This website was developed and deployed for an NGO.  
 I worked directly with stakeholders to design, build, and deploy the application end-to-end.
 
 The repository is maintained on my GitHub for development and maintenance purposes, as the organization does not currently have a dedicated technical team or repository setup.
@@ -24,7 +24,7 @@ The repository is maintained on my GitHub for development and maintenance purpos
 
 ## 📁 Folder Structure
 
----
+```text
 .
 ├── public/              # Static assets
 ├── src/
@@ -36,13 +36,13 @@ The repository is maintained on my GitHub for development and maintenance purpos
 │   ├── main.tsx         # Entry point
 │   └── index.css        # Tailwind and global styles
 ├── server.js            # Express server
-├── index.html           # Main HTML template 
+├── index.html           # Main HTML template
 ├── package.json         # Project manifest
 ├── package-lock.json    # Dependency lockfile
-├── .eslintrc.js         # ESLint configuration (or .json / .cjs depending on your format)
+├── .eslintrc.js         # ESLint configuration
 ├── netlify.toml         # Netlify deployment config
-└── README.md # Project overview
----
+└── README.md            # Project overview
+```
 
 ---
 
@@ -52,21 +52,27 @@ This section is intended for **development and maintenance** purposes.
 
 ### Install dependencies
 
+```bash
 npm install
 # or
 yarn install
+```
 
 ### Run the frontend (Vite)
 
+```bash
 npm run dev
 # or
 yarn dev
+```
 
 ### Run the backend (Express)
 
+```bash
 node server.js
+```
 
-Both frontend and backend should be running when developing locally.
+> Both frontend and backend should be running when developing locally.
 
 ---
 
@@ -102,7 +108,7 @@ Deployment details are intentionally scoped to this project and the organization
 
 ## 🧑‍💻 Author
 
-Navdeep Singh
+Navdeep Singh  
 GitHub: https://github.com/navu545
 
 ---
