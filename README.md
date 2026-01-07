@@ -23,6 +23,8 @@ The repository is maintained on my GitHub for development and maintenance purpos
 ---
 
 ## 📁 Folder Structure
+
+---
 .
 ├── public/              # Static assets
 ├── src/
@@ -40,6 +42,7 @@ The repository is maintained on my GitHub for development and maintenance purpos
 ├── .eslintrc.js         # ESLint configuration (or .json / .cjs depending on your format)
 ├── netlify.toml         # Netlify deployment config
 └── README.md # Project overview
+---
 
 ---
 
