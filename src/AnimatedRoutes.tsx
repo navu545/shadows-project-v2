@@ -159,7 +159,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/exter"
+          path="/ekster"
           element={
             <Suspense fallback={<LoaderBlack />}>
               <PageWrapper duration={0.3}>
@@ -179,7 +179,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/ripyn"
+          path="/repin"
           element={
             <Suspense fallback={<LoaderBlack />}>
               <PageWrapper duration={0.3}>

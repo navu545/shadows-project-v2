@@ -159,7 +159,7 @@ const AboutNew = () => {
               campaign, or reframing historical narratives to connect with
               modern audiences.
             </p>
-            <Link to="/creativePage">
+            <Link to="/creative">
               <div className="openLink-wrap flex items-center cursor-pointer">
                 <p className="underline mt-2 text-sm sm:text-base md:text-lg">
                   Learn more
