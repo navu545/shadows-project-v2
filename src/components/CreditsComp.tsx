@@ -32,13 +32,13 @@ const credits = [
     name: "Naomi Nemickas, Viktor Gorskiy, Viktoriia Shevchenko, Bozhena Nadopta, Costanza Russo, Yde Bosma, Daria Honokhova",
   },
   { label: "", name: "" },
-  { label: "⬤\u2003INSTAGRAM FILTER", name: "Hannah Tomczyk" },
+  { label: "⬤\u2003INSTAGRAM FILTER", name: "Agatha Gorski" },
   { label: "", name: "" },
   { label: "⬤\u2003WEBSITE DESIGN", name: "Navdeep Singh" },
   { label: "", name: "" },
   {
     label: "⬤\u2003INSTAGRAM DESIGN",
-    name: "Hannah Tomczyk, Yelyzaveta Volkova, Nataliia Ratushniak, Iryna Kovalenko, Mariia Derevianko",
+    name: "Yelyzaveta Volkova, Nataliia Ratushniak, Iryna Kovalenko, Mariia Derevianko",
   },
 ];
 
