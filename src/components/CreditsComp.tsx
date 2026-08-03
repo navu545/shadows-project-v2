@@ -192,11 +192,11 @@ const CreditsComp = () => {
                 className="w-18 h-18 scale-160 xs:w-20 xs:h-20 sm:w-23 sm:h-23 object-contain -mt-1 "
                 alt=""
               />
-              <img
+              {/* <img
                 src={credit5}
                 className="w-20 h-20 scale-170 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain "
                 alt=""
-              />
+              /> */}
               <img
                 src={credit6}
                 className="w-20 h-20 scale-135 xs:w-22 xs:h-22 sm:w-25 sm:h-25 object-contain"

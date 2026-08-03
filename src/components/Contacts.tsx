@@ -6,7 +6,7 @@ const Contacts = () => {
       <div className="contacts flex flex-col max-w-6xl">
         <h1 className="font-bold text-xl mb-3 xs:text-3xl xs:mb-5">Contacts</h1>
         <p className="font-semibold xs:text-xl underline mb-10">
-          shadows.ukraine@gmail.com
+          info@shadowsproject.org
         </p>
         <div className="linkdin-insta hidden md:grid grid-cols-2 gap-4 divide-x divide-gray-300 text-xl justify-center">
           <div
