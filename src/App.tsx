@@ -10,9 +10,9 @@ const blackLoaderPaths = [
   "/artists",
   "/kazymyr",
   "/davyd",
-  "/exter",
+  "/ekster",
   "/mariia",
-  "/ripyn",
+  "/repin",
   "/database",
   "/credits",
 ];

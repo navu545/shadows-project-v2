@@ -98,7 +98,7 @@ const ArtistComp = () => {
       },
     },
     {
-      link: "/ripyn",
+      link: "/repin",
       painting:
         "https://ik.imagekit.io/shadows/Shadows-project/painting3pop.png",
       paintingAlt: "Painting 3",
@@ -116,7 +116,7 @@ const ArtistComp = () => {
       },
     },
     {
-      link: "/exter",
+      link: "/ekster",
       painting:
         "https://ik.imagekit.io/shadows/Shadows-project/painting4pop.png",
       paintingAlt: "Painting 4",
