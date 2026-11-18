@@ -34,7 +34,7 @@ const credits = [
   { label: "", name: "" },
   { label: "⬤\u2003INSTAGRAM FILTER", name: "Agatha Gorski" },
   { label: "", name: "" },
-  { label: "⬤\u2003WEBSITE DESIGN", name: "Navdeep Singh" },
+  { label: "⬤\u2003WEB DEVELOPER", name: "Navdeep Singh" },
   { label: "", name: "" },
   {
     label: "⬤\u2003INSTAGRAM DESIGN",

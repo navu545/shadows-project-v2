@@ -175,14 +175,14 @@ const CampaignComp = () => {
               will help protect Ukraine’s cultural heritage from Russia’s
               destruction.
             </p>
-            <a
+            {/* <a
               href="https://www.rdnystreetwear.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline"
             >
               → Shop the Collection
-            </a>
+            </a> */}
           </div>
 
           <div className="bg-[#2c2d2c] text-white p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[35%]">
